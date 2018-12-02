@@ -1,6 +1,6 @@
 # Types de données
-+ EN: [JavaScript.info](https://javascript.info/types)
-+ EN/FR: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
++ [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
++ [JavaScript.info](https://javascript.info/types)
 
 ## Types primitives
 1. Ecrivez une chaîne de charactèrs

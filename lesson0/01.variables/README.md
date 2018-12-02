@@ -1,9 +1,9 @@
 # Variables
-Regardez resources pour comprendre comment fonctionnent ES6 variables:
-+ EN: [JavasScript.info](https://javascript.info/variables)
-+ EN/FR: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
-+ EN/FR: [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-+ EN/FR: [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+Regardez les resources suivants pour comprendre comment fonctionnent ES6 variables:
++ [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
++ [JavasScript.info](https://javascript.info/variables)
++ [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
++ [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
 ## Créez une variable
 1. Declarez deux variables: `user` et `admin`.
