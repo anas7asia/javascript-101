@@ -1,6 +1,5 @@
 # Traitments conditionnés
 
-Resources: 
 + [MDN > opérateurs de comparaison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 + [MDN > If...Else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 + [JavaScript.info > opérateurs de comparaison](https://javascript.info/comparison)
@@ -136,5 +135,8 @@ Si l'indice est superieur à 25, le résultat est 'considered underweight';
 
 Loggez le résultat: 'Your BMI is (insert bmi value here). It is (insert the result here). This test is not the most reliable, but if you are concerned about the result, check it with your doctor.'
 
-## Reading time
+## Reading List
+
++ [You Don't Know JS > Conditions](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#conditionals)
++ [You Don't Know JS > Operators precedence](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch5.md#operator-precedence)
 

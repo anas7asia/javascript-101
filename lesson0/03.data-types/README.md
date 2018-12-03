@@ -1,4 +1,5 @@
 # Types de données
+
 + [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 + [JavaScript.info](https://javascript.info/types)
 
@@ -60,3 +61,12 @@ Expliquez dans un commentaire pourquoi les types sont convertis comme ça.
 + `4 + undefined`
 + `'4' + null`
 + `4 - null`
+
+## Reading List
+
++ [You Don't Know JS > Data Types](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch1.md)
++ [You Don't Know JS > Types Conversion](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch4.md)
++ [You Don't Know JS > Strings](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#strings)
++ [You Don't Know JS > Numbers](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#numbers)
++ [You Don't Know JS > Null](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#the-non-value-values)
++ [You Don't Know JS > Undefined](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#undefined)

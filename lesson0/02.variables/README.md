@@ -1,11 +1,11 @@
 # Variables
-Regardez les resources suivants pour comprendre comment fonctionnent ES6 variables:
+
+Regardez les resources suivants pour comprendre comment fonctionnent les variables ES6:
 + [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
 + [JavasScript.info](https://javascript.info/variables)
 + [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 + [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
-## Créez une variable
 1. Declarez deux variables: `user` et `admin`.
 2. Assignez le valeur 'Sophie' à la variable `name`.
 3. Copiez le valeur de `name` dans `admin`.
@@ -43,5 +43,6 @@ Essayez de donner le nom le plus convenant aux variables suivantes:
 7. Numéro téléphone de la police
 8. Le poids que l'utilisateur a saisi dans un champ.
 
-## Mmm, lécture...
+## Reading List
++ [You Don't Know JS > Variables](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#variables)
 + [Let et const](https://www.sitepoint.com/es6-let-const/)

@@ -1,6 +1,5 @@
-# Functions
+# Fonctions
 
-Resources: 
 + [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 + [w3schools](https://www.w3schools.com/js/js_functions.asp)
 + [JavaScript.info > Functions](https://javascript.info/function-basics)
@@ -42,7 +41,7 @@ const loveIt5 = toCelsius(17);
 2. Créez une fonction qui retourne `'Hello World'`
 3. Sauvegardez le valeur retourné par la première fonction
 3. Sauvegardez le valeur retourné par la deuxième fonction
-4. Comparez ces deux résultat. Est-ce que l'instruction est obligatoire? Expliquez dans un commentaire.
+4. Comparez ces deux résultat. Est-ce que l'instruction `return` est obligatoire? Expliquez dans un commentaire.
 
 ---
 Créez une fonction qui retourne le paramètre passé
@@ -150,4 +149,5 @@ Refactorisez la calculatrice de BMI que vous avez créé pour utiliser les fonct
 ## Reading List
 
 + [Principles To Code By](https://medium.com/dailyjs/principles-to-code-by-3c516ad61fcc)
-+ [What is scope?](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch1.md#review-tldr)
++ [You don't know JS > Scope](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch1.md#review-tldr)
++ [You don't know JS > Function Arguments](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch5.md#function-arguments)

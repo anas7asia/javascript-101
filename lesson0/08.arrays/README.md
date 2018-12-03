@@ -1,6 +1,5 @@
 # Tableaux et traitements itératifs
 
-Resources:
 + [w3schools](https://www.w3schools.com/js/js_arrays.asp)
 + [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 + [JavaScript.info > Tableaux](https://javascript.info/array)
@@ -12,7 +11,11 @@ Resources:
 4. Loggez le dernier élément de ce tableau avec l'aide de .length property.
 5. Loggez le nombre d'élément du tableau.
 
+---
+
 Créez un tableau qui contient les éléments de différents types.
+
+---
 
 Créez un tableau *multidimensionnel* d'au moins de 3 éléments.
 Loggez le premier élément du premier élément.
@@ -71,8 +74,24 @@ Utilisez une autre boucle `for` pour augmenter par 1 chaque élément du tableau
 Triez le tableau `[0, 1, 2, 3, 4, 5, 6, 7]` avec une boucle `for` pour obtenir que des nombres impairs.
 
 ## Boucle while
-Dans une boucle `while` augmenter la variable `index` par 1. Si le valeur de `index` est superieur à 10, arretez l'augmetation. 
-> Attention de ne pas créer une boucle infinie 😱
+
+> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ? 
+>
+> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
+>
+> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
+>
+> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
+>
+> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
+>
+> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
+>
+> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
+
+Dans une boucle [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) augmenter la variable `index` par 3. Si le valeur de `index` est superieur à 10, arretez l'augmetation. Attention de ne pas créer une boucle infinie 😱
+
+---
 
 Demandez l'utilisateur son mot de passe jusque ce qu'il saisi le mot de passe correct (toujours avec la boucle `while`)
 
@@ -114,6 +133,19 @@ Les méthodes à utiliser:
 + Insérez trois éléments dans un tableau à la position 2: `[1, 2, 3, 4, 5]`
 + Insérez un élément dans un tableau au lieu d'un élément à la position 1: `[1, 2, 3, 4, 5]`
 
+## Référence et valeur
+
+Refactoriser ce code pour ne plus utiliser la [même référence](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#value-vs-reference) et pouvoir modifier `myArr2` sans modifier `myArr`.
+Utilisez la métode `slice` ou opérateur spread `...`
+
+```js
+const myArr = [1, 2, 3];
+const myArr2 = myArr;
+myArr2[0] = 0;
+console.log(myArr) // [0, 2, 3] - What the heck? Why? How?
+console.log(myArr2) // [0, 2, 3]
+```
+
 ## Go an extra mile
 
 Transformez un tableau multidimensionnel en un tableau simple
@@ -147,3 +179,9 @@ const res1 = randomize(myArr, 3) // returns [['k', 'f', 'a'], ['b', 'j', 'e'], [
 const res2 = randomize(myArr, 5) // returns [['k', 'f', 'a', 'b', 'j'], ['e', 'd', 'c']]
 
 ```
+
+## Reading List
+
++ [You Don't Know JS > Arrays](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#arrays)
++ [You Don't Know JS > Array-Likes](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#array-likes)
++ [You Don't Know JS > Loop](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#loops)
