@@ -53,7 +53,7 @@ let isMember = true;
 
 Utilisez opérateur `!` avec les valeurs suivants. Expliquez dans un commentaire pourquoi on utilise cet opérateur.
 ```js
-'', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World}, {}, [1, 2, 3], []
+'', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World'}, {}, [1, 2, 3], []
 ```
 
 ---
@@ -68,7 +68,7 @@ Refactorisez votre code pour utiliser l'opérateur `!`.
 
 Utilisez opérateur `!!` avec les valeurs suivants. Expliquez dans un commentaire pourquoi on utilise cet opérateur.
 ```js
-'', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World}, {}, [1, 2, 3], []
+'', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World'}, {}, [1, 2, 3], []
 ```
 
 ---
@@ -80,7 +80,7 @@ Refactorisez votre code pour utiliser l'opérateur `!!`.
 
 Testez les valeurs suivants dans la construction `if`. Lesquels sont TRUTHY et lesquels sont FALSY? 
 ```js
-'', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World}, {}, [1, 2, 3], []
+'', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World'}, {}, [1, 2, 3], []
 // List truthy values here:
 // List falsy values here:
 ```
