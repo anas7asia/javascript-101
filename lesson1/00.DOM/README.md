@@ -14,6 +14,7 @@ Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `q
 + Trouvez la balise `span` avec l'id 'js-unique-el'. Loggez-là.
 + Trouvez toutes les balises `p` qui se trouvent dedans `div`. 
 + Trouvez toutes les balises `p` qui ne se trouvent pas dedans `div`. 
++ Trouvez toutes les balises `span` qui sont précédéss par un `div`. 
 
 ```html
 <div>
@@ -22,6 +23,7 @@ Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `q
 <div>
   <p class="secondary-paragraph">Paragraph 2</p>
 </div>
+<span></span>
 <div>
   <p class="secondary-paragraph">Paragraph 3</p>
 </div>
@@ -38,6 +40,22 @@ Console > Séléctionner un élément > 'Elements' > 'Properties'
 
 
 ## Modifier un node
+
+Ajoutez le texte 'I am the first paragraphe' au premier paragraph du document.
+Ajoutez le HTML `<span>Hello</span>` au deuxième paragraphe du document.
+Modifiez les attributs `width` à 50% et `height` à 'auto' de l'image.
+Ajoutez un attribut `alt` à l'image.
+Donnez la couleur 'blue' au premier paragraphe et la taille de police '1.5rem'.
+
+```html
+<p class="first-p"></p>
+<p class="second-p"></p>
+<img src="path/to/image" width="10px" height="10px">
+
+```
+
+## Créez un node
+
 
 ## Supprimer un node
 
