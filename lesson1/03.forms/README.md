@@ -15,6 +15,8 @@
 
 ---
 
+![Password](http://www.commitstrip.com/wp-content/uploads/2014/01/Strips-Mot-de-passe-650-final.jpg)
+
 Créez un formulaire de connexion qui comprend deux champs: email et mot de passe.
 Quand ce formulaire est [soumis](https://developer.mozilla.org/en-US/docs/Web/Events/submit), vérifez que:
 1. Email est saisi 
@@ -58,7 +60,7 @@ Créez un calculateur du prix de bonbons magiques 🔮
 
 Deuxìeme partie (aussi un fieldset) est la liste de produits. Un produit comprend le nom, le prix et la quantité (`input[type=number]`).
 
-// TODO: image
+![Magic Price Calculator](https://i.ibb.co/b5N6Cg5/Magic-price-calculator.png)
 
 Créez la liste de bonbons dynamiquement avec JavaScript (pas de magie pour ça).
 Quantité des bonbons ne peut pas être inférieur à 0.
@@ -78,4 +80,6 @@ const candies = [
 ]
 ```
 
+## Reading List
 
++ [Why should I use Form Elements?](https://medium.com/@hanna.soloman/why-should-i-use-form-elements-a7baa8f8306)

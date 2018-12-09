@@ -57,3 +57,5 @@ Créez une fonction pour pouvoir revenir à la page suivante.
 
 ## Reading List
 
++ [How does Window object really works?](https://develoger.com/how-does-window-object-really-works-216ee99c356f)
++ [DOM & BOM Revisited](https://medium.com/@fknussel/dom-bom-revisited-cf6124e2a816)

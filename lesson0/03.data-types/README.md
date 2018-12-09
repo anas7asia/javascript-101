@@ -62,6 +62,8 @@ Expliquez dans un commentaire pourquoi les types sont convertis comme ça.
 + `'4' + null`
 + `4 - null`
 
+![Everything is an object](https://i.ibb.co/L5YC14q/terrible-mistake-js.jpg)
+
 ## Reading List
 
 + [You Don't Know JS > Data Types](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch1.md)

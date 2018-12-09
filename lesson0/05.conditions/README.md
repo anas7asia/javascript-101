@@ -51,6 +51,8 @@ let isMember = true;
 
 ## Vrai ou faux?
 
+![null comparisons](https://i.ibb.co/99xX5c7/comparisons.png)
+
 Utilisez opérateur `!` avec les valeurs suivants. Expliquez dans un commentaire pourquoi on utilise cet opérateur.
 ```js
 '', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World'}, {}, [1, 2, 3], []

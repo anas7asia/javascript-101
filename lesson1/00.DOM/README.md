@@ -38,7 +38,8 @@ Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `q
 
 Utilisez la console pour regarder toutes les propriétés et méthodes associés à un node.
 Console > Séléctionner un élément > 'Elements' > 'Properties'
-// TODO: add an image
+
+![Quick DOM Inspector](https://i.ibb.co/X7bW84V/DOM-inspector.png)
 
 
 ## Modifier un node

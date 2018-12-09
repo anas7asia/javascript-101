@@ -121,10 +121,9 @@ numbers.sort(function(a, b) {
 })
 ```
 
-## Hosting
+## Hoisting
 
-Expliquez dans un commentaire quelles expressions sont ["hoisted"](multiply(3, 4); // what's happening here?
-sum(2, 2); // what's happening here?) et quand on peut les appeler.
+Expliquez dans un commentaire quelles expressions sont ["hoisted"](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) et quand on peut les appeler.
 
 ```js
 
@@ -149,5 +148,6 @@ Refactorisez la calculatrice de BMI que vous avez créé pour utiliser les fonct
 ## Reading List
 
 + [Principles To Code By](https://medium.com/dailyjs/principles-to-code-by-3c516ad61fcc)
++ [You don't know JS > Hoisting](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch4.md)
 + [You don't know JS > Scope](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch1.md#review-tldr)
 + [You don't know JS > Function Arguments](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch5.md#function-arguments)

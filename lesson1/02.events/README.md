@@ -96,7 +96,8 @@ Les liens de partage en `position: fixed;` apparessent si on a descendu à 200 p
 ---
 
 Sur la page créez un div avec des boutons (ou des liens). Si le div ou les boutons sont cliqués, marquez 'Clicked inside', si l'endroit hors div est cliqué, marquez 'Clicked outside'.
-// TODO: insert video []
+
+![Click outside](https://i.ibb.co/6tNfRxM/click-outside.gif)
 
 ---
 
@@ -106,3 +107,4 @@ Creéz un système d'affichage de contenu de type ["accordeon"](https://getboots
 ## Reading List
 + [Eloquent JavaScript > Events](https://eloquentjavascript.net/15_event.html)
 + [JavaScript.info > Events bubbling and capture](https://javascript.info/bubbling-and-capturing)
++ [A simplified explanation of event propagation in JavaScript.](https://medium.freecodecamp.org/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e)
