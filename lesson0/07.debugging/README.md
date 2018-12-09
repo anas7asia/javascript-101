@@ -2,16 +2,15 @@
 
 ![End of coding](http://www.commitstrip.com/wp-content/uploads/2016/03/Strip-Reflexion-de-codeur-4-650-final.jpg)
 
-> !!! Gardez toujours la console ouverte, elle votre méilleur ami
+> !!! Gardez toujours la console ouverte, elle est votre méilleur ami
 
-Comment déboger mieux et ne pas qu'avec `console.log`: les [conseils](https://developers.google.com/web/tools/chrome-devtools/javascript/) de Google pour les développeurs.
+Comment déboger mieux et ne pas qu'avec `console.log`: les [conseils](https://developers.google.com/web/tools/chrome-devtools/javascript/) d'experts Google pour les développeurs.
 
-Entrainez-vous avec ce code bugué:
+Entrainez-vous avec ce code défectueux:
 
 ```js
-availableCharacters = ['Harry Potter', 'Luna Lovegood', 'Draco Malfoy']
 
-myCharacter = availableCharacters[0];
+myCharacter = 'Luna Lovegood';
 
 myCharacterHouse = useSortingHat()
 

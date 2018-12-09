@@ -9,7 +9,7 @@
 + [JavaScript.info > Form events](http://javascript.info/forms-submit) 
 
 1. Créez un champ de texte. 
-2. Quand la page est entièrement [chargée](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload), appelez une fonction qui fait concentrer sur ce champ. 
+2. Quand la page est entièrement [chargée](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload), appelez une fonction qui met le champ en avant. 
 3. Ecrivez du texte dedans. 
 4. Quand le champ sera deconcentré, loggez le texte écrit.
 
@@ -19,31 +19,31 @@
 
 Créez un formulaire de connexion qui comprend deux champs: email et mot de passe.
 Quand ce formulaire est [soumis](https://developer.mozilla.org/en-US/docs/Web/Events/submit), vérifez que:
-1. Email est saisi 
-2. Email est [valide](https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript)
-3. Mot de passe est saisi
+1. Email est saisi.
+2. Email est [valide](https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript).
+3. Mot de passe est saisi.
 4. Mot de passe est plus long que 8 symboles.
 
 Si tous les champs du formulaire sont vides ajoutez l'attribut `disabled` au bouton du type `submit`.
 
 Quand le formulaire est soumis, vérifiez que tous les conditions sont remplis, si oui loggez 'Welcome!', sinon affichez les erreurs et demandez de re-saisir les champs.
 
-> Attention à la [propagation d'évènements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture), n'oubliez pas d'utiliser la méthode [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) de votre évènement `submit`
+> Attention à la [propagation d'évènements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture), n'oubliez pas d'utiliser la méthode [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) d'évènement `submit`.
 
 ---
 
 Créez un formulaire d'inscription d'un utilisateur sur votre site qui comprend les champs suivants:
 
-+ sexe (boutons radio) - champs obligatoire, accepte les valeurs 'M' (male) ou 'F' (female)
-+ nom (input) - champs obligatoire
-+ prénom (input) - champs obligatoire
++ sexe (boutons radio) - obligatoire, accepte les valeurs 'M' (male) ou 'F' (female)
++ nom (input) - obligatoire
++ prénom (input) - obligatoire
 + email (input) - obligatoire, doit être un email valide 
-+ mot de passe (input) - obligatoire, plus long que 8 symboles
++ mot de passe (input) - obligatoire, doit être plus long que 8 symboles
 + adresse (textarea) - obligatoire
-+ condition d'utilisation (checkbox) - obligatoire, doit avoir le valeur `true`
++ condition d'utilisation (checkbox) - obligatoire, doit avoir la valeur `true`
 
 Si un de champs est concentré et ensuite deconcentré, passez la couleur de sa bordure en rouge.
-Si l'information est saisie dans un champ est invalide et ce champ est deconcentré, passez la couleur de sa bordure en rouge et montrer la .
+Si l'information saisie dans un champ est invalide et ce champ devient deconcentré, passez la couleur de sa bordure en rouge et montrez l'erreur.
 Si tous les champs du formulaire sont vides ajoutez l'attribut `disabled` au bouton du type `submit`.
 Quand le formulaire est soumis, vérifiez que tous les champs sont valides:
 + Si non, passez la couleur de bordure en rouge de tous les champs invalides et mettez l'erreur sous chaque champ.
@@ -51,9 +51,9 @@ Quand le formulaire est soumis, vérifiez que tous les champs sont valides:
 
 Vous pouvez utiliser [Bootstrap](https://getbootstrap.com/docs/4.1/components/forms/) ou un autre framework pour donner des styles à votre formulaire.
 
-## Aller plus loin
+## Pour aller plus loin
 
-Créez un calculateur du prix de bonbons magiques 🔮
+Créez un calculateur de prix de bonbons magiques 🔮
 [Première partie](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) du formulaire est l'information de l'utilisateur qui effectue la commande: 
 + nom (obligatoire)
 + nom d'hibou (obligatoire)
@@ -63,10 +63,10 @@ Deuxìeme partie (aussi un fieldset) est la liste de produits. Un produit compre
 ![Magic Price Calculator](https://i.ibb.co/b5N6Cg5/Magic-price-calculator.png)
 
 Créez la liste de bonbons dynamiquement avec JavaScript (pas de magie pour ça).
-Quantité des bonbons ne peut pas être inférieur à 0.
+Quantité de bonbons ne peut pas être inférieur à 0.
 Utilisateur doit commander au moins 1 produit.
 A chaque changement de quantité, montrez la somme totale (en sickles bien sûr).
-Si la quantité de tous les produits est 0, ajoutez l'attribut `disabled` au bouton du type `submit`.
+Si la quantité de tous les produits est égale à 0, ajoutez l'attribut `disabled` au bouton du type `submit`.
 
 ```js
 const candies = [

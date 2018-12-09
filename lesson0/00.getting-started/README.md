@@ -10,4 +10,10 @@ Les IDEs les plus populaire sont:
 + SublimeText
 + Atom
 
-Télécharger un IDE qui vous plaît, la liste de ces raccourcis et ALLONS-Y!
+Télécharger un IDE qui vous plaît et la liste de ces raccourcis et ALLONS-Y!
+
+// ESLint
+
+// Code style
+
+Dans ce fichier créez des commentaires JavaScript: d'une ligne (*inline*) et de plusieurs lignes (*multiline*)

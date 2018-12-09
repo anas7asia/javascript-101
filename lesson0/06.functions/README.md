@@ -26,7 +26,7 @@ const loveIt2 = toCelsius(12);
 const loveIt3 = toCelsius(33);
 const loveIt4 = toCelsius(14);
 const loveIt5 = toCelsius(17);
-
+// Love it!
 ```
 
 > DRY - **D**on't **R**epeat **Y**ourself
@@ -39,18 +39,21 @@ const loveIt5 = toCelsius(17);
 
 1. Créez une fonction qui log `'Hello World'`
 2. Créez une fonction qui retourne `'Hello World'`
-3. Sauvegardez le valeur retourné par la première fonction
-3. Sauvegardez le valeur retourné par la deuxième fonction
+3. Sauvegardez la valeur retournée par la première fonction
+3. Sauvegardez la valeur retournée par la deuxième fonction
 4. Comparez ces deux résultat. Est-ce que l'instruction `return` est obligatoire? Expliquez dans un commentaire.
 
 ---
+
 Créez une fonction qui retourne le paramètre passé
 
 ---
+
 Créez une fonction qui retourne la somme de deux nombres passés.
 
 ---
-Créez une fonction qui [tronque](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) la chaîne de charactèrs. Elle prend la chaîne de charactères, le longeur et la traînée (..., ->, etc) en tant que paramètres.
+
+Créez une fonction qui [tronque](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) la chaîne de caractères. Elle prend la chaîne de caractères, le longeur et la traînée (..., ->, etc) en tant que paramètres.
 Donnez une valeur par défaut à la traînée. 
 ```js
 truncate('I will be truncated', 15, '->') // returns 'I will be trunc->'
@@ -76,7 +79,7 @@ console.log(count) // accessible here ?
 console.log(count2) // accessible here ?
 
 ```
-> Préférez tojours les variables locales
+> Préférez toujours les variables locales
 
 ## Fonctions pures et impures
 
@@ -97,7 +100,7 @@ function calcPrice(price, qty) {
 calcPrice(14, 3);
 ```
 
-> Quand vous pouvez créez toujours les fonctions pures
+> Quand vous pouvez, créez toujours les fonctions pures
 
 ## Fonctions ES6
 
@@ -142,8 +145,8 @@ multiply(3, 4); // what's happening here?
 sum(2, 2); // what's happening here?
 ```
 
-## Go an extra mile
-Refactorisez la calculatrice de BMI que vous avez créé pour utiliser les fonctions pures.
+## Pour aller plus loin
+Refactorisez le calculateur de BMI que vous avez créé pour utiliser les fonctions pures.
 
 ## Reading List
 
