@@ -45,3 +45,7 @@ const checkMyGringottsAccount = () {
 }
 
 ```
+
+## Reading List
+
++ [Eloquent JavaScript > Bugs and Errors](https://eloquentjavascript.net/08_error.html)

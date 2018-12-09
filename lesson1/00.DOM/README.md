@@ -31,6 +31,8 @@ Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `q
 <span id="js-unique-el"></span>
 ```
 
+> **Bonnes pratiques :** si vous créez une classe ou un id pour manipuler les éléments avec JS, prefixez leurs noms avec 'js-', comme `.js-my-class`
+
 
 ## Inspécter un node
 
@@ -50,7 +52,7 @@ Donnez la couleur 'blue' au premier paragraphe et la taille de police '1.5rem'.
 ```html
 <p class="first-p"></p>
 <p class="second-p"></p>
-<img src="path/to/image" width="10px" height="10px">
+<img src="path/to/image" width="10" height="10">
 
 ```
 

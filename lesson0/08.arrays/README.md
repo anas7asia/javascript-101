@@ -75,19 +75,7 @@ Triez le tableau `[0, 1, 2, 3, 4, 5, 6, 7]` avec une boucle `for` pour obtenir q
 
 ## Boucle while
 
-> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ? 
->
-> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
->
-> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
->
-> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
->
-> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
->
-> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
->
-> Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?
+![While loop](https://ibb.co/LxgMwgY)
 
 Dans une boucle [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) augmenter la variable `index` par 3. Si le valeur de `index` est superieur à 10, arretez l'augmetation. Attention de ne pas créer une boucle infinie 😱
 
