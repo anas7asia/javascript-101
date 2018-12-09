@@ -75,7 +75,7 @@ Triez le tableau `[0, 1, 2, 3, 4, 5, 6, 7]` avec une boucle `for` pour obtenir q
 
 ## Boucle while
 
-![While loop](https://i.ibb.co/y6kDTkd/while-loop.jpg)
+![While loop](https://i.ibb.co/gFGS4hy/while-loop.jpg)
 
 Dans une boucle [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) augmenter la variable `index` par 3. Si le valeur de `index` est superieur à 10, arretez l'augmetation. Attention de ne pas créer une boucle infinie 😱
 
