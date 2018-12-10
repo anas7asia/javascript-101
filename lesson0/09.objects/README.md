@@ -6,7 +6,7 @@
 1. Créez un objet avec les valeurs suivantes: id = 1, name = Jeremy, email = jeremy@ynov.com.
 2. Loggez l'id de cet objet avec un point.
 3. Loggez l'id de cet objet avec les crochets.
-4. Declarez une variable avec la valeur 'name'. Accédez à la propriété 'name' de votre objet par cette variable et les crochets.
+4. Déclarez une variable avec la valeur 'name'. Accédez à la propriété 'name' de votre objet par cette variable et les crochets.
 5. Changez la valeur d'id dans votre objet à 2.
 6. Ajoutez à votre objet une nouvelle propriété 'human' de valeur `true`.
 7. Changez la valeur de la propriété 'email' à `undefined`.

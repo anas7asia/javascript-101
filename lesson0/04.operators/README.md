@@ -11,10 +11,10 @@ Effectuez les opérations suivantes:
 + Multipliez 5 par 7. Multipliez le résultat par 2 avec l'opérateur `*=`.
 + Divisez 10 par 2. Divisez le résultat par 2 avec l'opérateur `/=`.
 
-+ Declarez une variable avec la valeur de 10. Multipliez-la par un nombre Float pour avoir 15 comme résultat. 
++ Déclarez une variable avec la valeur de 10. Multipliez-la par un nombre Float pour avoir 15 comme résultat. 
 + Divisez le résultat de l'opération précédante par un nombre Float pour avoir 30 comme résultat.
 
-+ Declarez une variable avec la valeur de 5. Incrémentez le par 1 avec l'opérateur `++`.
-+ Declarez une variable avec la valeur de 5. Décrémentez le par 1 avec l'opérateur `--`.
++ Déclarez une variable avec la valeur de 5. Incrémentez le par 1 avec l'opérateur `++`.
++ Déclarez une variable avec la valeur de 5. Décrémentez le par 1 avec l'opérateur `--`.
 
 + Parmi les nombres 0, 1, 2, 8, 13, 25, 48, 101 trouvez les nombres pairs et impairs avec l'opérateur `%`.
