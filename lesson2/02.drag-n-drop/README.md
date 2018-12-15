@@ -3,15 +3,28 @@
 + [MDN > Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API )
 + [w3school > Drag and Drop API](https://www.w3schools.com/Html/html5_draganddrop.asp)
 
-// 1. Simply drag one thing to another
+Créer un API qui permet de mettre un div dans un autre div.
 
 ---
 
-Créez une question de quizz avec l'API de Drag & Drop.
+![Drag&Drop images](https://i.ibb.co/xCsGFwk/drag-n-drop-images.gif)
+
+Créez un API de dépôt d'un ou plusieurs images pour ensuite les télécharger sur le serveur.
+Créez un div, faites glisser un image, [affichez son aperçu](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/FileReader) et son nom.
+
+Le poids maximum du'image ne doit pas depasser 300Ko.
+Les formats acceptés d'un image sont jpeg, png et svg.
+
+Pour aller plus loin:
+Vérifiez que les images avec le même nom ne peuvent pas être uploadés plusieurs fois.
+Ajoutez la restriction d'uploader plus de 10 images.
+
+---
+
+Créez un quiz avec l'API de Drag & Drop.
 
 ![IT Quiz](https://i.ibb.co/D8dTWwH/drag-n-drop-demo.gif)
 
-Vous avez l'objet de languages suivant:
 
 ```js
 const LANGS = [
@@ -24,16 +37,12 @@ const LANGS = [
 ];
 ```
 
-Créez dynamiquement la liste de languages sur le plateau d'options. Toutes les options sont *draggable*s. Utilisez les `id` dynamiques.
+Créez *dynamiquement* la liste de choix de quiz.
+C'est possible de mettre et enlever les choix avant la validation de la réponse.
+A chaque déplacement d'un choix mettez à jour le compteur des choix.
+Le bouton de soumission est inactive s'il y a plus ou moins de 3 choix.
 
-Les plateaux d'options et de réponses sont *droppable*s.
-<!-- On est en mésure d'mettre un élément draggable sur le plateau de réponses et l'emmener dans la liste d'options. -->
-
-A chaque déplacement d'un language mettez à jour le compteur des éléments.
-
-Le bouton de soumission est inactive s'il y a plus ou moins de 3 éléments.
-
-A la soumission vérifiez si 3 réponses sont corrèctes et changez l'état du plateau de réponses. Si la réponse est corrècte, passez-le en vert, sinon en rouge. Si vous redeplacez les languages, donner la couleur initiale.
+A la soumission de la réponse vérifiez si 3 réponses sont corrèctes. Si la réponse est corrècte, passez sa couleur du fond en vert, sinon en rouge.
 
 
 
