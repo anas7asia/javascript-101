@@ -131,5 +131,6 @@ Recréez le HTML suivant uniquement avec JavaScript.
 ## Reading List
 
 + [Eloquent JavaScript > DOM](https://eloquentjavascript.net/14_dom.html)
++ [A comprehensive dive into NodeLists, Arrays, converting NodeLists and understanding the DOM](https://toddmotto.com/a-comprehensive-dive-into-nodelists-arrays-converting-nodelists-and-understanding-the-dom/)
 
 

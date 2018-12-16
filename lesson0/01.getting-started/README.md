@@ -28,7 +28,17 @@ multiline
 
 ```
 
+## Langue de développement
+
+Toutes les lettres d'Unicode peuvent être utilisé pour écrire du code, ça veut dire que c'est possible de le faire en français, anglais, russe, chinois ou n'importe quelle autre langue
+Desormais, la meilleure pratique est écrire du code et ces commentaires en anglais.
+
+![Coding in French](http://www.commitstrip.com/wp-content/uploads/2015/08/Strip-à-la-française-650-final.jpg)
+
+
 ## Code style
+
+![Indent your code properly](http://www.commitstrip.com/wp-content/uploads/2013/02/Strips-Indentation-600-final.jpg)
 
 Le plus important en façon d'écrire du code est être cohérent. Il faut se mettre d'accord avec l'équipe ou soi-même quels règles de syntax et d'indentation on va utiliser.
 [Airbnb](https://github.com/airbnb/javascript) et [Google](https://google.github.io/styleguide/jsguide.html) ont crée leurs styleguides que chaqu'un est libre de suivre (ou pas). 

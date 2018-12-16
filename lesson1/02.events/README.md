@@ -8,11 +8,11 @@
 
 ## Evénements de souris
 
-Créez un bouton dans votre HTML. Associez-lui un évènement `onclick` par un attribut directement dans HTML. Si le bouton est cliqué, loggez 'Clicked!'.
+Créez un bouton dans votre HTML. Associez-lui un événement `onclick` par un attribut directement dans HTML. Si le bouton est cliqué, loggez 'Clicked!'.
 
 Créez un bouton dans votre HTML. Avec JavaScript assosiez à la propriété `onclick` la fonction qui logge 'Clicked!' si le bouton est cliqué.
 
-Créez un bouton dans votre HTML. Ajoutez-lui un écouteur d'évènements côté JavaScript. Si le bouton est cliqué, loggez 'Clicked!'. Loggez également [l'évènement](https://developer.mozilla.org/en-US/docs/Web/API/Event) passé et explorez ces propriétés.
+Créez un bouton dans votre HTML. Ajoutez-lui un écouteur d'événements côté JavaScript. Si le bouton est cliqué, loggez 'Clicked!'. Loggez également [l'événement](https://developer.mozilla.org/en-US/docs/Web/API/Event) passé et explorez ces propriétés.
 
 ---
 
@@ -34,7 +34,7 @@ Créez un bouton bleu. Il devient violet au moment quand la touche de la souris 
 
 ---
 
-Créez un bouton, associez-lui un évènement `click`. Si ce bouton a été cliqué trois fois, enlevez l'écouteur d'évènement.
+Créez un bouton, associez-lui un événement `click`. Si ce bouton a été cliqué trois fois, enlevez l'écouteur d'événement.
 
 ---
 
@@ -46,7 +46,7 @@ Créez un [menu déroulant](https://getbootstrap.com/docs/4.0/components/dropdow
 
 ## Cible d'événement
 
-Ajoutez le même évènement à ces deux liens. Trouvez quel lien a été cliqué en fonction de la propriété `target` de l'`Event`.
+Ajoutez le même événement à ces deux liens. Trouvez quel lien a été cliqué en fonction de la propriété `target` de l'`Event`.
 
 ```html
 <div>
@@ -86,7 +86,7 @@ Si elle est [redimensionnée](https://developer.mozilla.org/en-US/docs/Web/Event
 ---
 
 Créez une page HTML. Sur la page placez un div qui changera sa couleur si on fait défiler la page.
-> Votre page doit avoir assez de contenu pour pouvoir déclencher l'évènement de [scroll](https://developer.mozilla.org/en-US/docs/Web/Events/scroll).
+> Votre page doit avoir assez de contenu pour pouvoir déclencher l'événement de [scroll](https://developer.mozilla.org/en-US/docs/Web/Events/scroll).
 
 
 ## Pour aller plus loin

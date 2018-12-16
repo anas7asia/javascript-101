@@ -5,6 +5,8 @@
 + [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 + [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
+> N'utilisez pas les [*mots réservés*](https://www.w3schools.com/js/js_reserved.asp) par JavaScript en tant que les noms de variables
+
 1. Déclarez deux variables: `user` et `admin`.
 2. Assignez la valeur 'Sophie' à la variable `name`.
 3. Copiez la valeur de `name` dans `admin`.

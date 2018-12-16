@@ -36,6 +36,8 @@ Supprimez le cookie *test*.
 
 > Qu'est-ce que c'est [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)?
 
+![JSON](http://www.commitstrip.com/wp-content/uploads/2014/05/Strips-XML-VS-JSON.jpg)
+
 Mettez l'objet *user* et le tableau *emails* dans les cookies et ensuite récupérez-les. Utilisez les méthodes [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) et [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
 ```js

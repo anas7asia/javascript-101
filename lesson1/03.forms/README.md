@@ -28,7 +28,7 @@ Si tous les champs du formulaire sont vides ajoutez l'attribut `disabled` au bou
 
 Quand le formulaire est soumis, vérifiez que tous les conditions sont remplis, si oui loggez 'Welcome!', sinon affichez les erreurs et demandez de re-saisir les champs.
 
-> Attention à la [propagation d'évènements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture), n'oubliez pas d'utiliser la méthode [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) d'évènement `submit`.
+> Attention à la [propagation d'événements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture), n'oubliez pas d'utiliser la méthode [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) d'événement `submit`.
 
 ---
 

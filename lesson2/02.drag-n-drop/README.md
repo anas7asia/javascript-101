@@ -12,12 +12,12 @@ Créer un API qui permet de mettre un div dans un autre div.
 Créez un API de dépôt d'un ou plusieurs images pour ensuite les télécharger sur le serveur.
 Créez un div, faites glisser un image, [affichez son aperçu](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/FileReader) et son nom.
 
-Le poids maximum du'image ne doit pas depasser 300Ko.
-Les formats acceptés d'un image sont jpeg, png et svg.
+Le poids maximum d'un image ne doit pas depasser 300Ko.
+Les formats acceptés sont jpeg, png et svg.
 
 Pour aller plus loin:
-Vérifiez que les images avec le même nom ne peuvent pas être uploadés plusieurs fois.
-Ajoutez la restriction d'uploader plus de 10 images.
+Les images avec le même nom ne peuvent pas être uploadés plusieurs fois.
+Ajoutez la restriction de télécharger sur le serveur plus de 10 images valides d'un coup.
 
 ---
 
