@@ -9,34 +9,39 @@
 
 ## Opérateurs de comparaison
 
-+ Vérifiez si 2 est supérieur à 1.
-+ Vérifiez si 2 est inférieur à 1.
-+ Vérifiez si 2 est inférieur à 5.
-+ Vérifiez si 20 est supérieur ou égal à 10.
-+ Vérifiez si 10 est supérieur ou égal à 10.
-+ Vérifiez si 5 est inférieur ou égal à 10.
-+ Vérifiez si 4 n'est pas égal à 6.
-+ Vérifiez si '5' converti en nombre n'est pas égal à 5.
-+ Vérifiez si '2' est égal à 2 avec l'opérateur d'égalité simple.
-+ Vérifiez si '2' est égal à 2 avec l'opérateur d'égalité stricte.
-+ Vérifiez si 0 n'est pas égal à '0'.
-+ Vérifiez si 0 n'est pas strictement égal à '0'.
-+ Vérifiez si 'hello' est égal à 'hello'.
-+ Vérifiez si 'hello' est égal à 'Hello'.
-+ Vérifiez si `'true'` est égal à `true`.
+> “Vérifiez” veux dire “Ecrivez en ligne de code un moyen de vérifier”
+​
++ Ecrivez en ligne de code un moyen de vérifier si 2 est supérieur à 1.
++ Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 1.
++ Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 5.
++ Ecrivez en ligne de code un moyen de vérifier si 20 est supérieur ou égal à 10.
++ Ecrivez en ligne de code un moyen de vérifier si 10 est supérieur ou égal à 10.
++ Ecrivez en ligne de code un moyen de vérifier si 5 est inférieur ou égal à 10.
++ Ecrivez en ligne de code un moyen de vérifier si 4 n'est pas égal à 6.
++ Ecrivez en ligne de code un moyen de vérifier si '5' converti en nombre n'est pas égal à 5.
++ Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité simple.
++ Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité stricte.
++ Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas égal à '0'.
++ Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas strictement égal à '0'.
++ Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'hello'.
++ Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'Hello'.
++ Ecrivez en ligne de code un moyen de vérifier si `'true'` est égal à `true`.
 
 ## If ... Else
 
-Vérifiez si `5` est supérieur à 0 ET inférieur à 10 dans la même expression if.
+Ecrivez en ligne de code un moyen de vérifier si `5` est supérieur à 0 ET inférieur à 10 dans la même expression if.
 
 ---
 
-Vérifiez si `20` divisé par `2` est supérieur ou égal à 10 OU inférieur à 15 dans la même expression. Si vrai, loggez `'Yes'`, sinon loggez `'No'`.
+Ecrivez en ligne de code un moyen de vérifier si `20` divisé par `2` est supérieur ou égal à 10 OU inférieur à 15 dans la même expression. Si vrai, loggez `'Yes'`, sinon loggez `'No'`.
 
 ---
 
-Un groupe peut être publique ou privé. Utilisateur peut accéder à son contenu si ce groupe est publique ou si le groupe est privé mais il a rejoint ce group. 
-Utilisez deux variables `isPrivate` et `isMember` pour écrire une seule condition qui vérifie si utilisateur peut voir le contenu du group.
+Un groupe peut être publique ou privé. Un utilisateur peut accéder au contenu d’un groupe si ce groupe est publique ou si le groupe est privé mais qu’il est membre ce groupe.
+​
+Utilisez deux variables `isPrivate` et `isMember` pour écrire une seule condition qui vérifie si utilisateur peut accéder au contenu d’un groupe
+​
+
 Testez votre solution avec les valeurs suivantes:
 ```js
 // can see the group
@@ -57,7 +62,8 @@ let isMember = true;
 
 ![null comparisons](https://i.ibb.co/99xX5c7/comparisons.png)
 
-Utilisez opérateur `!` avec les valeurs suivantes. Expliquez dans un commentaire pourquoi on utilise cet opérateur.
+Assignez à une variable chaque valeur suivante précédé par l'opérateur `!`. Observez comment il transforme les valeurs.
+Expliquez dans un commentaire pourquoi on utilise cet opérateur.
 ```js
 '', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World'}, {}, [1, 2, 3], []
 ```
@@ -72,14 +78,15 @@ Refactorisez votre code pour utiliser l'opérateur `!`.
 
 ---
 
-Utilisez opérateur `!!` avec les valeurs suivantes. Expliquez dans un commentaire pourquoi on utilise cet opérateur.
+Assignez à une variable chaque valeur suivante précédé par l'opérateur `!!`. Observez comment il transforme les valeurs.
+Expliquez dans un commentaire pourquoi on utilise cet opérateur.
 ```js
 '', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World'}, {}, [1, 2, 3], []
 ```
 
 ---
 
-Demandez utilisateur de se présenter avec la méthode [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt). Si le prénom est saisi, [alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) 'Nice to meet you $username ($username est le prénon saisi)!', sinon alert 'Don't be shy!'
+Demandez à l’utilisateur de se présenter avec la méthode [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt). Si le prénom est saisi, [alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) 'Nice to meet you $username ($username est le prénon saisi)!', sinon alert 'Don't be shy!'
 Utilisez l'opérateur `!!`.
 
 ---
@@ -91,25 +98,28 @@ Testez les valeurs suivantes dans la construction `if`. Lesquelles sont TRUTHY e
 // List falsy values here:
 ```
 
-Refactorisez le code de la tâche précédante pour vérifiez que la valeur saisie est simplement truthy/falsy.
+Copiez collez le code de la tâche ("Demandez à l’utilisateur de se présenter...") puis refactorisez-le pour vérifier que la valeur saisie est simplement truthy/falsy.
 
 ## Nested if
 
-Utilisateur de votre site web est soit connecté, soit pas connecté. Celui qui est connecté peut avoir des status différents:
+Un utilisateur de votre site web est soit connecté, soit pas connecté. Celui qui est connecté peut avoir des status différents:
 0 - standard user
 1 - admin
 2 - website owner
 
-Si utilisateur est connecté, vérifiez son status et loggez: 'Hello %username' for standard user, 'Hello powerful' for admin 'Hello powerful' for admin.
 S'il n'est pas connecté, loggez 'Please, connect'.
+Si un utilisateur est connecté, vérifiez son status.
+Si un utilisateur est un 'standard user', loggez 'Hello %username'.
+Si un utilisateur est un 'admin', loggez 'Hello powerful'. 
+Si un utilisateur est un 'website owner' loggez 'Hello powerful'.
 
 ## Switch
 
-Refactorisez le code de la tâche précédante pour utiliser l'instruction [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+Copier coller le code de la tâche précédante puis refactorisez-le pour utiliser l'instruction [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 
 ---
 
-Obtenez ce jour de la semaine avec l'objet [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) et sa méthode `getDay`.
+Obtenez le jour de la semaine avec l'objet [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) et sa méthode `getDay`.
 Utilisez l'instruction `switch` pour traduire les jours de la semaine en français. 
 En JavaScript, le premier jour de la semaine est dimanche 😉.
 ```js
@@ -128,11 +138,11 @@ Si l'id du client est valide, sauvegarder ces achats dans la base de données (o
 
 --- 
 
-Utilisateur arrive sur votre site web. Si c'est sa première fois ici, vous devez montrer une notice que vous utilisez cookies selon le RGPD (Règlement Général à la Protection des Données). Sinon, cachez la notice.
+Un utilisateur arrive sur votre site web. Si c'est sa première fois ici, vous devez montrer une bannière que vous utilisez cookies selon le RGPD (Règlement Général à la Protection des Données). Sinon, cachez la bannière.
 
 ```js
 const isFirstTimeHere = true; // ou false
-const isCookiesVisible = // use ternaty operator here to assign value to isCookiesVisible variable
+const isCookiesVisible = // use ternary operator here to assign value to isCookiesVisible variable
 ```
 
 ## Pour aller plus loin

@@ -4,7 +4,7 @@
 + [JavaScript.info](https://javascript.info/types)
 
 ## Types primitives
-Créez des variables contenantes:
+Créez des variables contenant:
 + chaîne de caractères
 + nombre Integer
 + nombre Float
@@ -52,8 +52,9 @@ Créez des variables contenantes:
 + Transformez undefined en boolean (`false`)
 
 ### Conversion automatique
-Effectuez les opérations arithmétiques suivantes et observez le résultat.
-Expliquez dans un commentaire pourquoi les types sont convertis comme ça.
+Assignez à une variable chaque operation arithmétique suivante. 
+Observez le type de la variable déduite par JS et expliquez dans un commentaire pourquoi les types sont convertis comme cela.
+​
 + `'4' * '3' // explain here`
 + `'4' + 3`
 + `'4' - 3`

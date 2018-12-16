@@ -17,7 +17,7 @@ Créez un tableau qui contient les éléments de différents types.
 
 ---
 
-Créez un tableau *multidimensionnel* d'au moins de 3 éléments.
+Créez un tableau *multidimensionnel* d'au moins 3 éléments.
 Loggez le premier élément du premier élément.
 Modifiez le second élément du dernier élément.
 
@@ -49,11 +49,12 @@ Les méthodes à utiliser:
 [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice),
 [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
-+ Extrayez les éléments de position 2 à 4 sans modifier le tableau original: `[1, 2, 3, 4, 5, 6, 7]`
++ Extrayez les éléments de la position 2 à 4 sans modifier le tableau original: `[1, 2, 3, 4, 5, 6, 7]`
 + Extrayez le dernier élément du tableau sans modifier le tableau original: `[1, 2, 3]`
-+ Supprimez deux premiers éléments du tableau original: `[1, 2, 3, 4, 5]`
++ Supprimez les deux premiers éléments du tableau original: `[1, 2, 3, 4, 5]`
 + Insérez trois éléments dans un tableau à la position 2: `[1, 2, 3, 4, 5]`
-+ Insérez un élément dans un tableau au lieu d'un élément à la position 1: `[1, 2, 3, 4, 5]`
++ Remplacer l’élément en position 1 par un autre élément: `[1, 2, 3, 4, 5]`
+​
 
 ## Référence et valeur
 
@@ -75,9 +76,9 @@ Les méthodes à utiliser:
 [sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 + Transformez la chaîne de caractères `'Hello World'` en `'dlroW olleH'`. Utilisez la méthode ['split'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) pour transformez chaque lettre en un élément du tableau.
-+ Triez tous les éléments du tableau `[10, 3, 5, 2, 7, 9, 8, 6, 1, 0, 4]` de plus petit à plus grand.
-+ Ensuite triez tous les éléments de ce tableau de plus grand à plus petit.
-+ Triez les éléments du tableau `['One', 'two', 'Three', 'Four', 'Five']` en ordre alphabétique.
++ Triez tous les éléments du tableau `[10, 3, 5, 2, 7, 9, 8, 6, 1, 0, 4]` de plus petit au plus grand.
++ Ensuite triez tous les éléments de ce tableau de plus grand au plus petit.
++ Triez les éléments du tableau `['One', 'two', 'Three', 'Four', 'Five']` par ordre alphabétique.
 
 ## Itération
 Les méthodes à utiliser: 

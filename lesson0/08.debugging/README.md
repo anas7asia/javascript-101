@@ -2,11 +2,11 @@
 
 ![End of coding](http://www.commitstrip.com/wp-content/uploads/2016/03/Strip-Reflexion-de-codeur-4-650-final.jpg)
 
-> !!! Gardez toujours la console ouverte, elle est votre méilleur ami
+> !!! Gardez toujours la console ouverte, elle est votre meilleur ami
 
-Comment déboger mieux et ne pas qu'avec `console.log`: les [conseils](https://developers.google.com/web/tools/chrome-devtools/javascript/) d'experts Google pour les développeurs.
+Comment déboger mieux et pas seulement avec `console.log`: les [conseils](https://developers.google.com/web/tools/chrome-devtools/javascript/) d'experts Google pour les développeurs.
 
-Entrainez-vous avec ce code défectueux:
+Débogez ce code défectueux :
 
 ```js
 
@@ -14,9 +14,9 @@ myCharacter = 'Luna Lovegood';
 
 myCharacterHouse = useSortingHat()
 
-isMyCharacterRich = checkMyGringottsAccount()
+isMyCharacterRich = checkMyGringottAccount()
 
-function useSortingHat(char) {
+function useSortngHat(char) {
   let choice = ''
   
   switch (ch) {

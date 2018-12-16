@@ -5,7 +5,8 @@
 + [JavaScript.info > Functions](https://javascript.info/function-basics)
 + [JavaScript.info > Function Expressions](https://javascript.info/function-expressions-arrows)
 
-Pourquoi les fonctions?
+Pourquoi utiliser les fonctions?
+​
 ```js
 // I need to convert Fahrenheit to Celsius five times with different values:
 const res1 = (5/9) * (18-32);
@@ -45,15 +46,15 @@ const loveIt5 = toCelsius(17);
 
 ---
 
-Créez une fonction qui retourne le paramètre passé
+Créez une fonction qui retourne un paramètre de cette fonction
 
 ---
 
-Créez une fonction qui retourne la somme de deux nombres passés.
+Créez une fonction qui retourne la somme de deux nombres passés en paramètre de cette fonction
 
 ---
 
-Créez une fonction qui [tronque](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) la chaîne de caractères. Elle prend la chaîne de caractères, le longeur et la traînée (..., ->, etc) en tant que paramètres.
+Créez une fonction qui [tronque](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) la chaîne de caractères. Elle prend la chaîne de caractères, la longeur et la traînée (..., ->, etc) en tant que paramètres.
 Donnez une valeur par défaut à la traînée. 
 ```js
 truncate('I will be truncated', 15, '->') // returns 'I will be trunc->'
@@ -64,7 +65,8 @@ truncate('I will be truncated', 5) // returns 'I wil...'
 
 Qu'est-ce que c'est le [scope](https://www.w3schools.com/js/js_scope.asp)?
 
-Expliquez dans un commentaire quelles variables on peut accéder:
+Expliquez pour chaque variable précédée d’un commentaire si celle-ci est accessible.
+​
 ```js
 let count = 2;
 
@@ -83,12 +85,13 @@ console.log(count2) // accessible here ?
 
 ## Fonctions pures et impures
 
-Fonction pure est
+Une fonction pure est
+​
 > The function always returns the same result if the same arguments are passed in. It does not depend on any state, or data, change during a program’s execution. It must only depend on its input arguments.
 >
 > from [What Are Pure Functions And Why Use Them?](https://medium.com/@jamesjefferyuk/javascript-what-are-pure-functions-4d4d5392d49c)
 
-Refactorisez ce code pour avoir une fonction pure:
+Refactorisez ce code pour avoir une fonction pure :
 ```js
 
 const totalPrice = 0;
@@ -146,8 +149,9 @@ sum(2, 2); // what's happening here?
 ```
 
 ## Pour aller plus loin
-Refactorisez le calculateur de BMI que vous avez créé pour utiliser les fonctions pures.
 
+Copiez collez le code du calculateur de BMI que vous avez créé puis refactorisez-le pour utiliser les fonctions pures.
+​
 ## Reading List
 
 + [Principles To Code By](https://medium.com/dailyjs/principles-to-code-by-3c516ad61fcc)
