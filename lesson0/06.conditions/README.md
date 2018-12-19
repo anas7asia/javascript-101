@@ -102,13 +102,13 @@ Copiez collez le code de la tâche ("Demandez à l’utilisateur de se présente
 
 ## Nested if
 
-Un utilisateur de votre site web est soit connecté, soit pas connecté. Celui qui est connecté peut avoir des status différents:
+Un utilisateur de votre site web est soit connecté, soit pas connecté. Celui qui est connecté peut avoir des statuts différents:
 0 - standard user
 1 - admin
 2 - website owner
 
 S'il n'est pas connecté, loggez 'Please, connect'.
-Si un utilisateur est connecté, vérifiez son status.
+Si un utilisateur est connecté, vérifiez son statut.
 Si un utilisateur est un 'standard user', loggez 'Hello %username'.
 Si un utilisateur est un 'admin', loggez 'Hello powerful'. 
 Si un utilisateur est un 'website owner' loggez 'Hello powerful'.
