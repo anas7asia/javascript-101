@@ -3,11 +3,11 @@
 + [MDN > Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/promise)
 + [Handling async operations gracefully with Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 
-Créez un promise qui retourne une chaîne de caractèrs 'Hello' immediatement. Récupérez et loggez le valeur qu'il retourne.
+Créez un promise qui retourne une chaîne de caractères 'Hello' immediatement. Récupérez et loggez la valeur qu'il retourne.
 
 ---
 
-Créez un promise qui retourne une chaîne de caractèrs 'Hello' dans 3 secondes. Récupérez et loggez le valeur qu'il retourne.
+Créez un promise qui retourne une chaîne de caractères 'Hello' dans 3 secondes. Récupérez et loggez la valeur qu'il retourne.
 
 ---
 
@@ -16,23 +16,23 @@ Créez un promise qui retourne une erreur 'Something went wrong!'. Récupérer e
 ---
 
 Créez un promise qui retourne un nombre. [Enchaînez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then#Chaining) le traitement du promise pour effectuez les operations suivantes:
-multiplier par 2, ensuite soustraire 1, ensuite decrementer de 2, augmenter de 10. Loggez le résultat réçu.
+multiplier par 2, ensuite soustraire 1, ensuite decrementer de 2, ensuite augmenter de 10. Loggez le résultat réçu.
 
 
 ## CRUD avec les promises
 
-Utiliser l'API de [https://reqres.in/](https://reqres.in/) et la méthode [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) qui retourne un promise.
+Utilisez l'API de [https://reqres.in/](https://reqres.in/) et la méthode [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) qui retourne un promise.
 
 
-Récupérez et affichez l'info de l'utilisateur avec l'id 5.
-
----
-
-Créez un formulaire d'inscription. A la soumission du formulaire envoyer une requête pour créez un nouveau utilisateur. Sauvegardez ces données dans les cookies.
+Récupérez et affichez les informations de l'utilisateur avec l'id 5.
 
 ---
 
-Créez un formulaire pour modifier le nom de l'utilisateur sauvegardé dans les cookies. Mettez à jour les données sauvegardée.
+Créez un formulaire d'inscription. A la soumission du formulaire envoyer une requête pour créez un nouvel utilisateur. Sauvegardez ces données dans les cookies.
+
+---
+
+Créez un formulaire pour modifier le nom de l'utilisateur sauvegardé dans les cookies. Mettez à jour les données sauvegardées.
 
 ---
 
@@ -42,7 +42,7 @@ Copiez collez le code que vous avez créé puis refactorisez-le en utilisant la 
 ## Créez votre propre site de gifs.
 
 [Giphy](https://giphy.com) est un service d'hébérgement de gifs avec un [API ouvert](https://developers.giphy.com/docs/).
-Pour travailler avec Giphy API, vous avez besoin de créer un compte sur [giphy.com](https://giphy.com) et ensuite [obtenir une clé](https://developers.giphy.com/dashboard/?create=true) de développement.
+Pour travailler avec l'API Giphy, vous avez besoin de créer un compte sur [giphy.com](https://giphy.com) et ensuite [obtenir une clé](https://developers.giphy.com/dashboard/?create=true) de testes.
 
 ### Première page
 
@@ -53,22 +53,23 @@ Récuperez et affichez un gif aléatoire.
 
 Affichez 5 gifs de la rubrique 'trending'. 
 En bas de la page ajoutez un bouton 'Voir plus de gifs'. Si ce bouton est cliqué, téléchargez 5 gifs suivants et affichez toute la collection de gifs.
-
-(optionnel) Ajouter un champ de tri par rating.
+Ajoutez un champ du tri par le rating.
 
 
 ### Troisième page
 
 Créez un champ de formulaire pour choisir et uploader un gif. Après avoir choisit un gif, montrez son aperçu. A la soumission du formulaire, uploadez le gif sur Giphy. 
-En cas de succès, empty le formulaire, montrez en vert 'Success. Here is the link to your gif: $url'. 
+
+En cas de succès, réinitialisez le formulaire, montrez en vert 'Success! Here is the link to your gif: $url'. 
+
 En cas d'erreur, laissez le formulaire comme il est et montrez en rouge l'erreur 'Uh oh! An error occured. The error status is: $errorStatus'.
-
-(optionnel) Ajoutez un autre champ pour uploader un gif à partir d'un url. A là soumission du formulaire vérifiez que un de ces deux champs est rempli et uploadez le ficher sur Giphy.
-
 
 ### Quatrième page
 
-Créez un champ de recherche de gifs. Après chaque changement de la valeur du champs (et sa longeur est inférioeur à 3), cherchez et affichez les gifs avec le mot clé saisit. Nombre maximum de gifs retournés ne doit pas depasser 10. S'il y a plus, affichez la [pagination](https://getbootstrap.com/docs/4.1/components/pagination/)
+Créez un champ de recherche de gifs. Après chaque changement de la valeur du champs (et sa longeur est superieure à 3), cherchez et affichez les gifs avec le mot clé saisit. 
+
+Nombre maximum de gifs retournés ne doit pas depasser 10. S'il y a plus de gif trouvés, affichez la [pagination](https://getbootstrap.com/docs/4.1/components/pagination/).
+
 Si un bouton de pagination est cliqué, montrez la liste de gifs avec un propre décalage *(offset)*
 
 ```js
@@ -80,3 +81,11 @@ function calculateOffset(currentPage, limit) {
   return currentPage * limit - limit
 }
 ```
+
+## Reading List
+
++ [Understanding promises in JavaScript](https://hackernoon.com/understanding-promises-in-javascript-13d99df067c1)
++ [JavaScript: Promises explained with simple real life analogies](https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138)
++ [Promises for asynchronous programming](http://exploringjs.com/es6/ch_promises.html)
++ [Understanding async-await in Javascript](https://hackernoon.com/understanding-async-await-in-javascript-1d81bb079b2c)
++ [Asynchronous JavaScript: From Callback Hell to Async and Await](https://www.toptal.com/javascript/asynchronous-javascript-async-await-tutorial)

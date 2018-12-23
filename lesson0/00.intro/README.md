@@ -34,7 +34,7 @@ Brandon Eich fut recruté pour dévélopper un prototype pour ce nouveau langage
 > **LiveScript** (nom de la première version officiele) -->
 > **JavaScript** (implementation dans Netscape Navigator en septembre 1995)
 
-L'idée plu à Microsoft et une version de JavaScript - *JScript* - était né et intégré dans Internet Explorer 3.0 en août 1996. Pour éviter la confusion avec les APIs des deux versions, Netscape envoya sa version à [ECMA](https://fr.wikipedia.org/wiki/Ecma_International) (European Computer Manufacturers Association) afin de créer un seul standart du langage.
+L'idée plu à Microsoft et une version de JavaScript - *JScript* - était né et intégré dans Internet Explorer 3.0 en août 1996. Pour éviter la confusion avec les [API](https://developer.mozilla.org/fr/docs/Glossaire/API)s des deux versions, Netscape envoya sa version à [ECMA](https://fr.wikipedia.org/wiki/Ecma_International) (European Computer Manufacturers Association) afin de créer un seul standart du langage.
 
 Ce standart fut implementé sous le nom de **ECMAScript** (nom court - ES). Depuis, le groupe [T39](https://tc39.github.io/ecma262/) au sein d'ECMA continue à mettre à jour le standart du langage. A partir de l'année 2015 une nouvelle version d'ES sort annuellement.
 

@@ -3,13 +3,13 @@
 + [MDN > Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API )
 + [w3school > Drag and Drop API](https://www.w3schools.com/Html/html5_draganddrop.asp)
 
-Créer un API qui permet de mettre un div dans un autre div.
+Créer une API qui permet de mettre un div dans un autre div.
 
 ---
 
 ![Drag&Drop images](https://i.ibb.co/xCsGFwk/drag-n-drop-images.gif)
 
-Créez un API de dépôt d'un ou plusieurs images pour ensuite les télécharger sur le serveur.
+Créez une API de dépôt d'un ou plusieurs images pour ensuite les télécharger sur le serveur.
 Créez un div, faites glisser un image, [affichez son aperçu](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/FileReader) et son nom.
 
 Le poids maximum d'un image ne doit pas depasser 300Ko.

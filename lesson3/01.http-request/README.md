@@ -1,7 +1,6 @@
 # HTTP
 
 + [MDN > HTTP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-+ [CRUD]()
 + [What is RESTful?](https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)
 
 ## Méthodes de requêtes HTTP
@@ -41,7 +40,5 @@ Pour communiquer l'information additionnelle dans une requête HTTP on utilise l
 ## Réponses
 
 ![Header](https://www.commitstrip.com/wp-content/uploads/2018/08/Strip-Response-code-650-final.jpg)
-
-En cas de succès ainsi que d'erreur API RESTful envoie un code numérique pour indiquer un status d'une réponse.
 
 En cas de succès ainsi que d'erreur de chaque requête HTTP un code numérique indiquant le status d'éxecution est envoyé. Voir tout les statuts: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

@@ -64,8 +64,8 @@ etc
 
 ## Données fictives (mock data)
 
-Des fois c'est très utile de tester notre code avec des données fictives en attendant que le vrai API soit prêt. 
-![Tests](https://www.commitstrip.com/wp-content/uploads/2017/02/Strip-Ou-sont-les-tests-unitaires-650-final.jpg)
+Des fois c'est très utile de tester le code avec des données fictives en attendant que la vrai API soit prête. 
+![API](http://www.commitstrip.com/wp-content/uploads/2013/07/Strips-Unknown-error-600-final.jpg)
 
 ### Placeholder API: 
 
@@ -101,3 +101,5 @@ Créez un bouton de suppression d'un utilisateur. Cliquez-le pour supprimer l'ut
 Supprimer ses infos et son token des cookies.
 
 ## Reading List
+
++ [A gentle Introduction to Ajax.](https://codeburst.io/a-gentle-introduction-to-ajax-1e88e3db4e79)
