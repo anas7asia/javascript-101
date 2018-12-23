@@ -1,80 +1,47 @@
 # HTTP
 
-## Comment fonctionne le Web
-
-[![How web works](http://img.youtube.com/vi/7_LPdttKXPc/0.jpg)](http://www.youtube.com/watch?v=7_LPdttKXPc)
-
-<!-- // How web works: https://www.youtube.com/watch?v=7_LPdttKXPc -->
++ [MDN > HTTP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
++ [CRUD]()
++ [What is RESTful?](https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)
 
 ## Méthodes de requêtes HTTP
-> **CRUD** - **C**reate, **R**ead, **U**pdate, **D**elete
 
-> Pour pouvoir utiliser ces methodes avec JavaScript et avoir les résponses correctes il faut avoir un API RESTful
-> Normalement chaque API possède un doc avec la liste de toutes les requêtes et les méthodes qu'il faut utiliser
+> [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) - **C**reate, **R**ead, **U**pdate, **D**elete
 
 ### Read
 
-Méthode [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)
-Search params
-
-Utilisée pour récupérer les données d'un serveur. Par exemple, vous avez un blog. Avec la méthode GET vous pouvez récupérer les articles du blog, faire la recherche parmis les articles (avec query params), avoir l'info de l'auteur du blog.
-
-Utilisée également pour récupérer les fichiers de votre ordinateur ou serveur.
+Méthode [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) est utilisée pour récupérer des données d'un serveur. Par exemple, des articles d'un blog, ou des commentaires sous un article.
 
 ### Create
 
-Méthode [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
-Utilisée pour envoyer les données sur le serveur. Par exemple, créer un article, soumettre un formulaire de contacte, se connecter à votre compte.
-Avec cette methode il faut faire attention et bien formatter les données avant envoie. 
+Méthode [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) est utilisée pour envoyer les données sur un serveur. Par exemple, créer un article, soumettre un formulaire de contact, se connecter à un compte.
 
 ### Update
 
-Méthode [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT)
-Utilisée pour mettre à jour le contenu qui existe déjà sur le serveur. Par exemple, modifier le mot de passe ou contenu d'un article.
+Méthode [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) est utilisée pour modifier du contenu qui existe déjà sur un serveur. Par exemple, modifier un mot de passe ou un commentaire sous un article.
 
 ### Delete
 
-Méthode [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE)
-Utilisée pour supprimer les données qui existent sur le serveur. Par exemple, supprimer un commentaire d'un article, supprimer son compte, 
+Méthode [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE) est utilisée pour supprimer des données qui existent sur un serveur. Par exemple, supprimer un commentaire d'un article ou un compte.
+
+
+> Les méthodes à utiliser et les paramètres acceptés sont décrits dans les docs de APIs RESTful, par exemple, de [Dota2](https://docs.opendota.com/), [Twitter](https://developer.twitter.com/en/docs.html), [référence de l’intégralité des adresses français](https://adresse.data.gouv.fr/api)
+
+
+Voir toutes les méthodes HTTP: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 
 
 ## Headers
 
 ![Headers](https://i.ibb.co/pz5jVTL/Request.png)
 
-Pour communiquer l'information additionnelle dans une requête HTTP on peut utiliser les [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 
-Les plus communs sont:
-
-General:
-
-Request URL
-Request Method
-Status Code
-
-Request:
-
-Accept
-Accept-Encoding
-Accept-Language
-Authorization
-Connection
-Content-Type
-Origin
-etc
+Pour communiquer l'information additionnelle dans une requête HTTP on utilise les [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 
 
 
 ## Réponses
 
 ![Header](https://www.commitstrip.com/wp-content/uploads/2018/08/Strip-Response-code-650-final.jpg)
 
-API RESTful en cas de succès ainsi que d'erreur envoie toujours un statut numérique pour dire si tout va bien ou il a subit une erreur.
+En cas de succès ainsi que d'erreur API RESTful envoie un code numérique pour indiquer un status d'une réponse.
 
-Les statuts de réponses: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-200,
-201,
-204,
-400,
-401,
-404,
-408
-409
+En cas de succès ainsi que d'erreur de chaque requête HTTP un code numérique indiquant le status d'éxecution est envoyé. Voir tout les statuts: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

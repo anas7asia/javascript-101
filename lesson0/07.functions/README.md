@@ -87,7 +87,7 @@ console.log(count2) // accessible here ?
 
 Une fonction pure est
 ​
-> The function always returns the same result if the same arguments are passed in. It does not depend on any state, or data, change during a program’s execution. It must only depend on its input arguments.
+> The function always returns the same result if the same arguments are passed in. It does not depend on any state, or data, change during a program’s exécution. It must only depend on its input arguments.
 >
 > from [What Are Pure Functions And Why Use Them?](https://medium.com/@jamesjefferyuk/javascript-what-are-pure-functions-4d4d5392d49c)
 

@@ -7,7 +7,7 @@
 
 ## Trouver un node
 
-Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, `querySelectorAll`
+Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, `querySelectorAll` pour
 
 + Trouvez toutes les balises `div` du document. Loggez le deuxième élément s'il est présent.
 + Trouvez toutes les balises `p` avec la classe 'my-paragraph' du document. Loggez le premier élément s'il est présent.
@@ -33,20 +33,24 @@ Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `q
 > **Bonne pratique :** si vous créez une classe ou un id pour manipuler les éléments avec JS, prefixez leurs noms avec 'js-', comme `.js-my-class`
 
 
-## Inspécter un node
+## Inspécter une node
 
-Utilisez la console pour regarder toutes les propriétés et méthodes associés à un node.
+Utilisez la console pour regarder toutes les propriétés et méthodes associés à une node.
 Console > Séléctionner un élément > Elements > Properties
 
 ![Quick DOM Inspector](https://i.ibb.co/X7bW84V/DOM-inspector.png)
 
 
-## Modifier un node
+## Modifier une node
 
 Ajoutez le texte 'I am the first paragraph' au premier paragraphe du document.
+
 Ajoutez le HTML `<span>Hello</span>` au deuxième paragraphe du document.
+
 Modifiez les attributs `width` à 50% et `height` à 'auto' de l'image.
-Ajoutez un attribut `alt` pas vide à l'image.
+
+Ajoutez un attribut `alt` non vide à l'image.
+
 Donnez la couleur 'blue' au premier paragraphe du div et la taille de police '1.5rem'.
 
 ```html
@@ -57,7 +61,7 @@ Donnez la couleur 'blue' au premier paragraphe du div et la taille de police '1.
 
 ```
 
-## Supprimer un node
+## Supprimer une node
 
 Supprimez le paragraphe qui se trouve dans un div.
 Supprimez le span.
@@ -73,11 +77,12 @@ Supprimez le span.
 ## Créez un node
 
 Créez un div et insérez le dans la balise `body`.
-Créez une balise `ul` avec 5 `li`s dedans et insérez la dans un div dans body. N'hésitez pas à utiliser la boucle `for` pour ne pas répéter la même ligne de code 5 fois.
+
+Créez une balise `ul` avec 5 `li` dedans et insérez la dans un div dans body. N'hésitez pas à utiliser la boucle `for` pour ne pas répéter la même ligne de code 5 fois.
 
 ---
 
-Créez une balise `script` qui télécharge la librairy jQuery `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js` en manière asynchrone.
+Créez une balise `script` qui télécharge la librairy jQuery `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js` de manière asynchrone.
 
 ## Pour aller plus loin
 

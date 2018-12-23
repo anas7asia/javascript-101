@@ -5,12 +5,11 @@
 + [w3schools > XMLHttpRequest](https://www.w3schools.com/xml/xml_http.asp)
 
 AJAX est "**A**synchronous **J**avaScript **A**nd **X**ML", mais on utilise JSON au lieu de XML
-Grâce à l'AJAX on peut envoyer/récupérer des données d'un serveur distant après le chargement de la page.
-
+Grâce à l'AJAX on peut envoyer/récupérer des données d'un serveur distant et modifier le contenue de la page après son chargement.
 
 ```js
 // Exeptionally comments are in French this time
-// la méthode encorporée dans le navigateur - XMLHttpRequest - est instanciée
+// La méthode de BOM - XMLHttpRequest - est instanciée
 var xhttp = new XMLHttpRequest();
 // onreadystatechange est déclenché à chaque changement du statut de l'objet "XMLHttpRequest" (comme un écouteur d'événement)
 xhttp.onreadystatechange = () => {
@@ -31,12 +30,16 @@ xhttp.open('GET', 'url', true);
 xhttp.send();
 ```
 
-## Practise now!
+![Ajax](https://i.ibb.co/CK86F0R/ajax.gif)
 
-`https://swapi.co/documentation` est un API RESTful qui provide l'information sur l'univers de Star Wars et nécessite pas d'autorization, donc que les requêtes GET sont possibles.
+## C'est en forgeant qu'on devient forgeron
 
-Récupérez l'information du profil de Han Solo sachant que sont id est égal à 14 dans la base de donnée.
-Ensuite affichez sur votre page ces données: nom, sexe, date de naissance, couleur de yeux, couleur de cheveux.
+`https://swapi.co/documentation` est un API RESTful qui fournit les données de l'univers Star Wars et ne nécessite pas d'autorization.
+
+![Star Wars](http://www.commitstrip.com/wp-content/uploads/2015/12/Strip-Star-wars-650-final.jpg)
+
+Récupérez l'information du profil de Han Solo (son id dans la base de données est 14).
+Ensuite affichez sur votre page ces données: nom, sexe, date de naissance, couleur des yeux, couleur des cheveux.
 
 ---
 
@@ -52,14 +55,49 @@ const planets = [1, 2, 3, 4, 5];
 
 ---
 
-// TODO: use headers
+Récupérez l'information du profil de Chewbacca (son id dans la base de données est 14) en format wookiee.
+Ensuite affichez sur votre page ces données: nom, hauteur, date de naissance, couleur des yeux, couleur des cheveux.
 
----
+**whrascwo:** Cacwoohrhraoaoara
+etc
 
-Placeholder API: [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/)
 
-Récupérez et affichez un article, sous cet article affichez ces comentaires.
+## Données fictives (mock data)
+
+Des fois c'est très utile de tester notre code avec des données fictives en attendant que le vrai API soit prêt. 
+![Tests](https://www.commitstrip.com/wp-content/uploads/2017/02/Strip-Ou-sont-les-tests-unitaires-650-final.jpg)
+
+### Placeholder API: 
+
+> Placeholder API: [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/)
+
+Récupérez et affichez un article avec l'id 25, ensuite affichez ces commentaires.
 
 ---
 
 Récupérez et affichez 5 articles, sous chaque article affichez ces comentaires.
+
+```js
+const articles = [1, 2, 3, 4, 5];
+```
+
+### Reqres
+
+> API RESTful https://reqres.in/ accepte les données en format JSON.
+
+Créez un formulaire de **connexion** qui comprend les champs de email et de mot de passe. A la soumission du formulaire, envoyez la requête de connexion à l’API https://reqres.in/. En cas de succès, mettez le token dans les cookies, en cas d’erreur, affichez l’erreur sous le formulaire.
+
+---
+
+Créez un bouton de deconnexion. Cliquez-le pour effacer le token sauvegardé das les cookies.
+
+---
+
+Créez un formulaire d'**inscription** qui comprend les champs de email et de mot de passe. A la soumission du formulaire, envoyez la requête d'inscription à l’API https://reqres.in/. En cas de succès, mettez ses information et le token rétourné dans les cookies, en cas d’erreur, affichez l’erreur sous le formulaire.
+
+---
+
+Créez un bouton de suppression d'un utilisateur. Cliquez-le pour supprimer l'utilisateur sauvegardé das les cookies.
+Supprimer ses infos et son token des cookies.
+
+## Reading List

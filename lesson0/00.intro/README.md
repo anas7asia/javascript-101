@@ -10,14 +10,14 @@ HTML (HyperText Markup Language) est un langage qui définit la structure des pa
 
 CSS (Cascading Style Sheets) est un langage qui donne des styles aux éléments HTML.
 
-JavaScript est un langage de *programmation* qui permet de rendre les pages web interactives: transformer le contenu de la page à la volée, écouter les événements déclenchés par utilisateur, centaines de choses!
+JavaScript est un langage de *programmation* qui permet de rendre les pages web interactives: transformer le contenu de la page à la volée, écouter les événements déclenchés par l'utilisateur et plein d'autres choses !
 
 ## Pourquoi JavaScript?
 
-Aujourd'hui c'est le seul langage qui a ces qualités:
+Aujourd'hui c'est le seul langage qui a les qualités suivantes:
 1. Intégration complète avec HTML et CSS.
-2. Simplicité de faire les choses simples.
-3. Support par defaut par tous les navigateurs modernes.
+2. Simplicité.
+3. Supporté par defaut par tous les navigateurs modernes.
 
 ## Histoire de JavaScript
 
@@ -26,19 +26,19 @@ Aujourd'hui c'est le seul langage qui a ces qualités:
 *Netscape Navigator 1.22 - [Wikipedia](https://en.wikipedia.org/wiki/Netscape_Navigator)*
 
 
-Fondée en 1994 l'entreprise *Netscape Communications* avec son navigateur *Netscape Navigator* a conquis trois quarts du marché mondial. Afin d'aller plus loin elle a décidé de créer un nouveau langage pour rajouter de l'interactivité aux pages web. Ce langage devait rassembler à Java parce que Java était très tendance en ce moment là.
+Fondée en 1994 l'entreprise *Netscape Communications* avec son navigateur *Netscape Navigator* a conquis trois quarts du marché mondial. Afin d'aller plus loin celle-ci décide de créer un nouveau langage pour ajouter de l'interactivité aux pages web. Ce langage devait ressembler à Java car celui-ci était très à la mode à ce moment là.
 
-Brandon Eich a été recruté pour dévélopper un prototype de ce nouveau langage et il l'a terminé en 10 (dix) jours.
+Brandon Eich fut recruté pour dévélopper un prototype pour ce nouveau langage qu'il termina en seulement dix jours.
 
 > **Mocha** (nom du prototype) -->
-> **LiveScript** (nom du premier release officiel) -->
+> **LiveScript** (nom de la première version officiele) -->
 > **JavaScript** (implementation dans Netscape Navigator en septembre 1995)
 
-L'idée à plu à Microsoft et une version de JavaScript - *JScript* - était né et intégré dans Internet Explorer 3.0 en août 1996. Pour éviter la confusion avec les APIs de deux versions, Netscape a envoyé sa version à [ECMA](https://fr.wikipedia.org/wiki/Ecma_International) (European Computer Manufacturers Association) afin de créer un seul standart du langage.
+L'idée plu à Microsoft et une version de JavaScript - *JScript* - était né et intégré dans Internet Explorer 3.0 en août 1996. Pour éviter la confusion avec les APIs des deux versions, Netscape envoya sa version à [ECMA](https://fr.wikipedia.org/wiki/Ecma_International) (European Computer Manufacturers Association) afin de créer un seul standart du langage.
 
-Ce standart a été implementé sous le nom de **ECMAScript** (nom court - ES). Depuis le groupe [T39](https://tc39.github.io/ecma262/) au sein d'ECMA continue à mettre à jour le standart du langage. A partir de l'année 2015 la nouvelle version d'ES sort annuellement.
+Ce standart fut implementé sous le nom de **ECMAScript** (nom court - ES). Depuis, le groupe [T39](https://tc39.github.io/ecma262/) au sein d'ECMA continue à mettre à jour le standart du langage. A partir de l'année 2015 une nouvelle version d'ES sort annuellement.
 
-> ECMAScript est le nom officiel du langage. JavaScript est un trademark appartenant à une entreprise américaine Oracle
+> ECMAScript est le nom officiel du langage. JavaScript est une marque déposée appartenant à l'entreprise américaine Oracle
 
 Version | Année | Déscription
 --- | --- | ---
@@ -48,35 +48,34 @@ Version | Année | Déscription
 4 | ECMAScript 4 | Jamais sortie
 5 | ECMAScript 5 (2009) | Version majeure. Actuellement supportée par tous les navigateurs *modernes*
 6 | ECMAScript 2015 | Version majeure avec plusieurs ameliorations. Supportée par les navigateurs sortis depuis 2016/2017.  
-7 | ECMAScript 2016 | 
-8 | ECMAScript 2017 | 
-9 | ECMAScript 2018 | 
+7 | ECMAScript 2016 | Mise à jour
+8 | ECMAScript 2017 | Mise à jour
+9 | ECMAScript 2018 | Mise à jour
 
-Même si ES6 n'est pas supporté dans 100% de navigateurs, c'est fortément conseillé de l'utiliser. Il y a des outils spéciaux pour le *transpiler* (transformer) en ES5. Comme ça vous profitez de toutes les nouvelles fonctionnalités et votre code marche sur tous les navigateurs modernes.
+Même si ES6 n'est pas supporté dans 100% de navigateurs, il est fortement conseillé de l'utiliser. Il y a des outils spéciaux pour le *transpiler* (transformer) en ES5. Comme il est possible de profiter de toutes les nouvelles fonctionnalités et le code marche sur tous les navigateurs modernes.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=EUAmiIsp2YU" target="_blank"><img src="http://img.youtube.com/vi/EUAmiIsp2YU/0.jpg" alt="JavaScript History" width="400" height="auto" border="3" /></a>
 
-## JavaScript dans le navigateur
+## JavaScript dans le navigateur (client)
 
-Aujourd'hui JavaScript est capable de
+Aujourd'hui JavaScript est capable, par exemple, de :
 + Garder et gérer les données côté client
-+ Transformer les données grâce à ses différent APIs intégrés
-+ Ajouter/modifier/supprimer les éléments HTML
-+ Ecouter les événements déclenché par utilisateur (clique, appui de touche de clavier, etc.)
++ Transformer les données grâce à ses différentes APIs intégrées
++ Ajouter/modifier/supprimer des éléments HTML
++ Ecouter les événements déclenché par l'utilisateur (clique, appui de touche de clavier, etc.)
 + Faire des appels aux serveurs distants
-+ Plein d'autres choses
 
-Mais JavaScript n'est pas capable (heureusement!) de:
-+ Accéder au système d'exploitation d'ordinateur
-+ Accéder aux autres onglets de navigateur
-+ Créer/supprimer les fichiers sur l'ordinateur
+Mais JavaScript n'est pas capable (heureusement!) de :
++ Accéder au système d'exploitation de l'ordinateur
++ Accéder aux autres onglets du navigateur
++ Créer/supprimer des fichiers sur l'ordinateur
 
-Pour faciliter et accélérer le temps de développement, les développeurs JavaScript ont créé les miliers de librairies (collections de méthodes) et de frameworks (ils definissent le design du code de l'application entier).
+Pour faciliter et accélérer le temps de développement, les développeurs JavaScript ont créé des miliers de librairies (collections de méthodes) et de frameworks (ils definissent le design global du code de l'application).
 
 Les librairies les plus connues:
 + jQuery (manipulation du DOM)
 + lodash (les méthodes utiles qui n'existent pas dans JavaScript)
-+ D3.js
++ D3.js (représentation de données)
 + ...
 
 Les frameworks les plus connus:
@@ -90,14 +89,14 @@ Les frameworks les plus connus:
 
 ## JavaScript ailleurs
 
-> "Ecris une fois, utilise partout" -
+> "Learn once, write anywhere" -
 > Tom Occhino, ingénieur logiciel chez Facebook
 
 ### Côté serveur
 
 ![Server-side JS](http://www.commitstrip.com/wp-content/uploads/2016/05/Strip-Le-fullstack-JS-2-650-final.jpg)
 
-En 2009 Ryan Dahl a créé *Node.js* – environnement bas niveau permettant l’exécution de JavaScript côté serveur qui tourne sur la machine virtuelle V8.
+En 2009 Ryan Dahl créa *Node.js* – environnement bas niveau permettant l’exécution de JavaScript côté serveur qui tourne sur la machine virtuelle V8.
 
 Le principal avantage de Node.js est son modèle événementiel (event-driven), non-blockant E/S.
 Cela dit, Node.js est un excellent logiciel pour gérer des applications temps réel gourmandes en données avec de nombreuses requêtes simultanées.
@@ -107,7 +106,7 @@ Node.js est utilisé par Netflix, PayPal, LinkedIn, IBM, Microsoft, Groupon, Wal
 
 ### CLI (Command Line Interface)
 
-Grâce à Node.js c'est possible d'executer les tâches en interface de ligne de commande.
+Grâce à Node.js il est possible d'exécuter les tâches en ligne de commande.
 
 + Télécharger et gérer les libraries avec *npm* ou *yarn*
 + Minifier et combiner des fichiers

@@ -1,9 +1,12 @@
 # Programmation asynchrone
 
-Dans un navigateur JavaScript est un langage *single threaded* (une seule chose peut se passer à la fois) et *blocking*
-(tout le reste est bloqué jusqu'à la fin d'une opération).
++ [MDN > Introducing async JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
++ [w3school > setTimeout](https://www.w3schools.com/jsref/met_win_settimeout.asp)
 
-### Synchrone
+JavaScript côté client est *single threaded* (une seule chose peut se passer à la fois) et *blocking*
+(l'exécution du code qui suit est bloqué jusqu'à la fin d'une opération).
+
+### Code synchrone
 
 > *Synchrone* fait référence à une communication en temps réel pendant laquelle chaque partie reçoit les messages (et, si nécessaire, les traite et y répond) dès que possible après qu'ils aient été envoyés.
 >
@@ -11,7 +14,7 @@ Dans un navigateur JavaScript est un langage *single threaded* (une seule chose 
 
 ![Sync code](https://i.ibb.co/GJjg9r3/sync-code-gif.gif)
 
-Toutes les expressions du code syncrone s'exécutent une par une. Si une expression n'a pas terminé de s'exécuter, l'autre commencera pas son exécution – chaqu'un son tour.
+Toutes les expressions du code syncrone s'exécutent une par une. Si une expression n'a pas fini de s'exécuter, l'autre commencera pas son exécution – chacun à son tour.
 
 Les expressions syncrones:
 + itérations
@@ -22,7 +25,7 @@ Les expressions syncrones:
 + etc
 
 
-### Asynchrone
+### Code asynchrone
 
 > *Asynchrone* fait référence à un environnement de communication où chaque partie reçoit et traite les messages lorsque c'est possible ou plus pratique, au lieu de le faire au même moment.
 >
@@ -30,22 +33,22 @@ Les expressions syncrones:
 
 ![Async code](https://i.ibb.co/L84rYtj/async-code-gif.gif)
 
-Les expressions asyncrones commencent leurs exécution quand toutes les expressions syncrones sont exécutées. Sauf la methode setTimeout pour laquelle on précise le temps d'attente, on ne sait jamais à quel moment l'exécution sera terminée.
+Les expressions asyncrones commencent leurs exécution quand toutes les expressions syncrones sont exécutées. 
 
-**Exemple:** un étudiant travaille sur une tâche. Son professeur veux savoir quand l'étudiant terminera pour passer à la tâche suivante. 
-En mode synchrone, le professeur reste à côté de l'étudiant et lui demande regulièrement si celui-là a terminé. Le professeur ne sais pas quand l'étudiant terminera, donc il est obligé de redemander plusieurs fois. Personne active ici et le prof.
-En mode asynchrone, le prof travaille sur les autres tâches en attendant que l'étudiant termine son travail. Quand il terminera, il previendra le professeur. Le temps est géré plus efficacement.
+Nous ne sommes pas en mésure de prédire quand l'exécution du code asyncrone sera fait, cela dépendra de la performance du réseau, par exemple. Une exception est la methode setTimeout pour laquelle on précise le temps d'attente.
+
+**Exemple:**
+Un étudiant travaille sur une tâche. Son professeur veut savoir quand l'étudiant terminera pour passer à la tâche suivante. 
+
+*En mode synchrone,* le professeur reste à côté de l'étudiant et lui demande regulièrement si la tâche est terminée. Le professeur ne sais pas quand l'étudiant terminera, donc il est obligé de redemander plusieurs fois. L'enfer pour le prof ainsi que l'étudiant.
+
+*En mode asynchrone,* le professeur travaille sur les autres choses en attendant que l'étudiant termine son travail. Quand il terminera, il previendra le professeur. Le temps est géré plus efficacement.
 
 Les expressions asyncrones:
 + setTimeout
-+ XMLHttpRequest (AJAX)
++ XMLHttpRequest
 + Promises
 + fetch
-+ async await
-
-
-> Grâce à l'exécution asyncrone on peut attendre un certain temps pour exécuter un bout de code.
-
 
 ## setTimeout
 
@@ -55,55 +58,17 @@ Loggez `'Hello'` 3 secondes après le rendu de la page.
 
 Ajoutez un écouteur d'événement 'click' à l'objet window 10 secondes après le rendu de la page.
 
+
+## onload et onerror
+
+Créez dynamiquement un [image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image) avec `src` égal à `http://lorempixel.com/400/200/`. Pas besoin de l'afficher sur la page.
+Quand l'image sera entièrement chargé, loggez `'Done!'`.
+En cas d'erreur de chargement, loggez `'Error'`.
+
 ---
 
-```js
-
-function placeOrder(oNum){
-  console.log("Customer order",oNum);
-  cookAndDeliverFood(function(){    
-    console.log("Deliverd food order:",oNum);
-  });
-}
- 
-//Simulate a 5s operation
-function cookAndDeliverFood(callback){    
-  setTimeout(callback,5000);
-}
- 
-//Simulate User requests;
-placeOrder(1);
-placeOrder(2);
-placeOrder(3);
-placeOrder(4);
-placeOrder(5);
-
-
-/*
-Après l'exécution du code vous devez avoir:
-
-Customer order 1
-Customer order 2
-Customer order 3
-Customer order 4
-Customer order 5
-Deliverd food order: 1
-Deliverd food order: 2
-Deliverd food order: 3
-Deliverd food order: 4
-Deliverd food order: 5
-
-
-*/
-
-```
-
-# onload
-
-Img onload function
-
-Script onload function
-Load lodash lib and call its function
+Créez dynamiquement un node de script avec l'url de la librarie lodash: `https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js`.
+Quand le script sera téléchargé, appelez une de [ces fonctions](https://lodash.com/docs/4.17.11).
 
 
 ## Reading List

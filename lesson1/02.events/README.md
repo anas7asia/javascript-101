@@ -1,4 +1,4 @@
-# Evènements 
+# Evénements 
 
 + [MDN > List of all the events](https://developer.mozilla.org/en-US/docs/Web/Events)
 + [w3school > JavaScript Events](https://www.w3schools.com/js/js_events.asp)
@@ -8,17 +8,17 @@
 
 ## Evénements de souris
 
-Créez un bouton dans votre HTML. Associez-lui un événement `onclick` par un attribut directement dans HTML. Si le bouton est cliqué, loggez 'Clicked!'.
+Créez un bouton dans votre HTML. Associez-lui un événement `onclick` avec un attribut directement dans HTML. Si le bouton est cliqué, loggez 'Clicked!'.
 
-Créez un bouton dans votre HTML. Avec JavaScript assosiez à la propriété `onclick` la fonction qui logge 'Clicked!' si le bouton est cliqué.
+Créez un bouton dans votre HTML. Avec JavaScript associez à la propriété `onclick` à une fonction qui logge 'Clicked!' si le bouton est cliqué.
 
 Créez un bouton dans votre HTML. Ajoutez-lui un écouteur d'événements côté JavaScript. Si le bouton est cliqué, loggez 'Clicked!'. Loggez également [l'événement](https://developer.mozilla.org/en-US/docs/Web/API/Event) passé et explorez ces propriétés.
 
 ---
 
-Créez un bouton gris. S'il est cliqué, passez son couleur en vert. S'il est reqliqué, passez son couleur de nouveau en gris. Gérez les couleurs côté JavaScript.
+Créez un bouton gris. S'il est cliqué, passez sa couleur en vert. S'il est cliqué à nouveau, repassez sa couleur en gris. Gérez les couleurs côté JavaScript.
 
-Faites la même chose en utilisant les classes css.
+Faites la même chose en utilisant des classes css.
 
 ---
 
@@ -30,7 +30,7 @@ Créez un div rose. Si on le survole, il passe en rouge. Si on sort le curseur d
 
 ---
 
-Créez un bouton bleu. Il devient violet au moment quand la touche de la souris est [appuyée](https://developer.mozilla.org/en-US/docs/Web/Events/mousedown) sur le bouton. Il devient rouge quand le souris est [relâché](https://developer.mozilla.org/en-US/docs/Web/Events/mouseup).
+Créez un bouton bleu. Il devient violet quand une touche de la souris est [appuyée](https://developer.mozilla.org/en-US/docs/Web/Events/mousedown) sur le bouton. Il devient rouge quand la touche de la souris est [relâché](https://developer.mozilla.org/en-US/docs/Web/Events/mouseup).
 
 ---
 
@@ -57,7 +57,7 @@ Ajoutez le même événement à ces deux liens. Trouvez quel lien a été cliqu�
 
 ## Evènements de clavier
 
-Créez un champ de la taille de la fenêtre de votre navigateur. Dedans créez un carré qui bouge à 20px à droite/gauche/en-haut/en-bàs si on appuie sur les boutons fléchés. Ce carré ne peut pas dépasser les bords du champ.
+Créez un champ de la taille de la fenêtre de votre navigateur. Dedans créez un carré qui bouge de 20px à droite/gauche/en-haut/en-bàs si on appuie sur les boutons fléchés. Ce carré ne peut pas dépasser les bords du champ.
 
 ```js
 const KEY_CODES = {
@@ -70,10 +70,10 @@ const KEY_CODES = {
 
 ---
 
-Créez un champ de saisie de texte. A chaque fois quand on tape une lettre dedans, loggez le texte à jour que le champ contient. 
+Créez un champ de saisie de texte. A chaque fois que l'on tape une lettre dedans, loggez le contenu du champ. 
 
 
-## Evènements de vue du document
+## Evénements de vue du document
 
 Affichez la largeur et l'hauteur de la fênetre de votre navigateur.
 Si elle est [redimensionnée](https://developer.mozilla.org/en-US/docs/Web/Events/resize), mettez à jour ces valeurs.
@@ -85,8 +85,7 @@ Si elle est [redimensionnée](https://developer.mozilla.org/en-US/docs/Web/Event
 
 ---
 
-Créez une page HTML. Sur la page placez un div qui changera sa couleur si on fait défiler la page.
-> Votre page doit avoir assez de contenu pour pouvoir déclencher l'événement de [scroll](https://developer.mozilla.org/en-US/docs/Web/Events/scroll).
+Créez une page HTML. Sur la page placez un div qui changera sa couleur si on fait défiler la page. Votre page doit avoir assez de contenu pour pouvoir déclencher l'événement de [scroll](https://developer.mozilla.org/en-US/docs/Web/Events/scroll).
 
 
 ## Pour aller plus loin
@@ -96,7 +95,7 @@ Les liens de partage en `position: fixed;` apparessent si on a descendu à 200 p
 
 ---
 
-Sur la page créez un div avec des boutons (ou des liens). Si le div ou les boutons sont cliqués, marquez 'Clicked inside', si l'endroit hors le div est cliqué, marquez 'Clicked outside'.
+Sur la page créez un div avec des boutons (ou des liens). Si le div ou les boutons sont cliqués, marquez 'Clicked inside', si un endroit en dehors du div est cliqué, marquez 'Clicked outside'.
 
 ![Click outside](https://i.ibb.co/6tNfRxM/click-outside.gif)
 

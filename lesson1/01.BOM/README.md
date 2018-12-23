@@ -12,7 +12,7 @@ Affichez sur la page:
 + nom de votre navigateur
 + langue principal de votre navigateur
 + platforme de votre ordinateur
-+ si vous avez activé cookies dans votre navigateur 
++ si vous avez activé les cookies dans votre navigateur 
 
 ## screen
 
@@ -41,7 +41,7 @@ Affichez sur la page:
 
 ---
 
-Créez une fonction qui trouve le nom du sous-domaine d'un site (ou retourne null s'il n'y a pas). Pour faciliter la tâche prenez directement le nom d'hôte et coupez cette chaîne de caractères.
+Créez une fonction qui trouve le nom du sous-domaine d'un site (ou retourne null s'il n'y a pas). Pour faciliter la tâche prenez directement le nom d'hôte et découpez cette chaîne de caractères.
 
 ---
 

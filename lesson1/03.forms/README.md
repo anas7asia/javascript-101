@@ -11,7 +11,7 @@
 1. Créez un champ de texte. 
 2. Quand la page est entièrement [chargée](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload), appelez une fonction qui met le champ en avant. 
 3. Ecrivez du texte dedans. 
-4. Quand le champ sera deconcentré, loggez le texte écrit.
+4. Quand le champ n'est plus mis en avant, loggez le texte écrit.
 
 ---
 
@@ -26,7 +26,7 @@ Quand ce formulaire est [soumis](https://developer.mozilla.org/en-US/docs/Web/Ev
 
 Si tous les champs du formulaire sont vides ajoutez l'attribut `disabled` au bouton du type `submit`.
 
-Quand le formulaire est soumis, vérifiez que tous les conditions sont remplis, si oui loggez 'Welcome!', sinon affichez les erreurs et demandez de re-saisir les champs.
+Quand le formulaire est soumis, vérifiez que toutes les conditions sont remplis, si oui loggez 'Welcome!', sinon affichez les erreurs et demandez de re-saisir les champs.
 
 > Attention à la [propagation d'événements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture), n'oubliez pas d'utiliser la méthode [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) d'événement `submit`.
 
@@ -42,8 +42,8 @@ Créez un formulaire d'inscription d'un utilisateur sur votre site qui comprend 
 + adresse (textarea) - obligatoire
 + condition d'utilisation (checkbox) - obligatoire, doit avoir la valeur `true`
 
-Si un de champs est concentré et ensuite deconcentré, passez la couleur de sa bordure en rouge.
-Si l'information saisie dans un champ est invalide et ce champ devient deconcentré, passez la couleur de sa bordure en rouge et montrez l'erreur.
+Si un de champs est mis en avant et ensuite ne l'est plus, passez la couleur de sa bordure en rouge.
+Si l'information saisie dans un champ est invalide et ce champ devient n'est plus mis en avant, passez la couleur de sa bordure en rouge et montrez l'erreur.
 Si tous les champs du formulaire sont vides ajoutez l'attribut `disabled` au bouton du type `submit`.
 Quand le formulaire est soumis, vérifiez que tous les champs sont valides:
 + Si non, passez la couleur de bordure en rouge de tous les champs invalides et mettez l'erreur sous chaque champ.
@@ -54,18 +54,23 @@ Vous pouvez utiliser [Bootstrap](https://getbootstrap.com/docs/4.1/components/fo
 ## Pour aller plus loin
 
 Créez un calculateur de prix de bonbons magiques 🔮
-[Première partie](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) du formulaire est l'information de l'utilisateur qui effectue la commande: 
+
+La [première partie](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) du formulaire sont les informations de l'utilisateur qui effectue la commande: 
 + nom (obligatoire)
 + nom d'hibou (obligatoire)
 
-Deuxìeme partie (aussi un fieldset) est la liste de produits. Un produit comprend le nom, le prix et la quantité (`input[type=number]`).
+La deuxième partie (aussi un fieldset) est la liste des produits. Un produit comprend un nom, son prix et sa quantité (`input[type=number]`).
 
 ![Magic Price Calculator](https://i.ibb.co/b5N6Cg5/Magic-price-calculator.png)
 
-Créez la liste de bonbons dynamiquement avec JavaScript (pas de magie pour ça).
-Quantité de bonbons ne peut pas être inférieur à 0.
-Utilisateur doit commander au moins 1 produit.
+Créez une liste de bonbons dynamiquement avec JavaScript (pas de magie pour ça).
+
+La quantité de bonbons ne peut pas être inférieure à 0.
+
+L'utilisateur doit commander au moins 1 produit.
+
 A chaque changement de quantité, montrez la somme totale (en sickles bien sûr).
+
 Si la quantité de tous les produits est égale à 0, ajoutez l'attribut `disabled` au bouton du type `submit`.
 
 ```js
