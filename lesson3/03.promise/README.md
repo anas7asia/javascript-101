@@ -41,6 +41,8 @@ Copiez collez le code que vous avez créé puis refactorisez-le en utilisant la 
 
 ## Créez votre propre site de gifs.
 
+![GIFS](http://www.commitstrip.com/wp-content/uploads/2016/02/Strip-Le-Gif-a-la-belle-vie-650-final.jpg)
+
 [Giphy](https://giphy.com) est un service d'hébérgement de gifs avec un [API ouvert](https://developers.giphy.com/docs/).
 Pour travailler avec l'API Giphy, vous avez besoin de créer un compte sur [giphy.com](https://giphy.com) et ensuite [obtenir une clé](https://developers.giphy.com/dashboard/?create=true) de testes.
 

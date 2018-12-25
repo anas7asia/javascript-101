@@ -1,6 +1,6 @@
 # Document Object Model
 
-+ [w3school](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
++ [w3schools](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
 + [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 + [JavaScript.info](http://javascript.info/dom-nodes)
 
