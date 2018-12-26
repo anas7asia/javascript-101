@@ -1,5 +1,13 @@
 # Manipulation de DOM avec jQuery
 
++ [jQuery > Manipulation](https://api.jquery.com/category/manipulation/)
++ [w3schools > jQuery - Get Content and Attributes](https://www.w3schools.com/jquery/jquery_dom_get.asp)
++ [w3schools > jQuery - Set Content and Attributes](https://www.w3schools.com/jquery/jquery_dom_set.asp)
++ [w3schools > jQuery - Add Elements](https://www.w3schools.com/jquery/jquery_dom_add.asp)
++ [w3schools > jQuery - Remove Elements](https://www.w3schools.com/jquery/jquery_dom_remove.asp)
++ [w3schools > jQuery - Get and Set CSS Classes](https://www.w3schools.com/jquery/jquery_css_classes.asp)
++ [w3schools > jQuery - css() Method](https://www.w3schools.com/jquery/jquery_css.asp)
+
 ## Récupérer/modifier
 
 Utilisez les méthodes `text`, `html`, `val`, `attr` pour travailler avec le HTML suivant.
@@ -92,15 +100,42 @@ Dans la balise `<div>` de l'article `js-article-1` ajoutez un autre paragraphe a
 Supprimez le contenu de l'article avec l'id `js-article-2`.
 
 ---
-Supprimez complètement l'article avec l'id `js-article-2`.
+Supprimez du DOM l'article avec l'id `js-article-2`.
 
 ## Manipuler le CSS
 
-addClass
-removeClass
-hasClass
-css (read, write, write multiple)
+Utilisez les méthodes `addClass`, `removeClass`, `hasClass`, `css` pour travailler avec le HTML suivant.
 
-## Dimensions
+```html
+<div id="js-alert" class="alert">
+  <p>Very important message</p>
+</div>
+<button id="js-btn" class="btn btn-secondary">Change alert state</button>
+```
+
+Ajoutez la classe `'alert-primary'` au `<div>`.
+
+---
+Supprimez la classe `'alert'` du `<div>`.
+Supprimez la classe `'alert-primary'` du `<div>`.
+
+---
+
+Ajoutez *d'un coup* les classes `'alert'` et `'alert-warning'` au `<div>`.
+
+---
+Vérifiez si le `<div>` a déjà la classe `'alert-warning'`. Si oui, supprimez-la.
+
+---
+En cliquant sur le bouton avec l'id `js-btn`, basculez la classe `'alert-success'`: premier clique ajoute la classe, deuxième clique l'enlève, troisième l'ajoute de nouveau, etc.
+
+---
+Récupérez et loggez la couleur du fond du bouton.
+
+---
+Passez la couleur du fond du bouton en `#71b8af`.
+
+---
+Changez *d'un coup* la couleur du texte du bouton à `#fff2d5` et le radius de la bordure à `3px`.
 
 

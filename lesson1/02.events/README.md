@@ -4,8 +4,6 @@
 + [w3school > JavaScript Events](https://www.w3schools.com/js/js_events.asp)
 + [JavaScript.info > Browser Events](http://javascript.info/introduction-browser-events)
 
-![Clicks not allowed](http://www.commitstrip.com/wp-content/uploads/2016/06/Strip-Les-codeurs-et-les-images-650-final-1.jpg)
-
 ## Evénements de souris
 
 Créez un bouton dans votre HTML. Associez-lui un événement `onclick` avec un attribut directement dans HTML. Si le bouton est cliqué, loggez 'Clicked!'.

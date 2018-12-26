@@ -29,3 +29,7 @@ En stade de développement vous pouvez également utiliser un CDN ou télécharg
 > De nombreux utilisateurs ont déjà téléchargé jQuery à partir de Google ou de Microsoft lorsqu'ils visitaient un autre site. En conséquence, il sera chargé à partir du cache lors de la visite de votre site, ce qui accélérera le temps de chargement. De plus, la plupart des CDN s'assureront qu'une fois qu'un utilisateur lui demandera un fichier, il sera servi par le serveur le plus proche, ce qui accélérera également le temps de chargement.
 >
 > [w3schools](https://www.w3schools.com/jquery/jquery_get_started.asp)
+
+## Reading List
+
++ [jQuery Overview](https://blog.cloudboost.io/dom-manipulation-with-jquery-448124ec1006)
