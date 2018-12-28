@@ -77,15 +77,64 @@ Utilisez la méthode `fadeTo`
 
 
 ## Gérer l'animation
-animate
-  delay
-  rotate
 
-enchainer les méthodes
+```html
+<div id="js-animation-1"></div>
+```
 
-chain animations
-stop animation
-stop all animations
+Utilisez le HTML ci-dessus.
+
+Appliquez une animation au div `#js-animation-1`: ce div se deplace à 300px de gauche à droit en 700 millisecondes 3 secondes après la fin du rendu de la page.
+
+---
 
 
+Créez un div de taille 5rem sur 5rem et un bouton qui déclenche ces animations :
+1. L'hauteur et la longeur du div enlargissent jusque 8rem en 500 millisecondes.
+2. Ensuite le div bouge à 10rem du gauche et 5rem du haut de sa position actuelle en 700 millisecondes.
+3. Ensuite l'opacité du div tombe à 50% en 300 millisecondes.
+4. Ensuite la bordure du div enlargisse jusque 5 pixels en 400 milisecondes.
 
+Créez un autre bouton qui arrete l'animation en cours et annule tous les autres animations.
+
+---
+
+```html
+<div class="animated" id="js-animated-1"></div>
+<div class="animated" id="js-animated-2"></div>
+<div class="animated" id="js-animated-3"></div>
+<div class="animated" id="js-animated-4"></div>
+```
+
+```js
+const randomNums = getArrayOfRandomNums();
+const divsToAnimate = randomNums.sort().reduce((acc, currVal, currIndex, array) => {
+  return acc += `#js-animated-${currVal}${currIndex !== array.length - 1 ? ',' : ''}`
+}, '')
+
+animateDivs(divsToAnimate)
+
+function animateDivs() {
+  $( divsToAnimate ).slideToggle( "slow", animateDivs );
+}
+
+function getArrayOfRandomNums(itemsCount = 4) {
+  const randomNums = [];
+  // itemsCount - 1 to make sure that final array is one item less than all of the divs in HTML
+  while (randomNums.length < itemsCount - 1) {
+    const randomNum = getRandomNumber(itemsCount)
+    if (!randomNums.includes(randomNum)) {
+      randomNums.push(randomNum)
+    }
+  }
+  return randomNums
+}
+
+function getRandomNumber(max) {
+  return Math.floor(Math.random() * max + 1)
+}
+```
+
+Il y a quatre `<div>`. Trois d'eux sont choisis aléatoirement et animé.
+
+Changez la couleur du fond de tous les divs animés.
