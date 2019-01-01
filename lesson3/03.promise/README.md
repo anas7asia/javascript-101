@@ -7,21 +7,25 @@ Créez une *promise* (promesse) qui retourne une chaîne de caractères 'Hello' 
 
 ---
 
-Créez une promise qui retourne une chaîne de caractères 'Hello' dans 3 secondes. Récupérez et loggez la valeur qu'elle retourne.
+Créez une *promise* qui retourne une chaîne de caractères 'Hello' dans 3 secondes. Récupérez et loggez la valeur qu'elle retourne.
 
 ---
 
-Créez une promise qui retourne une erreur 'Something went wrong!'. Récupérer et loggez cette erreur.
+Créez une *promise* qui retourne une erreur 'Something went wrong!'. Récupérer et loggez cette erreur.
 
 ---
 
-Créez une promise qui retourne un nombre. [Enchaînez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then#Chaining) le traitement du promise pour effectuez les operations suivantes:
-multiplier par 2, ensuite soustraire 1, ensuite decrementer de 2, ensuite augmenter de 10. Loggez le résultat réçu.
+Créez une *promise* qui retourne un nombre N. [Enchaînez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then#Chaining) le traitement de la *promise* pour effectuez les operations suivantes:
++ multiplier N par 2
++ ensuite soustraire 1
++ ensuite decrementer de 2
++ ensuite augmenter de 10. 
+Loggez le résultat réçu.
 
 
 ## CRUD avec les promises
 
-Utilisez l'API de [https://reqres.in/](https://reqres.in/) et la méthode [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) qui retourne une promise.
+Utilisez l'API de [https://reqres.in/](https://reqres.in/) et la méthode [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) qui retourne une *promise*.
 
 
 Récupérez et affichez les informations de l'utilisateur avec l'id 5.
@@ -44,7 +48,7 @@ Copiez collez le code que vous avez créé puis refactorisez-le en utilisant la 
 ![GIFS](http://www.commitstrip.com/wp-content/uploads/2016/02/Strip-Le-Gif-a-la-belle-vie-650-final.jpg)
 
 [Giphy](https://giphy.com) est un service d'hébérgement de gifs avec un [API ouvert](https://developers.giphy.com/docs/).
-Pour travailler avec l'API Giphy, vous avez besoin de créer un compte sur [giphy.com](https://giphy.com) et ensuite [obtenir une clé](https://developers.giphy.com/dashboard/?create=true) de testes.
+Pour travailler avec l'API Giphy, vous avez besoin de créer un compte sur [giphy.com](https://giphy.com) et ensuite [obtenir une clé](https://developers.giphy.com/dashboard/?create=true) de test.
 
 ### Première page
 
@@ -54,8 +58,10 @@ Récuperez et affichez un gif aléatoire.
 ### Deuxième page
 
 Affichez 5 gifs de la rubrique 'trending'. 
-En bas de la page ajoutez un bouton 'Voir plus de gifs'. Si ce bouton est cliqué, téléchargez 5 gifs suivants et affichez toute la collection de gifs.
-Ajoutez un champ du tri par le rating.
+
+En bas de la page ajoutez un bouton 'Voir plus de gifs'. Si ce bouton est cliqué, téléchargez et affichez 5 gifs en plus.
+
+Pour aller plus loin: ajoutez un champ de tri par note.
 
 
 ### Troisième page
@@ -68,11 +74,11 @@ En cas d'erreur, laissez le formulaire comme il est et montrez en rouge l'erreur
 
 ### Quatrième page
 
-Créez un champ de recherche de gifs. Après chaque changement de la valeur du champs (et sa longeur est superieure à 3), cherchez et affichez les gifs avec le mot clé saisit. 
+Créez un champ de recherche de gifs. Après chaque changement de la valeur du champs (et si sa longeur est superieure à 3), cherchez et affichez les gifs avec le mot clé saisit. 
 
-Nombre maximum de gifs retournés ne doit pas depasser 10. S'il y a plus de gif trouvés, affichez la [pagination](https://getbootstrap.com/docs/4.1/components/pagination/).
+Le nombre maximum de gifs retournés ne doit pas depasser 10. S'il y a plus de 10 gifs trouvés, affichez la [pagination](https://getbootstrap.com/docs/4.1/components/pagination/).
 
-Si un bouton de pagination est cliqué, montrez la liste de gifs avec un propre décalage *(offset)*
+Calculez le décalage *(offset)* avec la fonction `calculateOffset`
 
 ```js
 /*

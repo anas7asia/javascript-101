@@ -13,6 +13,8 @@
 Utilisez les méthodes `text`, `html`, `val`, `attr` pour travailler avec le HTML suivant.
 
 ```html
+<h1>Some title</h1>
+
 <article id="js-article">
   <h2>Article title</h2>
   <p>Article content</p>
@@ -27,7 +29,7 @@ Récupérez et loggez le contenu du titre de la page.
 Changez le contenu du titre de la page à `'My page title'`.
 
 ---
-Récupérez et loggez la sructure HTML (et son contenu) de l'article.
+Récupérez et loggez le HTML de l'article.
 
 ---
 Changez le contenu de l'article à 
@@ -51,10 +53,10 @@ Récupérez et loggez la valeur de placeholder du champ de saisie.
 Changez la valeur de placeholder du champ de saisie à `'Search'`
 
 ---
-Ajoutez un attribut `data-article-id` à l'article `js-article` avec la valeur `1`. Savoir plus sur les attributs de données: [https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
+Ajoutez un attribut `data-article-id` avec la valeur `1` à l'article avec l'id `js-article`. Savoir plus sur les attributs de données: [https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
 
 ---
-Récupérez et loggez la valeur de l'attribut `data-article-id`.
+Récupérez et loggez la valeur de l'attribut `data-article-id` que vous venez d'ajouter.
 
 ## Insérer/supprimier du contenu
 
@@ -72,15 +74,15 @@ Ajoutez une balise `<h1>` avec la valeur `'Cats are the weirdest'` dans l'articl
 
 ---
 
-Ajouter une balise `<div>` dans l'article avec l'id `js-article-1`.
+Ajoutez une balise `<div>` dans l'article avec l'id `js-article-1`.
 
 ---
 
-Dans la balise `<div>` de l'article `js-article-1` ajoutez un paragraphe avec la valeur `'He starts to look at me pleadingly, paces around, and meows insistently. He even climbs on top of the book and bites my wrists in protest.'`
+Dans la balise `<div>` de l'article `#js-article-1` ajoutez un paragraphe avec la valeur `'He starts to look at me pleadingly, paces around, and meows insistently. He even climbs on top of the book and bites my wrists in protest.'`
 
 ---
 
-Dans la balise `<div>` de l'article `js-article-1` ajoutez un autre paragraphe avec la valeur `'I recently found out that my cat, Marv, hates it when I read aloud.'` *avant* le paragraphe ajouté précédement.
+Dans la balise `<div>` de l'article `#js-article-1` ajoutez un autre paragraphe avec la valeur `'I recently found out that my cat, Marv, hates it when I read aloud.'` *avant* le paragraphe ajouté précédement.
 
 ---
 
@@ -88,7 +90,7 @@ Dans la balise `<div>` de l'article `js-article-1` ajoutez un autre paragraphe a
 
 ---
 
-*Avant* l'article avec l'id `js-article-1` ajoutez un autre article:
+*Avant* l'article `#js-article-1` ajoutez un autre article:
 
 ```html
 <article id="js-article-3">
@@ -97,14 +99,14 @@ Dans la balise `<div>` de l'article `js-article-1` ajoutez un autre paragraphe a
 </article
 ```
 ---
-Supprimez le contenu de l'article avec l'id `js-article-2`.
+Supprimez le contenu de l'article `#js-article-2`.
 
 ---
-Supprimez du DOM l'article avec l'id `js-article-2`.
+Supprimez du DOM l'article `#js-article-2`.
 
 ## Manipuler le CSS
 
-Utilisez les méthodes `addClass`, `removeClass`, `hasClass`, `css` pour travailler avec le HTML suivant.
+Utilisez les méthodes `addClass`, `removeClass`, `toggleClass`, `hasClass`, `css` pour travailler avec le HTML suivant.
 
 ```html
 <div id="js-alert" class="alert">
@@ -124,10 +126,10 @@ Supprimez la classe `'alert-primary'` du `<div>`.
 Ajoutez *d'un coup* les classes `'alert'` et `'alert-warning'` au `<div>`.
 
 ---
-Vérifiez si le `<div>` a déjà la classe `'alert-warning'`. Si oui, supprimez-la.
+Vérifiez si le `<div>` possède déjà la classe `'alert-warning'`. Si oui, supprimez-la.
 
 ---
-En cliquant sur le bouton avec l'id `js-btn`, basculez la classe `'alert-success'`: premier clique ajoute la classe, deuxième clique l'enlève, troisième l'ajoute de nouveau, etc.
+En cliquant sur le bouton `#js-btn`, basculez la classe `'alert-success'`: premier clique ajoute la classe, deuxième clique l'enlève, troisième l'ajoute de nouveau, etc.
 
 ---
 Récupérez et loggez la couleur du fond du bouton.

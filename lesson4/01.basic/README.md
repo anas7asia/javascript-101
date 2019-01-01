@@ -4,10 +4,11 @@
 + [Selectors](https://api.jquery.com/category/selectors/)
 + [w3schools](https://www.w3schools.com/jquery/jquery_selectors.asp)
 
-Loggez 'My page is ready' quand le rendu de la page sera terminé.
+## Document
+
+Loggez `'My page is ready'` quand le rendu de la page sera terminé.
 
 ## Selecteurs
-
 
 ```html
 <div>First paragraph</div>
@@ -38,7 +39,7 @@ Loggez 'My page is ready' quand le rendu de la page sera terminé.
   </tr>
   <tr>
     <td>Michel</td>
-    <td>Erikesson</td> 
+    <td>Erikson</td> 
     <td>19</td>
   </tr>
 </table>
@@ -49,17 +50,17 @@ Loggez 'My page is ready' quand le rendu de la page sera terminé.
 </form>
 ```
 
-Quand la page sera rendue, utilisez les selecteurs jQuery pour selectionner et logger:
+Quand le rendu de la page sera terminé, utilisez les selecteurs jQuery pour sélectionner et logger:
 
-+ toutes les balises div
-+ toutes les balises avec le nom de classe 'js-paragraph'
-+ la balise avec l'id 'js-unique-paragraph'
++ toutes les balises `<div>`
++ toutes les balises avec le nom de classe `js-paragraph`
++ la balise avec l'id `js-unique-paragraph`
 + le premier titre `<h3>`
 + le premier `<td>` du premier `<tr>` 
 + le premier `<td>` du chaque `<tr>`
 + tous les liens
 + tous les lien externes (ceux qui ont l'attribut `target` égal à `_blank`)
-+ tous les lien internes (ceux qui n'ont pad d'attribut `target` égal à `_blank`)
++ tous les lien internes (ceux qui n'ont pas d'attribut `target` égal à `_blank`)
 + toutes les balises `<th>` impairs
 + toutes les balises `<th>` pairs
-+ tous les boutons dans le formulaire
++ tous les boutons dans un formulaire

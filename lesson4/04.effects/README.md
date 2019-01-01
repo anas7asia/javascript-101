@@ -41,7 +41,7 @@ Si le bouton radio 'Jedi' est sélectionné, montrez l'alerte. Si ce bouton n'es
 </div>
 ```
 
-Utilisez les méthodes `slideUp`, `slideDown` ou `slideToggle` pour afficher/cachee la bannière `.js-slide-example-links` sous le paragraphe `#js-slide-example-1` si celui-ci est cliqué.
+Utilisez les méthodes `slideUp`, `slideDown` ou `slideToggle` pour afficher/cacher la bannière `.js-slide-example-links` sous le paragraphe `#js-slide-example-1` si celui-ci est cliqué.
 
 ![slideToggle](https://i.ibb.co/T43qPQt/slide-toggle.gif)
 
@@ -55,7 +55,7 @@ Utilisez les méthodes `slideUp`, `slideDown` ou `slideToggle` pour afficher/cac
 <button id="js-show-disappearing-alert">Show alert</button>
 ```
 Utilisez le HTML ci-dessus.
-Cliquez sur le bouton pour que l'alerte aparesse avec l'animation fondu (fade in) en 400 millisecondes. 3 secondes après l'apparition, faites disparetre l'alerte en 600 millisecondes.
+Cliquez sur le bouton pour que l'alerte aparesse avec l'animation fondu (fade in) en 400 millisecondes. 3 secondes après l'apparition, faites disparaître l'alerte en 600 millisecondes.
 
 Utilisez les méthodes `fadeIn`, `fadeOut` et le principe de callback.
 
@@ -69,9 +69,9 @@ Utilisez les méthodes `fadeIn`, `fadeOut` et le principe de callback.
 ```
 
 Utilisez le HTML ci-dessus.
-Après le rendu de la page tous les divs ont l'opacité de 30%. Quand un div est cliqué dessus, son opacité monte à 100%. Quand un autre div est cliqué, son opacité monte à 100% et l'opacité de tous les autres divs descend de nouveau à 30%.
+Après le rendu de la page tous les `<div>` ont l'opacité de 30%. Quand un `<div>` est cliqué dessus, son opacité monte à 100%. Quand un autre `<div>` est cliqué, son opacité monte à 100% et l'opacité de tous les autres divs descend de nouveau à 30%.
 
-Utilisez la méthode `fadeTo`
+Utilisez la méthode `fadeTo`.
 
 ![Choose one div](https://i.ibb.co/NYhBZV1/choose-one-div.gif)
 
@@ -84,12 +84,11 @@ Utilisez la méthode `fadeTo`
 
 Utilisez le HTML ci-dessus.
 
-Appliquez une animation au div `#js-animation-1`: ce div se deplace à 300px de gauche à droit en 700 millisecondes 3 secondes après la fin du rendu de la page.
+Appliquez une animation au div `#js-animation-1`: ce `<div>` se deplace à 300px de gauche à droit en 700 millisecondes 3 secondes après la fin du rendu de la page. Utilisez les méthodes `delay` et `animate`.
 
 ---
 
-
-Créez un div de taille 5rem sur 5rem et un bouton qui déclenche ces animations :
+Créez un `<div>` de taille 5rem sur 5rem et un bouton qui déclenche ces animations :
 1. L'hauteur et la longeur du div enlargissent jusque 8rem en 500 millisecondes.
 2. Ensuite le div bouge à 10rem du gauche et 5rem du haut de sa position actuelle en 700 millisecondes.
 3. Ensuite l'opacité du div tombe à 50% en 300 millisecondes.
@@ -99,6 +98,8 @@ Créez un autre bouton qui arrete l'animation en cours et annule tous les autres
 
 ---
 
+Voilà quatre `<div>`.
+
 ```html
 <div class="animated" id="js-animated-1"></div>
 <div class="animated" id="js-animated-2"></div>
@@ -106,8 +107,10 @@ Créez un autre bouton qui arrete l'animation en cours et annule tous les autres
 <div class="animated" id="js-animated-4"></div>
 ```
 
+Ce code JavaScript applique l'animation aux trois `<div>` choisis aléatoirement.
+
 ```js
-const randomNums = getArrayOfRandomNums();
+const randomNums = getArrayOfRandomNums($('.yourclass').length);
 const divsToAnimate = randomNums.sort().reduce((acc, currVal, currIndex, array) => {
   return acc += `#js-animated-${currVal}${currIndex !== array.length - 1 ? ',' : ''}`
 }, '')
@@ -118,7 +121,7 @@ function animateDivs() {
   $( divsToAnimate ).slideToggle( "slow", animateDivs );
 }
 
-function getArrayOfRandomNums(itemsCount = 4) {
+function getArrayOfRandomNums(itemsCount) {
   const randomNums = [];
   // itemsCount - 1 to make sure that final array is one item less than all of the divs in HTML
   while (randomNums.length < itemsCount - 1) {
@@ -135,6 +138,4 @@ function getRandomNumber(max) {
 }
 ```
 
-Il y a quatre `<div>`. Trois d'eux sont choisis aléatoirement et animé.
-
-Changez la couleur du fond de tous les divs animés.
+Sélectionnez tous les divs animés et changez leur couleur du fond.

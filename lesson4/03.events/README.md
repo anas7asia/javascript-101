@@ -9,8 +9,8 @@ Créez un bouton. Si ce bouton est cliqué, loggez `'Clicked!'`.
 Si ce bouton est cliqué plus que 5 fois, enlevez son écouteur de l'événement 'click'.
 
 ---
-
 Créez un div bleu. Si on le survole, il passe en vert. Si on sort le curseur du div, il redevient bleu. 
+Utilisez les méthodes `mouseenter`, `mouseleave` ou `hover`.
 
 ---
 
@@ -18,7 +18,7 @@ Desactivez le comportement par defaut du click du bouton droit de la souris sur 
 
 ![Clicks not allowed](http://www.commitstrip.com/wp-content/uploads/2016/06/Strip-Les-codeurs-et-les-images-650-final-1.jpg)
 
-## Evénement de formulaire
+## Evénements de formulaire
 
 ```html
 <form id="js-form">
@@ -27,13 +27,12 @@ Desactivez le comportement par defaut du click du bouton droit de la souris sur 
 
   <input type="text" placeholder="Your pet name" id="js-input">
 
-  <input type="button" value="Submit" id="js-submit">
+  <input type="submit" value="Submit" id="js-submit">
 </form>
 ```
 
-Si le champs de saisie avec l'id `js-input` est mis en avant passez la couleur de sa bordure en bleu.
+Si le champs de saisie `#js-input` est mis en avant passez la couleur de sa bordure en bleu.
 Si ce champ n'est plus mis en avant et reste vide, passez la couleur de sa bordure en rouge.
-Utilisez les méthodes `mouseenter`, `mouseleave` ou `hover`.
 
 ---
 
@@ -46,7 +45,7 @@ Si le bouton radio 'Dog' a été choisi, loggez `'Go dogs!'`
 
 ---
 
-A la soumission du formulaire, récupérez les valeurs de tous ces champs et loggez les.
+A la soumission du formulaire, récupérez les valeurs de tous ces champs et loggez-les.
 
 ## Reading List
 

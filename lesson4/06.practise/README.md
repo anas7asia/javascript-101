@@ -1,7 +1,7 @@
 
 # Projet en jQuery
 
-Créez un site d'un chateau viticole bordelais qui aimerais vendre son vin. 
+Créez un site d'un chateau viticole bordelais Fauxvin qui aimerait vendre ses produits. 
 En haut de chaque page mettez un header avec les liens de navigation vers les autres pages du site.
 En bas de chaque page mettez un footer avec la marque déposée et les date d'existance du site: à partir de l'année 2000 jusque l'année en cours (2000-2019).
 
@@ -9,7 +9,7 @@ En bas de chaque page mettez un footer avec la marque déposée et les date d'ex
 
 #### Présentation du produit.
 
-Installez un carousel pour montrer 5 photos et leurs titre par dessus. Ces photos doivent defiler chaque 7 seconde à la vitesse de 500 millisecondes.
+Installez un carousel pour montrer 5 photos et leurs titres par dessus. Ces photos doivent defiler chaque 7 seconde à la vitesse de 500 millisecondes.
 
 Les plugins à utiliser: [slick](http://kenwheeler.github.io/slick/) ou [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
 
@@ -40,7 +40,7 @@ const carouselItems = [
 
 #### Histoire du chateau
 
-Afficher l'histoire du chateau en forme de simples paragraphes.
+Affichez l'histoire du chateau en forme du simple texte.
 
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In diam mauris, semper et tincidunt sed, interdum in est. Nam fermentum elementum augue in sollicitudin. Vestibulum lectus felis, mattis eu condimentum sit amet, laoreet a sem. Aliquam elementum ac purus convallis blandit. Maecenas consequat est sapien, eu porta tellus semper ac. Praesent mattis nibh risus. Sed lobortis metus varius convallis facilisis. Suspendisse sed nunc id dolor posuere molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec quam libero, sagittis id facilisis id, commodo tincidunt augue. Praesent gravida tellus erat, sed convallis urna vestibulum eget. Aenean suscipit, massa finibus pellentesque vulputate, enim nunc dapibus justo, ac pellentesque quam augue eget nulla. Vivamus ac lacus nec orci euismod semper.
@@ -54,7 +54,7 @@ Nunc eu nunc ex. Quisque vel scelerisque quam. Sed non rutrum leo. Phasellus lac
 Quisque eget dolor a ipsum mattis ultrices. Proin bibendum porttitor rutrum. In et facilisis ante, quis vulputate nisi. Nam bibendum ornare nunc vel tempor. In hac habitasse platea dictumst. Suspendisse rutrum bibendum arcu, ut euismod felis. Donec sagittis augue eros, ut lobortis augue facilisis nec. Curabitur in lorem vel lorem placerat faucibus. Phasellus ullamcorper nibh enim, vitae gravida velit condimentum non. Nulla elementum aliquam sollicitudin.
 ```
 
-En-dessous de cette histoire, affichez une chronologie des événement de ce chateau avec le plugin [Timeline.js](https://ilkeryilmaz.github.io/timelinejs/)
+Au dessous de cette histoire, affichez une chronologie des événements de ce chateau avec le plugin [Timeline.js](https://ilkeryilmaz.github.io/timelinejs/)
 
 ```js
 
@@ -95,27 +95,29 @@ const timelineItems = [
 
 #### Navigation
 
-En bas de la page mettez une flèche pour remonter tout en haut de la page. Utilisez le plugin [AnchorScroll.JS](http://www.virgiliudiaconu.com/work/anchor-scroll) pour le faire.
+En bas de la page mettez une flèche pour remonter tout en haut de la page à l'aide du plugin [AnchorScroll.JS](http://www.virgiliudiaconu.com/work/anchor-scroll).
 
 
 ### Deuxième page
 
-Créer un calculateur du prix de vin du chateau.
+Créez un calculateur de prix d'une commande de vin.
 
-Chateau Fauxvin a deux marques de son vin: Fauxvin 1 et Fauxvin 2.
-Affichez ces deux marques, ainsi que leurs années et les prix par année.
-On peut saisir le nombre de bouteilles qu'on souhaite commander dans un champ de formulaire du type nombre. On peux commander autant de bouteilles de différentes années qu'on souhaite.
+Chateau Fauxvin a deux marques de son vin: Fauxvin Un et Fauxvin Deux. 
+
+Affichez ces deux marques, pour chaque marque affichez tous ces vins: l'année, le prix et un champ de formulaire du type nombre pour renseigner le nombre de bouteilles souhaités.
+
+On peux commander autant de bouteilles de différentes années et de differentes marques qu'on souhaite.
 
 Le prix de livraison est 19 € pour moins de 6 bouteilles, gratuit à partir de 6 bouteillles.
 
-A chaque changement de la quantité du vin choisi, calculez le prix total du vin choisit, le nombre de bouteilles et le prix de livraison:
+A chaque changement de la quantité de bouteilles, calculez le prix total du vin choisi, le nombre de bouteilles et le prix de livraison:
 ```
 Total de votre commande : $totalPrice.
 $winePrice euros de vin (soit $bottlesCount bouteilles)
 $deliveryPrice euros de frais de port / Frais de port offerts
 ```
 
-Si aucun vin est choisi, activer l'attribut `disabled` du bouton de soumission du formulaire.
+Si aucun vin est choisi, activez l'attribut `disabled` du bouton de soumission du formulaire.
 
 
 Nom et adresse de livraison ainsi que paiement sont gérés par le service [Stripe](https://stripe.com/docs/stripe-js/reference).
@@ -124,7 +126,7 @@ Nom et adresse de livraison ainsi que paiement sont gérés par le service [Stri
 const products = [
   {
     id: 1,
-    name: "Chateau Fauxvin 1",
+    name: "Chateau Fauxvin Un",
     desc: "The predominance of Merlot accounts for the wines' dark colour and red fruit aromas featuring oaky and spicy overtones. The wine starts out powerful and full-bodied on the palate, with a beautiful tannic structure, going on to reveal a long, fresh aftertaste.",
     wines: [
       { year: "2000", price: "35" },
@@ -132,13 +134,13 @@ const products = [
       { year: "2011", price: "21" },
       { year: "2012", price: "23" },
       { year: "2013", price: "18" },
-      { year: "2014", price: "19.5" },
+      { year: "2014", price: "19.50" },
       { year: "2015", price: "25.50" }
     ]
   },
   {
     id: 2,
-    name: "Chateau Fauxvin 2",
+    name: "Chateau Fauxvin Deux",
     desc: "The wine has an ink-black colour and intense nose featuring concentrated fruit aromas combined with vanilla and toast. The bouquet follows through on the palate to reveal a rich, full-bodied wine with black-berry fruit and an impressively long, elegant aftertaste. The tannin is well-structured with a wonderful velvety texture.",
     wines: [
       { year: "2007", price: "70" },
