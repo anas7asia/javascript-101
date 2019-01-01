@@ -3,25 +3,25 @@
 + [MDN > Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/promise)
 + [Handling async operations gracefully with Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 
-Créez un promise qui retourne une chaîne de caractères 'Hello' immediatement. Récupérez et loggez la valeur qu'il retourne.
+Créez une *promise* (promesse) qui retourne une chaîne de caractères 'Hello' immediatement. Récupérez et loggez la valeur qu'elle retourne.
 
 ---
 
-Créez un promise qui retourne une chaîne de caractères 'Hello' dans 3 secondes. Récupérez et loggez la valeur qu'il retourne.
+Créez une promise qui retourne une chaîne de caractères 'Hello' dans 3 secondes. Récupérez et loggez la valeur qu'elle retourne.
 
 ---
 
-Créez un promise qui retourne une erreur 'Something went wrong!'. Récupérer et loggez cette erreur.
+Créez une promise qui retourne une erreur 'Something went wrong!'. Récupérer et loggez cette erreur.
 
 ---
 
-Créez un promise qui retourne un nombre. [Enchaînez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then#Chaining) le traitement du promise pour effectuez les operations suivantes:
+Créez une promise qui retourne un nombre. [Enchaînez](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then#Chaining) le traitement du promise pour effectuez les operations suivantes:
 multiplier par 2, ensuite soustraire 1, ensuite decrementer de 2, ensuite augmenter de 10. Loggez le résultat réçu.
 
 
 ## CRUD avec les promises
 
-Utilisez l'API de [https://reqres.in/](https://reqres.in/) et la méthode [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) qui retourne un promise.
+Utilisez l'API de [https://reqres.in/](https://reqres.in/) et la méthode [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) qui retourne une promise.
 
 
 Récupérez et affichez les informations de l'utilisateur avec l'id 5.

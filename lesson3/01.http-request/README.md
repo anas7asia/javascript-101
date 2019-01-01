@@ -9,19 +9,19 @@
 
 ### Read
 
-Méthode [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) est utilisée pour récupérer des données d'un serveur. Par exemple, des articles d'un blog, ou des commentaires sous un article.
+Une méthode [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) est utilisée pour récupérer des données d'un serveur. Par exemple, des articles d'un blog, ou des commentaires sous un article.
 
 ### Create
 
-Méthode [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) est utilisée pour envoyer les données sur un serveur. Par exemple, créer un article, soumettre un formulaire de contact, se connecter à un compte.
+Une méthode [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) est utilisée pour envoyer des données sur un serveur. Par exemple, créer un article, soumettre un formulaire de contact, se connecter à un compte.
 
 ### Update
 
-Méthode [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) est utilisée pour modifier du contenu qui existe déjà sur un serveur. Par exemple, modifier un mot de passe ou un commentaire sous un article.
+Une méthode [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) est utilisée pour modifier du contenu qui existe déjà sur un serveur. Par exemple, modifier un mot de passe ou modifier un commentaire sous un article.
 
 ### Delete
 
-Méthode [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE) est utilisée pour supprimer des données qui existent sur un serveur. Par exemple, supprimer un commentaire d'un article ou un compte.
+Une méthode [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE) est utilisée pour supprimer des données qui existent sur un serveur. Par exemple, supprimer un commentaire d'un article ou supprimer un compte.
 
 
 > Les méthodes à utiliser et les paramètres acceptés sont décrits dans les docs de APIs RESTful, par exemple, de [Dota2](https://docs.opendota.com/), [Twitter](https://developer.twitter.com/en/docs.html), [référence de l’intégralité des adresses français](https://adresse.data.gouv.fr/api)
@@ -34,7 +34,7 @@ Voir toutes les méthodes HTTP: [https://developer.mozilla.org/en-US/docs/Web/HT
 
 ![Headers](https://i.ibb.co/pz5jVTL/Request.png)
 
-Pour communiquer l'information additionnelle dans une requête HTTP on utilise les [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 
+Pour communiquer des informations additionnelles dans une requête HTTP on utilise les [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 
 
 
 ## Réponses

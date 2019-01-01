@@ -26,7 +26,7 @@ Dans votre code HTML créez une balise 'script' interne.
 
 + Insérez le script `before-render.js` qui doit être téléchargé et exécuté avant que le navigateur commence le rendu de la page.
 + Insérez le script `after-render.js` qui doit être téléchargé et exécuté après que la navigateur ait terminé le rendu de la page.
-+ Insérez le script `whenever.js` qui doit être téléchargé et exécuté à n'import quel moment du rendu de la page par navigateur.
++ Insérez le script `whenever.js` qui doit être téléchargé et exécuté à n'import quel moment du rendu de la page par le navigateur.
 + Si le navigateur de l'utilisateur de votre site n'a pas JavaScript d'activé, montrez-lui une bannière "Pour accéder à toutes les fonctionnalités de notre site vous avez besoin de JavaScript".
 
 ```html

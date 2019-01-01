@@ -4,14 +4,17 @@
 + [MDN > XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 + [w3schools > XMLHttpRequest](https://www.w3schools.com/xml/xml_http.asp)
 
-AJAX est "**A**synchronous **J**avaScript **A**nd **X**ML", mais on utilise JSON au lieu de XML
-Grâce à l'AJAX on peut envoyer/récupérer des données d'un serveur distant et modifier le contenue de la page après son chargement.
+AJAX signifie "**A**synchronous **J**avaScript **A**nd **X**ML".
+AJAX permet d'envoyer et de récupérer des données d'un serveur distant après que le rendu de la page par le navigateur soit terminé.
+A l'origine AJAX utilise le format XML pour la communication avec le serveur. Desormais on préfère utiliser le format JSON, celui-ci étant bien plus simple à manipuler.
+
 
 ```js
 // Exeptionally comments are in French this time
+
 // La méthode de BOM - XMLHttpRequest - est instanciée
 var xhttp = new XMLHttpRequest();
-// onreadystatechange est déclenché à chaque changement du statut de l'objet "XMLHttpRequest" (comme un écouteur d'événement)
+// onreadystatechange est appelé de manière asynchrone et sera déclenché à chaque changement du statut de l'objet "XMLHttpRequest" (comme un écouteur d'événement)
 xhttp.onreadystatechange = () => {
     /*
     Si l'état de "XMLHttpRequest" est égal à 4 (4 signifie "DONE"). Voir tous les statuts: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState
@@ -19,14 +22,14 @@ xhttp.onreadystatechange = () => {
     Et si le statut la requête est égal à 200 (Ok / réussite)
     */
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      // faites ce que vous voulez avec 
+      // procédez à un traitement de la réponse 
       console.log(xhttp)
       console.log(xhttp.responseText)
     }
 };
 // La méthode "open" crée la requête
 xhttp.open('GET', 'url', true);
-// Quand le traitement de la requête est prêt, la méthode "send" envoie la requête
+// Quand le traitement de la requête est terminé, la méthode "send" envoie la requête
 xhttp.send();
 ```
 
@@ -55,12 +58,13 @@ const planets = [1, 2, 3, 4, 5];
 
 ---
 
-Récupérez l'information du profil de Chewbacca (son id dans la base de données est 14) en format wookiee.
-Ensuite affichez sur votre page ces données: nom, hauteur, date de naissance, couleur des yeux, couleur des cheveux.
+Récupérez l'information du profil de Chewbacca (son id dans la base de données est 13) en format **wookiee**.
+Attention les clés json sont également en wookiee. 
+Pour chaque clé json, si la valeur est primitive (string, number, etc), affichez la paire de clé/valeur.
 
+```
 **whrascwo:** Cacwoohrhraoaoara
-etc
-
+```
 
 ## Données fictives (mock data)
 
@@ -71,11 +75,11 @@ Des fois c'est très utile de tester le code avec des données fictives en atten
 
 > Placeholder API: [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/)
 
-Récupérez et affichez un article avec l'id 25, ensuite affichez ces commentaires.
+Récupérez et affichez un article avec l'id 25, ensuite récupérez et affichez ses commentaires.
 
 ---
 
-Récupérez et affichez 5 articles, sous chaque article affichez ces comentaires.
+Récupérez et affichez 5 articles, sous chaque article récupérez et affichez leurs comentaires.
 
 ```js
 const articles = [1, 2, 3, 4, 5];
@@ -85,20 +89,19 @@ const articles = [1, 2, 3, 4, 5];
 
 > API RESTful https://reqres.in/ accepte les données en format JSON.
 
-Créez un formulaire de **connexion** qui comprend les champs de email et de mot de passe. A la soumission du formulaire, envoyez la requête de connexion à l’API https://reqres.in/. En cas de succès, mettez le token dans les cookies, en cas d’erreur, affichez l’erreur sous le formulaire.
+Créez un formulaire de **connexion** qui comprend les champs *email* et *mot de passe*. A la soumission du formulaire, envoyez la requête de connexion à l’API `https://reqres.in/`. En cas de succès, mettez le token dans les cookies, en cas d’erreur, affichez l’erreur sous le formulaire.
 
 ---
 
-Créez un bouton de deconnexion. Cliquez-le pour effacer le token sauvegardé das les cookies.
+Créez un bouton de deconnexion. Au clique sur ce bouton effacez le token sauvegardé dans les cookies.
 
 ---
 
-Créez un formulaire d'**inscription** qui comprend les champs de email et de mot de passe. A la soumission du formulaire, envoyez la requête d'inscription à l’API https://reqres.in/. En cas de succès, mettez ses information et le token rétourné dans les cookies, en cas d’erreur, affichez l’erreur sous le formulaire.
+Créez un formulaire d'**inscription** qui comprend les champs *nom*, *prénom*, *email* et *mot de passe*. A la soumission du formulaire, envoyez la requête d'inscription à l’API https://reqres.in/. En cas de succès, mettez ses informations et le token renvoyé dans les cookies, en cas d’erreur, affichez l’erreur sous le formulaire.
 
 ---
 
-Créez un bouton de suppression d'un utilisateur. Cliquez-le pour supprimer l'utilisateur sauvegardé das les cookies.
-Supprimer ses infos et son token des cookies.
+Créez un bouton de suppression d'un utilisateur. Au clique sur ce bouton supprimez l'objet utilisateur et son token des cookies.
 
 ## Reading List
 

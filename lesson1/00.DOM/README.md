@@ -74,7 +74,7 @@ Supprimez le span.
 <span>I will be deleted</span>
 ```
 
-## Créez un node
+## Créez une node
 
 Créez un div et insérez le dans la balise `body`.
 
