@@ -100,6 +100,24 @@ En bas de la page mettez une flèche pour remonter tout en haut de la page à l'
 
 ### Deuxième page
 
+Créez un formulaire de contacte qui comprend les champs suivants :
+
++ nom
++ prénom
++ promotion
++ email
++ date de naissance ([sélecteur de date](https://jqueryui.com/datepicker/) de jQuery UI)
++ message (textarea)
+
+A la soumission de formulaire envoyez les informations saisies en format JSON à 
+```
+POST https://usebasin.com/f/ddec74dc7c7b
+```
+N'oubliez pas d'ajouter un header `Accept` égal à `application/json` à votre requête.
+
+
+### Troisième page
+
 Créez un calculateur de prix d'une commande de vin.
 
 Chateau Fauxvin a deux marques de son vin: Fauxvin Un et Fauxvin Deux. 
@@ -151,8 +169,4 @@ const products = [
 ]
 ```
 
-### Troisième page
 
-Formulaire de contact
-jQuery UI with date picker
-Call firebase to save data
