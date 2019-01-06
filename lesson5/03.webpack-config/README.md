@@ -54,7 +54,7 @@ Créez un fichier `.gitignore` avec le contenu suivant qui interdira envoyer cer
 /dist
 ```
 
-Créez un fichier `package.json` avec la commande :
+Créez un fichier `package.json` avec la commande. Repondez aux questions ou appuyez Enter pour mettre la reponse par defaut
 ```
 npm init
 ```
@@ -67,8 +67,10 @@ npm install --save-dev webpack webpack-cli
 Toujours dans le même dossier créez un fichier `webpack.config.js` où vous allez mettre toute la configuration de Webpack (webpack pourra la trouver automatiquement par le nom du fichier) :
 
 ```js
-module.exports = (env, argv) => ({
+const path = require('path');
 
+module.exports = (env, argv) => ({
+  // all properties go here
 });
 ```
 
@@ -80,26 +82,29 @@ Installez le plugin [webpack-dev-server](https://github.com/webpack/webpack-dev-
 npm install webpack-dev-server --save-dev
 ```
 
-Ajoutez la configuration
-```js
-module.exports = (env, argv) => ({
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000
-  }
-});
-
+Ajoutez la configuration dans `module.exports`:
+```
+devServer: {
+  contentBase: path.join(__dirname, 'dist'),
+  compress: true,
+  port: 9000
+}
 ```
 
-Dans `package.json` ajoutez la commande du lancement du serveur :
+Dans `package.json` ajoutez la commande du lancement du serveur, on peut en avour plusieurs scripts séparés par une virgule :
 ```json
 "scripts": {
   "start:dev": "webpack-dev-server"
 }
 ```
 
-Executez cette commande pour voir vos changements en live:
+Installer de suite la dernière version de `jQuery` parce qu'elle est utilisée dans le projet:
+
+```
+npm install jquery@latest --save
+```
+
+Executez cette commande pour voir vos changements en live (c'est normale si vous avez une erreur tout au debut, vu que la config est vide) :
 ```
 npm run start:dev
 ```
@@ -109,54 +114,60 @@ npm run start:dev
 
 Installez le plugin webpack pour charger des fichiers HTML :
 ```
-npm install html-webpack-plugin --save-dev
+npm install html-loader html-webpack-plugin --save-dev
 ```
 
 <details>
 <summary>Voir la configuration</summary>
 
+Ajoutez dans le fichier `webpack.config.js` l'import du plugin :
 ```js
-const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+```
 
-module.exports = (env, argv) => ({
-  // code that you work on in 'src' folder
-  entry: {
-    vendor: './src/scripts/vendor.js', // all the not development dependencies from node_modules go here
-    scripts: './src/scripts/scripts.js', // all the code shared between different pages goes here
-    index: './src/scripts/index.js', // code specific to index page
-    'contact-form': './src/scripts/contact-form.js', // code specific to contact-form page
-  },
-  // compiled code
-  output: {
-    filename: argv.mode == 'development' ? '[name].js' : '[name].[hash].js', // '[name].[hash].js' for production
-    path: path.resolve(__dirname, 'dist'), // folder where all tranformed files will be placed
-  },
-  module: {
-    rules: [
-      {
-        test: /\.html$/,
-        use: [{ 
-          loader: "html-loader", 
-          options: { minimize: true } 
-        }]
-      },
-    ]
-  },
-  plugins: [
-    // create an instance of HtmlWebPackPlugin for every page of a multipage website
-    new HtmlWebPackPlugin({
-      template: "src/index.html", // take html from this path
-      filename: "./index.html", // name it 'index.html' and insert to the root of output folder
-      chunks: ['vendor', 'scripts', 'index'] // insert dymamically vendor.js, scripts.js and index.js to index.html
-    }),
-    new HtmlWebPackPlugin({
-      template: "src/contact-form.html",
-      filename: "./contact-form.html",
-      chunks: ['vendor', 'scripts', 'contact-form']
-    }),
-  ]
-});
+Ajoutez la propriété `entry` dans `module.exports` :
+```js
+// code that you work on in 'src' folder
+entry: {
+  vendor: './src/scripts/vendor.js', // all the not development dependencies from node_modules go here
+  scripts: './src/scripts/scripts.js', // all the code shared between different pages goes here
+  index: './src/scripts/index.js', // code specific to index page
+  'contact-form': './src/scripts/contact-form.js', // code specific to contact-form page
+},
+```
+
+Ajoutez la propriété `output` dans `module.exports` :
+```js
+output: {
+  filename: argv.mode == 'development' ? '[name].js' : '[name].[hash].js', // '[name].[hash].js' for production
+  path: path.resolve(__dirname, 'dist'), // folder where all tranformed files will be placed
+}
+```
+
+Dans la propriété `rules` (qui est un tableau) de la propriété `module` de `module.exports` ajoutez le loader de html
+```js
+{
+  test: /\.html$/,
+  use: [{ 
+    loader: "html-loader", 
+    options: { minimize: true } 
+  }]
+}
+```
+
+Dans la propriété `plugins` (qui est un tableau) de `module.exports` ajoutez ces deux objets :
+```js
+  // create an instance of HtmlWebPackPlugin for every page of a multipage website
+  new HtmlWebPackPlugin({
+    template: "src/index.html", // take html from this path
+    filename: "./index.html", // name it 'index.html' and insert to the root of output folder
+    chunks: ['vendor', 'scripts', 'index'] // insert dymamically vendor.js, scripts.js and index.js to index.html
+  }),
+  new HtmlWebPackPlugin({
+    template: "src/contact-form.html",
+    filename: "./contact-form.html",
+    chunks: ['vendor', 'scripts', 'contact-form']
+  })
 ```
 </details>
 
@@ -180,36 +191,34 @@ Le fichier `global.scss` est inséré dans `scripts.js` pour le rendre visible �
 <details>
 <summary>Voir la configuration</summary>
 
-Toujours dans `webpack.config.js` rajoutez:
+Dans le fichier `webpack.config.js` ajoutez :
 ```js
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+```
 
-module.exports = (env, argv) => ({
-  module: {
-    rules: [
-      {
-        test: /\.(sa|sc|c)ss$/, // look for .sass, .scss or .css files
-        use: [
-          MiniCssExtractPlugin.loader, // minify css files
-          "css-loader", // translate CSS to JavaScript
-          { 
-            loader: "postcss-loader", // perform some actions on compiled css
-            options: {
-              plugins: [require("autoprefixer")] // add prefixes to css properties if needed for browsers mentioned in 'browserslist' property in package.json
-            }
-          },
-          "sass-loader" // convert SASS/SCSS to css
-        ],
-      },
-    ],
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: argv.mode == 'development' ? '[name].css' : '[name].[hash].css', // '[name].[hash].css for production - hash this file, so users always will get the newest version of this file and not that one from cache
-    })
-  ]
-});
+Dans la propriété `rules` de la propriété `module` de `module.exports` ajoutez les loaders de css
+```js
+{
+  test: /\.(sa|sc|c)ss$/, // look for .sass, .scss or .css files
+  use: [
+    MiniCssExtractPlugin.loader, // minify css files
+    "css-loader", // translate CSS to JavaScript
+    { 
+      loader: "postcss-loader", // perform some actions on compiled css
+      options: {
+        plugins: [require("autoprefixer")] // add prefixes to css properties if needed for browsers mentioned in 'browserslist' property in package.json
+      }
+    },
+    "sass-loader" // convert SASS/SCSS to css
+  ],
+}
+```
 
+Dans la propriété `plugins` de `module.exports` ajoutez ces deux objets :
+```js
+new MiniCssExtractPlugin({
+  filename: argv.mode == 'development' ? '[name].css' : '[name].[hash].css', // '[name].[hash].css for production - hash this file, so users always will get the newest version of this file and not that one from cache
+})
 ```
 </details>
 
@@ -225,24 +234,17 @@ npm i -D babel-loader @babel/core @babel/preset-env
 
 Les fichiers `.js` sont déjà mis dans la propriété `entry`, il reste qu'à ajouter le loader pour exécuter les actions nécessaires :
 ```js
-module.exports = (env, argv) => ({
-  module: {
-    rules: [
-      {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'] // transpile ES6 to ES5
-          }
-        }
-      },
-    ]
+{
+  test: /\.m?js$/,
+  exclude: /node_modules/,
+  use: {
+    loader: 'babel-loader',
+    options: {
+      presets: ['@babel/preset-env'] // transpile ES6 to ES5
+    }
   }
-});
+}
 ```
-
 
 // TODO: image how specific to a page scripts are not loaded at once
 
@@ -260,31 +262,25 @@ npm i -D img-loader url-loader file-loader
 <details>
 <summary>Voir la configuration</summary>
 
+Ajoutez un loader des images dans la propriété `module.rules` de `module.exports` :
 ```js
-
-module.exports = (env, argv) => ({
-  module: {
-    rules: [
-      // convert an image lighter than 10.000 bytes to Base64 URL
-      // otherwise reduce its size
-      {
-        test: /\.(png|jpe?g)/i,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              name: "./assets/images/[name].[ext]",
-              limit: 10000 // 10k bytes
-            }
-          },
-          {
-            loader: "img-loader"
-          }
-        ]
+// convert an image lighter than 10.000 bytes to Base64 URL
+// otherwise reduce its size
+{
+  test: /\.(png|jpe?g)/i,
+  use: [
+    {
+      loader: "url-loader",
+      options: {
+        name: "./assets/images/[name].[ext]",
+        limit: 10000 // 10k bytes
       }
-    ]
-  }
-});
+    },
+    {
+      loader: "img-loader"
+    }
+  ]
+}
 ```
 </details>
 
@@ -306,7 +302,7 @@ Exécutez celui pour le serveur de développement :
 npm run build:dev
 ```
 
-Résultat:
+Vous devez avoir les mêmes fichiers comme résultat:
 
 ![Webpack-Dev](https://i.ibb.co/W5gbMN1/webpack-dev.png)
 

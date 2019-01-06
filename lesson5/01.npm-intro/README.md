@@ -44,3 +44,5 @@ Chaque projet npm doit avoir à sa racine un fichier `package.json` qui contient
 + `nom run some-script` exécuter un script précisé dans `package.json`
 + `npm -v` pour voir la version de npm utilisée
 + Voir toutes les commandes: <https://docs.npmjs.com/cli-documentation/cli>
+
+C'est commandes sont exécutées en CLI dans Terminal (Mac) ou CommandLine (Windows)
