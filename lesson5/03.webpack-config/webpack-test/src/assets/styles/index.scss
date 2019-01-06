@@ -1,0 +1,14 @@
+@import '_variables.import.scss';
+
+body {
+  color: $text-primary;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
