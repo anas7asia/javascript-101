@@ -246,7 +246,11 @@ Les fichiers `.js` sont déjà mis dans la propriété `entry`, il reste qu'à a
 }
 ```
 
-// TODO: image how specific to a page scripts are not loaded at once
+Les scripts `vendor`, `scripts` et `index` sont chargé sur la page `index.html`
+![Webpack Index page](https://i.ibb.co/yYBm6JG/webpack-index.png)
+
+Les scripts `vendor`, `scripts` et `contact-form` sont chargé sur la page `contact-form.html`
+![Webpack Contac Form page](https://i.ibb.co/qRKMHjm/webpack-contact-form.png)
 
 ### Images
 
