@@ -50,8 +50,8 @@ Webpack connaît pas d'autres formats que `.js`, donc il faut installer les load
 
 Créez un fichier `.gitignore` avec le contenu suivant qui interdira envoyer certains dossiers ou fichiers lourds ou inutiles à partager :
 ```
-/node_modules
-/dist
+node_modules/
+dist/
 ```
 
 Créez un fichier `package.json` avec la commande. Repondez aux questions ou appuyez Enter pour mettre la reponse par defaut
