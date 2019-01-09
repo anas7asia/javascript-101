@@ -1,0 +1,21 @@
+{
+  "name": "javascript-101",
+  "version": "1.0.0",
+  "description": "JavaScript Practical Lessons",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NastyaNik/javascript-101.git"
+  },
+  "author": "Anastasia Oudin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NastyaNik/javascript-101/issues"
+  },
+  "homepage": "https://github.com/NastyaNik/javascript-101#readme",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

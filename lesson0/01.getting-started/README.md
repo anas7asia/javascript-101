@@ -46,6 +46,22 @@ Le plus important lorsqu'on écrit du code est d'être consistant. Il faut se me
 Si vous avez une hésitation sur la manière d'indenter votre code, retournez voir le styleguide choisi.
 Pour automatiser ce processus, vous pouvez installer un *code linter* [ESLint](https://eslint.org/) dans votre projet ou en global.
 
+Comment installer ESLint en locale?
+
+1. Installez la dernière version de [NodeJS](https://nodejs.org/en/download/) sur votre ordinateur.
+
+2. Ouvrez le programme Terminal (Mac) ou Command Prompt (Windows) et allez-y à la racine de ce projet avec la commande `cd`.
+
+3. La configuration de ce projet est déjà prête, il reste qu'à installer les dependences nécessaires avec la commande :
+```
+npm install
+```
+
+<details>
+<summary>
+Installer ESLint en global
+</summary>
+
 Comment [installer ESLint en global](https://medium.com/@davidchristophersally/how-to-set-up-eslint-in-vscode-globally-253f25fbaff9) (pour utiliser les mêmes reglès sur tous vos projets) et l'utiliser avec VSCode?
 
 1. Installez la dernière version de [NodeJS](https://nodejs.org/en/download/) sur votre ordinateur.
@@ -73,7 +89,7 @@ Ensuite retournez sur le terminal et exécutez:
 code .eslintrc
 ``` -->
 
-5. Ajoutez ce code dans le ficher et sauvgardez
+5. Ajoutez ce code dans le ficher et sauvegardez
 ```json
 {
  "extends": "airbnb",
@@ -87,3 +103,4 @@ code .eslintrc
 ```
 
 6. Installez l'extension ESLint dans la partie des [extensions sur VSCode](https://code.visualstudio.com/docs/editor/extension-gallery)
+</details>
