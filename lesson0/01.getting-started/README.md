@@ -46,13 +46,16 @@ Le plus important lorsqu'on écrit du code est d'être consistant. Il faut se me
 Si vous avez une hésitation sur la manière d'indenter votre code, retournez voir le styleguide choisi.
 Pour automatiser ce processus, vous pouvez installer un *code linter* [ESLint](https://eslint.org/) dans votre projet ou en global.
 
-Comment installer ESLint en locale?
+Comment installer ESLint en local?
 
 1. Installez la dernière version de [NodeJS](https://nodejs.org/en/download/) sur votre ordinateur.
 
-2. Ouvrez le programme Terminal (Mac) ou Command Prompt (Windows) et allez-y à la racine de ce projet avec la commande `cd`.
+2. Ouvrez le programme Terminal (Mac) ou Command Prompt (Windows) et allez à la racine de ce projet avec la commande `cd`.
+```
+cd /Users/yourname/path/to/project/javascript-101
+```
 
-3. La configuration de ce projet est déjà prête, il reste qu'à installer les dependences nécessaires avec la commande :
+3. La configuration de ce projet est déjà prête, il ne reste plus qu'à installer les dependences nécessaires avec la commande :
 ```
 npm install
 ```

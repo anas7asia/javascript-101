@@ -141,6 +141,9 @@ Vérifiez si 'Alex' est present dans le tableau: `['Mary', 'Alex', 'Thibaud', 'J
 
 
 ## Boucle for
+
+![For and Foreach](http://www.commitstrip.com/wp-content/uploads/2014/07/Strip-Dora-la-codeuse-650-final.jpg)
+
 Utilisez une boucle [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) pour créer un tableau `[0, 1, 2, 3, 4, 5]`.
 Utilisez une autre boucle `for` pour augmenter de 1 chaque élément de ce nouveau tableau.
 
