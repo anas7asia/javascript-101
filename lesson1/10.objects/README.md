@@ -35,6 +35,17 @@ Loggez la couleur de la voiture.
 
 ---
 
+Créez un objet 'cat' avec les propriétés suivantes :
++ propriété 'name' égale à 'Cookie'
++ propriété 'favoritePlaces' égale à un tableau `['random box', 'laps', 'Christmas tree']`
++ propriété 'petMyCat' égale à une fonction qui loggue `'Mrrr'` dans la console 
+
+Logguez dans la console le premier endroit preféré de l'objet 'cat'.
+
+Logguez dans la console `'Mrrr'` grâce à la fonction 'petMyCat' de l'objet 'cat'.
+
+---
+
 Trouvez dans un tableau l'objet avec une certaine propriété:
 
 ```js
@@ -203,4 +214,5 @@ Créez une horloge qui logge le temps chaque seconde en format heures:minutes:se
 
 
 ## Reading List
++ [Eloquent JavaScript](https://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o)
 + [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch3.md)

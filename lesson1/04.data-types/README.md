@@ -66,6 +66,7 @@ Observez le type de la variable déduite par JS et expliquez dans un commentaire
 
 ## Reading List
 
++ [Eloquent JavaScript > Values, Types, and Operators](https://eloquentjavascript.net/01_values.html)
 + [You Don't Know JS > Data Types](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch1.md)
 + [You Don't Know JS > Types Conversion](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch4.md)
 + [You Don't Know JS > Strings](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#strings)

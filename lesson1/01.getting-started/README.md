@@ -36,6 +36,37 @@ Généralement la meilleure pratique est d'écrire le code et les commentaires e
 ![Coding in French](http://www.commitstrip.com/wp-content/uploads/2015/08/Strip-à-la-française-650-final.jpg)
 
 
+## Préparer l'espace de travail
+
+1. Installez [git](https://git-scm.com/book/fr/v2) sur votre ordinateur : <https://git-scm.com/book/fr/v2/Démarrage-rapide-Installation-de-Git>
+
+2. Connectez-vous sur <https://github.com>.
+
+3. [Créez un nouveau projet](https://help.github.com/articles/create-a-repo/) **privé** et **sans** README.md.
+
+4. Sur votre ordinateur allez dans un dossier où vous voulez placez votre projet à l'aide de [CLI](https://www.w3schools.com/whatis/whatis_cli.asp) :
+```
+cd path/to/your/folder/
+```
+
+5. Dans le dossier choisi clonez le projet Github `javascript-101-template` :
+```
+git clone https://github.com/anas7asia/javascript-101-template
+```
+
+6. Rentrez dans votre dossier :
+```
+cd javascript-101-template
+```
+
+7. Changez l'origin du projet en éxécutant les commandes suivantes une par une :
+```
+git remote rename origin upstream
+git remote add origin URL_TO_YOUR_GITHUB_REPO
+git push origin master
+```
+
+
 ## Code style
 
 ![Indent your code properly](http://www.commitstrip.com/wp-content/uploads/2013/02/Strips-Indentation-600-final.jpg)
@@ -50,9 +81,9 @@ Comment installer ESLint en local?
 
 1. Installez la dernière version de [NodeJS](https://nodejs.org/en/download/) sur votre ordinateur.
 
-2. Ouvrez le programme Terminal (Mac) ou Command Prompt (Windows) et allez à la racine de ce projet avec la commande `cd`.
+2. *(Optionnel si vous êtes déjà dans le bon dossier)* Ouvrez le programme Terminal (Mac) ou Command Prompt (Windows) et allez à la racine de votre projet avec la commande `cd`.
 ```
-cd /Users/yourname/path/to/project/javascript-101
+cd /Users/yourname/path/to/project/javascript-101-template
 ```
 
 3. La configuration de ce projet est déjà prête, il ne reste plus qu'à installer les dependences nécessaires avec la commande :
@@ -99,6 +130,7 @@ code .eslintrc
  "env": {
  "node": true,
  "es6": true,
+ "jquery": true,
  "browser": true
  },
  "rules": { }

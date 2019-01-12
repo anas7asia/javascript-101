@@ -212,6 +212,7 @@ const res2 = randomize(myArr, 5) // returns [['k', 'f', 'a', 'b', 'j'], ['e', 'd
 
 ## Reading List
 
++ [Eloquent JavaScript > Data Structures](https://eloquentjavascript.net/04_data.html)
 + [You Don't Know JS > Arrays](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#arrays)
 + [You Don't Know JS > Array-Likes](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#array-likes)
 + [You Don't Know JS > Loop](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#loops)

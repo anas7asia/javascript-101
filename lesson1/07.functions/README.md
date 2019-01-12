@@ -154,6 +154,7 @@ Copiez collez le code du calculateur de BMI que vous avez créé puis refactoris
 ​
 ## Reading List
 
++ [Eloquent JavaScript > Functions](https://eloquentjavascript.net/03_functions.html)
 + [Principles To Code By](https://medium.com/dailyjs/principles-to-code-by-3c516ad61fcc)
 + [You don't know JS > Hoisting](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch4.md)
 + [You don't know JS > Scope](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch1.md#review-tldr)

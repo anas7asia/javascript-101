@@ -159,6 +159,7 @@ Loggez le résultat: 'Your BMI is $insert_bmi_value_here. It is $insert_the_resu
 
 ## Reading List
 
++ [Eloquent JavaScript > Conditions](https://eloquentjavascript.net/02_program_structure.html#h_wpz5oi2dy7)
 + [You Don't Know JS > Conditions](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#conditionals)
 + [You Don't Know JS > Operators precedence](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch5.md#operator-precedence)
 
