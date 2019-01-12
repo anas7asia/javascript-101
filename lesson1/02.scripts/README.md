@@ -5,7 +5,7 @@
 + [w3schools](https://www.w3schools.com/tags/tag_script.asp)
 + [JavaScript.info](http://javascript.info/hello-world)
 
-Dans votre code HTML créez une balise 'script' interne.
+Créez une page HTML. Dans votre code HTML créez une balise 'script' interne.
 
 ```html
 <!DOCTYPE html>
@@ -24,10 +24,7 @@ Dans votre code HTML créez une balise 'script' interne.
 
 ---
 
-+ Insérez le script `before-render.js` qui doit être téléchargé et exécuté avant que le navigateur commence le rendu de la page.
-+ Insérez le script `after-render.js` qui doit être téléchargé et exécuté après que la navigateur ait terminé le rendu de la page.
-+ Insérez le script `whenever.js` qui doit être téléchargé et exécuté à n'import quel moment du rendu de la page par le navigateur.
-+ Si le navigateur de l'utilisateur de votre site n'a pas JavaScript d'activé, montrez-lui une bannière "Pour accéder à toutes les fonctionnalités de notre site vous avez besoin de JavaScript".
+Créez une page HTML :
 
 ```html
 <!DOCTYPE html>
@@ -52,7 +49,14 @@ Dans votre code HTML créez une balise 'script' interne.
 </html>
 ```
 
-## async et defer
++ Insérez le script `before-render.js` qui doit être téléchargé et exécuté avant que le navigateur commence le rendu de la page.
++ Insérez le script `after-render.js` qui doit être téléchargé et exécuté après que la navigateur ait terminé le rendu de la page.
++ Insérez le script `whenever.js` qui doit être téléchargé et exécuté à n'import quel moment du rendu de la page par le navigateur.
++ Si le navigateur de l'utilisateur de votre site n'a pas JavaScript d'activé, montrez-lui une bannière "Pour accéder à toutes les fonctionnalités de notre site vous avez besoin de JavaScript".
+
+
+
+<!-- ## async et defer
 
 1. Quel script est téléchargé en premier?
 ```html
@@ -75,7 +79,7 @@ Dans votre code HTML créez une balise 'script' interne.
 4. Quel script est téléchargé en premier?
 ```html
 <script async src="./small-script.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script> -->
 ```
 
 ## Reading List

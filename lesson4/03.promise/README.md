@@ -74,7 +74,7 @@ En cas d'erreur, laissez le formulaire comme il est et montrez en rouge l'erreur
 
 ### Quatrième page
 
-Créez un champ de recherche de gifs. Après chaque changement de la valeur du champs (et si sa longeur est superieure à 3), cherchez et affichez les gifs avec le mot clé saisit. 
+Créez un champ de recherche de gifs. Après chaque changement de la valeur du champs (et si sa longeur est supérieure à 3), cherchez et affichez les gifs avec le mot clé saisit. 
 
 Le nombre maximum de gifs retournés ne doit pas depasser 10. S'il y a plus de 10 gifs trouvés, affichez la [pagination](https://getbootstrap.com/docs/4.1/components/pagination/).
 

@@ -155,7 +155,7 @@ Triez le tableau `[0, 1, 2, 3, 4, 5, 6, 7]` avec une boucle `for` pour obtenir q
 
 ![While loop](https://i.ibb.co/gFGS4hy/while-loop.jpg)
 
-Dans une boucle [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) augmenter la variable `index` de 3. Si la valeur de `index` est superieure à 10, arretez l'augmetation. Attention de ne pas créer une boucle infinie 😱
+Dans une boucle [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) augmenter la variable `index` de 3. Si la valeur de `index` est supérieure à 10, arretez l'augmetation. Attention de ne pas créer une boucle infinie 😱
 
 ---
 

@@ -1,3 +1,3 @@
-# Initiation à la librarie JQuery
+# Initiation à l'AJAX
 
-![Lib](http://www.commitstrip.com/wp-content/uploads/2015/05/Strip-La-tron%C3%A7onneuse-650-final.jpg)
+![Callbacks](https://www.commitstrip.com/wp-content/uploads/2017/05/Strip-Timeout-JS-650-finalV2.jpg)

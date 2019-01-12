@@ -1,3 +1,3 @@
-# Les modeles BOM, DOM et la gestion des événements
+# Concepts de base de JavaScript
 
-![Evil devs](https://www.commitstrip.com/wp-content/uploads/2017/02/Strip-Code-le-650-final-1.jpg )
+![Infinite duel](http://www.commitstrip.com/wp-content/uploads/2014/01/Strips-Duel-675-Final2.jpg)

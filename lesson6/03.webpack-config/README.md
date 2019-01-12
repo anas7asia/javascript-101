@@ -254,7 +254,7 @@ Les scripts `vendor`, `scripts` et `contact-form` sont chargé sur la page `cont
 
 ### Images
 
-Pour diminuer le nombre de requêtes envoyées on peut transformer les toutes petites images [en Base64 URL](https://stackoverflow.com/questions/11736159/advantages-and-disadvantages-of-using-base64-encoded-images) parce que le poids d'header est superieur au poids de l'image elle-même.
+Pour diminuer le nombre de requêtes envoyées on peut transformer les toutes petites images [en Base64 URL](https://stackoverflow.com/questions/11736159/advantages-and-disadvantages-of-using-base64-encoded-images) parce que le poids d'header est supérieur au poids de l'image elle-même.
 
 Grandes images doivent être optimisées en poids. Reduisez leurs poids automatiqument sans perdre en qualité avec Webpack.
 

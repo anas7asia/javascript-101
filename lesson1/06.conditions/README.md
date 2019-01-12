@@ -152,8 +152,8 @@ Utilisez la méthode prompt pour récevoir les données nécessaires.
 Pour calculer le BMI utilisez la formule suivante: poids / ((hauteur / 100) * (hauteur / 100)).
 Ecrivez une construction `if` pour trouver le résultat:
 Si l'indice est inférieur à 18.5, le résultat est 'considered underweight';
-Si l'indice est égal ou superieur à 18.5 ET égal ou inférieur à 25, le résultat est 'a healthy weight';
-Si l'indice est superieur à 25, le résultat est 'considered underweight';
+Si l'indice est égal ou supérieur à 18.5 ET égal ou inférieur à 25, le résultat est 'a healthy weight';
+Si l'indice est supérieur à 25, le résultat est 'considered underweight';
 
 Loggez le résultat: 'Your BMI is $insert_bmi_value_here. It is $insert_the_result_here. This test is not the most reliable, but if you are concerned about the result, check it with your doctor.'
 

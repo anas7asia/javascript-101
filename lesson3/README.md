@@ -1,3 +1,3 @@
-# Initiation à l'AJAX
+# JavaScript et HTML5
 
-![Callbacks](https://www.commitstrip.com/wp-content/uploads/2017/05/Strip-Timeout-JS-650-finalV2.jpg)
+![Job](http://www.commitstrip.com/wp-content/uploads/2014/04/Strips-Recrutement-codeur-600-final.jpg)
