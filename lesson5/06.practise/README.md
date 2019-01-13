@@ -1,15 +1,17 @@
 
 # Projet en jQuery
 
-Créez un site d'un chateau viticole bordelais Fauxvin qui aimerait vendre ses produits. 
+Créez un site du chateau viticole bordelais Fauxvin qui aimerait vendre ses produits. 
+
 En haut de chaque page mettez un header avec les liens de navigation vers les autres pages du site.
-En bas de chaque page mettez un footer avec la marque déposée et les date d'existance du site: à partir de l'année 2000 jusque l'année en cours (2000-2019).
+
+En bas de chaque page mettez un footer avec la marque déposée et l'année en cours (2019).
 
 ### Première page
 
 #### Présentation du produit.
 
-Installez un carousel pour montrer 5 photos et leurs titres par dessus. Ces photos doivent defiler chaque 7 seconde à la vitesse de 500 millisecondes.
+Installez un carousel pour montrer 5 photos et leurs titres par dessus. Ces photos doivent defiler toutes les 7 secondes à la vitesse de 500 millisecondes.
 
 Les plugins à utiliser: [slick](http://kenwheeler.github.io/slick/) ou [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
 
@@ -40,7 +42,7 @@ const carouselItems = [
 
 #### Histoire du chateau
 
-Affichez l'histoire du chateau en forme du simple texte.
+Affichez l'histoire du chateau avec des balises `<p>`.
 
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In diam mauris, semper et tincidunt sed, interdum in est. Nam fermentum elementum augue in sollicitudin. Vestibulum lectus felis, mattis eu condimentum sit amet, laoreet a sem. Aliquam elementum ac purus convallis blandit. Maecenas consequat est sapien, eu porta tellus semper ac. Praesent mattis nibh risus. Sed lobortis metus varius convallis facilisis. Suspendisse sed nunc id dolor posuere molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec quam libero, sagittis id facilisis id, commodo tincidunt augue. Praesent gravida tellus erat, sed convallis urna vestibulum eget. Aenean suscipit, massa finibus pellentesque vulputate, enim nunc dapibus justo, ac pellentesque quam augue eget nulla. Vivamus ac lacus nec orci euismod semper.
@@ -100,7 +102,7 @@ En bas de la page mettez une flèche pour remonter tout en haut de la page à l'
 
 ### Deuxième page
 
-Créez un formulaire de contacte qui comprend les champs suivants :
+Créez un formulaire de contact qui comprend les champs suivants :
 
 + nom
 + prénom
@@ -117,28 +119,6 @@ N'oubliez pas d'ajouter un header `Accept` égal à `application/json` à votre 
 
 
 ### Troisième page
-
-Créez un calculateur de prix d'une commande de vin.
-
-Chateau Fauxvin a deux marques de son vin: Fauxvin Un et Fauxvin Deux. 
-
-Affichez ces deux marques, pour chaque marque affichez tous ces vins: l'année, le prix et un champ de formulaire du type nombre pour renseigner le nombre de bouteilles souhaités.
-
-On peux commander autant de bouteilles de différentes années et de differentes marques qu'on souhaite.
-
-Le prix de livraison est 19 € pour moins de 6 bouteilles, gratuit à partir de 6 bouteillles.
-
-A chaque changement de la quantité de bouteilles, calculez le prix total du vin choisi, le nombre de bouteilles et le prix de livraison:
-```
-Total de votre commande : $totalPrice.
-$winePrice euros de vin (soit $bottlesCount bouteilles)
-$deliveryPrice euros de frais de port / Frais de port offerts
-```
-
-Si aucun vin est choisi, activez l'attribut `disabled` du bouton de soumission du formulaire.
-
-
-Nom et adresse de livraison ainsi que paiement sont gérés par le service [Stripe](https://stripe.com/docs/stripe-js/reference).
 
 ```js
 const products = [
@@ -168,5 +148,31 @@ const products = [
   }
 ]
 ```
+
+Créez un calculateur de prix d'une commande de vin.
+
+Chateau Fauxvin possède deux type de vin : Fauxvin Un et Fauxvin Deux. 
+
+Affichez ces deux types dans deux blocs séparés (l'un au dessus de l'autre).
+
+Chaque bloc contiendra le nom du type de vin et la liste des bouteilles disponibles pour ce type. Chaque bouteille a les atributs : année, prix et champ de formulaire (de type nombre) pour renseigner le nombre de bouteilles souhaitées.
+
+On peux commander autant de bouteilles de différentes années et de differentes types qu'on souhaite.
+
+Le prix de livraison est 19 € pour moins de 6 bouteilles, gratuit à partir de 6 bouteillles.
+
+A chaque changement de la quantité de bouteilles, calculez le prix total frais de port compris `$totalPrice`, le prix total de toutes les bouteilles `$winePrice`, le nombre de bouteilles `$bottlesCount`, le prix de livraison `$deliveryPrice` et affichez le texte suivant en-dessous de deux blocs :
+```
+Total de votre commande : $totalPrice.
+$winePrice euros de vin (soit $bottlesCount bouteilles)
+$deliveryPrice euros de frais de port / Frais de port offerts
+```
+
+Si aucun vin n'est choisi, activez l'attribut `disabled` du bouton de soumission du formulaire.
+
+## Pour aller plus loin
+
+Afin de passer la commande utilisez le service [Stripe](https://stripe.com/docs/stripe-js/reference) qui gère le nom et adresse de livraison ainsi que le paiement.
+
 
 

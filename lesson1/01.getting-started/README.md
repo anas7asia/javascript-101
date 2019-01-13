@@ -51,7 +51,7 @@ cd path/to/your/folder/
 
 5. Dans le dossier choisi clonez le projet Github `javascript-101-template` :
 ```
-git clone https://github.com/anas7asia/javascript-101-template
+git clone https://github.com/anas7asia/javascript-101-template.git
 ```
 
 6. Rentrez dans votre dossier :
@@ -62,10 +62,11 @@ cd javascript-101-template
 7. Changez l'origin du projet en éxécutant les commandes suivantes une par une :
 ```
 git remote rename origin upstream
-git remote add origin URL_TO_YOUR_GITHUB_REPO
-git push origin master
+git remote add origin URL_TO_YOUR_GITHUB_REPO.git
+git push -u origin master
 ```
 
+8. Ajoutez l’utilisateur `anas7asia` en tant que collaborateur: https://github.com/anas7asia/YOUR_PROJECT_NAME/settings/collaboration
 
 ## Code style
 

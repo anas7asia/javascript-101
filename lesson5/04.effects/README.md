@@ -29,7 +29,7 @@ Affichez l'alerte si le bouton `#js-show-alert` est cliqué. Cachez-la si le bou
 ```
 Utilisez le HTML ci-dessus.
 Si le bouton radio 'Jedi' est sélectionné, montrez l'alerte. Si ce bouton n'est plus sélectionné, cachez-la.
-(Utilisez la méthode `toggle` pour faire cela)
+(Pour cela utilisez la méthode `toggle`)
 
 ### slide
 
@@ -55,6 +55,7 @@ Utilisez les méthodes `slideUp`, `slideDown` ou `slideToggle` pour afficher/cac
 <button id="js-show-disappearing-alert">Show alert</button>
 ```
 Utilisez le HTML ci-dessus.
+
 Cliquez sur le bouton pour que l'alerte aparesse avec l'animation fondu (fade in) en 400 millisecondes. 3 secondes après l'apparition, faites disparaître l'alerte en 600 millisecondes.
 
 Utilisez les méthodes `fadeIn`, `fadeOut` et le principe de callback.
@@ -69,7 +70,8 @@ Utilisez les méthodes `fadeIn`, `fadeOut` et le principe de callback.
 ```
 
 Utilisez le HTML ci-dessus.
-Après le rendu de la page tous les `<div>` ont l'opacité de 30%. Quand un `<div>` est cliqué dessus, son opacité monte à 100%. Quand un autre `<div>` est cliqué, son opacité monte à 100% et l'opacité de tous les autres divs descend de nouveau à 30%.
+
+Après le rendu de la page tous les `<div>` ont l'opacité de 30%. Quand un `<div>` est cliqué, son opacité monte à 100%. Quand un autre `<div>` est cliqué, son opacité monte à 100% et l'opacité de tous les autres divs descend de nouveau à 30%.
 
 Utilisez la méthode `fadeTo`.
 
@@ -88,17 +90,17 @@ Appliquez une animation au div `#js-animation-1`: ce `<div>` se deplace à 300px
 
 ---
 
-Créez un `<div>` de taille 5rem sur 5rem et un bouton qui déclenche ces animations :
-1. L'hauteur et la longeur du div enlargissent jusque 8rem en 500 millisecondes.
-2. Ensuite le div bouge à 10rem du gauche et 5rem du haut de sa position actuelle en 700 millisecondes.
-3. Ensuite l'opacité du div tombe à 50% en 300 millisecondes.
-4. Ensuite la bordure du div enlargisse jusque 5 pixels en 400 milisecondes.
+Créez un `<div>` de taille `5rem` sur `5rem` et un bouton qui déclenche les animations suivantes :
+1. La hauteur et la longeur du div s'elargissent jusque 8rem en 500 millisecondes.
+2. Ensuite le div se deplace à `10rem` vers la droite et 5rem vers le bas par rapport à sa position actuelle en 700 millisecondes.
+3. Ensuite l'opacité du div descend à 50% en 300 millisecondes.
+4. Ensuite la largeur de la bordure du div passe de 0 à 5 pixels en 400 milisecondes.
 
-Créez un autre bouton qui arrete l'animation en cours et annule tous les autres animations.
+Créez un autre bouton qui arrete l'animation en cours et annule toutes les autres animations.
 
 ---
 
-Voilà quatre `<div>`.
+Voici quatre `<div>`.
 
 ```html
 <div class="animated" id="js-animated-1"></div>
@@ -138,4 +140,4 @@ function getRandomNumber(max) {
 }
 ```
 
-Sélectionnez tous les divs animés et changez leur couleur du fond.
+Créez une fonction qui sélectionne tous les divs animés et change leur couleur de fond.

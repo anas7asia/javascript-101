@@ -23,13 +23,13 @@ Utilisez les méthodes `text`, `html`, `val`, `attr` pour travailler avec le HTM
 <input type="text" id="js-search" placeholder="Search something..." value="Poodles">
 ```
 
-Récupérez et loggez le contenu du titre de la page.
+Récupérez et loggez dans la console le contenu du titre de la page.
 
 ---
 Changez le contenu du titre de la page à `'My page title'`.
 
 ---
-Récupérez et loggez le HTML de l'article.
+Récupérez et loggez dans la console le HTML de l'article.
 
 ---
 Changez le contenu de l'article à 
@@ -41,24 +41,24 @@ Changez le contenu de l'article à
 ```
 
 ---
-Récupérez et loggez la valeur du champ de saisie avec l'id `js-search`.
+Récupérez et loggez dans la console la valeur du champ de saisie avec l'id `js-search`.
 
 ---
 Changez la valeur du champ de saisie à `'Beagles'`
 
 ---
-Récupérez et loggez la valeur de placeholder du champ de saisie.
+Récupérez et loggez dans la console la valeur du placeholder du champ de saisie.
 
 ---
-Changez la valeur de placeholder du champ de saisie à `'Search'`
+Changez la valeur du placeholder du champ de saisie à `'Search'`
 
 ---
-Ajoutez un attribut `data-article-id` avec la valeur `1` à l'article avec l'id `js-article`. Savoir plus sur les attributs de données: [https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
+Ajoutez un attribut `data-article-id` avec la valeur `1` à l'article avec l'id `js-article`. Pour en savoir plus sur les attributs de données: [https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
 
 ---
-Récupérez et loggez la valeur de l'attribut `data-article-id` que vous venez d'ajouter.
+Récupérez et loggez dans la console la valeur de l'attribut `data-article-id` que vous venez d'ajouter.
 
-## Insérer/supprimier du contenu
+## Insérer/supprimer du contenu
 
 Utilisez les méthodes `append`, `prepend`, `before`, `after`, `remove`, `empty` pour travailler avec le HTML suivant.
 
@@ -86,7 +86,7 @@ Dans la balise `<div>` de l'article `#js-article-1` ajoutez un autre paragraphe 
 
 ---
 
-*Après* le premier paragraphe (entre les deux paragraphes) de l'article `js-article-1` ajoutez un [image](https://cdn.pixabay.com/photo/2018/03/28/16/23/cute-3269715__340.jpg).
+*Après* le premier paragraphe (entre les deux paragraphes) de l'article `js-article-1` ajoutez une [image](https://cdn.pixabay.com/photo/2018/03/28/16/23/cute-3269715__340.jpg).
 
 ---
 
@@ -132,7 +132,7 @@ Vérifiez si le `<div>` possède déjà la classe `'alert-warning'`. Si oui, sup
 En cliquant sur le bouton `#js-btn`, basculez la classe `'alert-success'`: premier clique ajoute la classe, deuxième clique l'enlève, troisième l'ajoute de nouveau, etc.
 
 ---
-Récupérez et loggez la couleur du fond du bouton.
+Récupérez et loggez dans la console la couleur du fond du bouton.
 
 ---
 Passez la couleur du fond du bouton en `#71b8af`.

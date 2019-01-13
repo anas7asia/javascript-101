@@ -5,8 +5,8 @@
 
 ## Evénements de souris
 
-Créez un bouton. Si ce bouton est cliqué, loggez `'Clicked!'`.
-Si ce bouton est cliqué plus que 5 fois, enlevez son écouteur de l'événement 'click'.
+Créez un bouton. Si ce bouton est cliqué, loggez dans la console `'Clicked!'`.
+Si ce bouton est cliqué plus de 5 fois, enlevez son écouteur d'événement 'click'.
 
 ---
 Créez un div bleu. Si on le survole, il passe en vert. Si on sort le curseur du div, il redevient bleu. 
@@ -14,7 +14,7 @@ Utilisez les méthodes `mouseenter`, `mouseleave` ou `hover`.
 
 ---
 
-Desactivez le comportement par defaut du click du bouton droit de la souris sur toute la page. Si le bouton a été cliqué, vérifiez si le comportement par defaut est desactivé. Dans ce cas-là, loggez `'You shall not pass'`
+Desactivez le comportement par defaut du click du bouton droit de la souris sur toute la page. Si le bouton a été cliqué, vérifiez si le comportement par defaut est desactivé. Dans ce cas-là, loggez dans la console `'You shall not pass'`
 
 ![Clicks not allowed](http://www.commitstrip.com/wp-content/uploads/2016/06/Strip-Les-codeurs-et-les-images-650-final-1.jpg)
 
@@ -31,21 +31,21 @@ Desactivez le comportement par defaut du click du bouton droit de la souris sur 
 </form>
 ```
 
-Si le champs de saisie `#js-input` est mis en avant passez la couleur de sa bordure en bleu.
+Si le champ de saisie `#js-input` est mis en avant passez la couleur de sa bordure en bleu.
 Si ce champ n'est plus mis en avant et reste vide, passez la couleur de sa bordure en rouge.
 
 ---
 
-Associez *d'un coup* les trois événements: 'keyup', 'keydown', 'keypress' - au champ de saisie. Si un d'eux est déclenché, loggez le code de la touche appuyée.
+Associez *d'un coup* les trois événements: 'keyup', 'keydown', 'keypress' - au champ de saisie. Si l'un d'eux est déclenché, loggez dans la console le code de la touche appuyée.
 
 ---
 
-Si le bouton radio 'Cat' a été choisi, loggez `'Go cats!'`
-Si le bouton radio 'Dog' a été choisi, loggez `'Go dogs!'`
+Si le bouton radio 'Cat' a été choisi, loggez dans la console `'Go cats!'`
+Si le bouton radio 'Dog' a été choisi, loggez dans la console `'Go dogs!'`
 
 ---
 
-A la soumission du formulaire, récupérez les valeurs de tous ces champs et loggez-les.
+A la soumission du formulaire, récupérez les valeurs de tous ces champs et loggez-les dans la console.
 
 ## Reading List
 

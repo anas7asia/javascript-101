@@ -6,7 +6,7 @@
 
 ## Document
 
-Loggez `'My page is ready'` quand le rendu de la page sera terminé.
+Logguez dans la console `'My page is ready'` quand le rendu de la page sera terminé.
 
 ## Selecteurs
 
@@ -50,7 +50,7 @@ Loggez `'My page is ready'` quand le rendu de la page sera terminé.
 </form>
 ```
 
-Quand le rendu de la page sera terminé, utilisez les selecteurs jQuery pour sélectionner et logger:
+Quand le rendu de la page sera terminé, utilisez les selecteurs jQuery pour sélectionner et logguer:
 
 + toutes les balises `<div>`
 + toutes les balises avec le nom de classe `js-paragraph`
