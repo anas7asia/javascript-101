@@ -54,7 +54,9 @@ Version | Année | Déscription
 
 Même si ES6 n'est pas supporté dans 100% de navigateurs, il est fortement conseillé de l'utiliser. Il y a des outils spéciaux pour le *transpiler* (transformer) en ES5. Comme il est possible de profiter de toutes les nouvelles fonctionnalités et le code marche sur tous les navigateurs modernes.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=EUAmiIsp2YU" target="_blank"><img src="http://img.youtube.com/vi/EUAmiIsp2YU/0.jpg" alt="JavaScript History" width="400" height="auto" border="3" /></a>
+<!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=EUAmiIsp2YU" target="_blank"><img src="http://img.youtube.com/vi/EUAmiIsp2YU/0.jpg" alt="JavaScript History" width="400" height="auto" border="3" /></a> -->
+
+[![JavaScript History](https://img.youtube.com/vi/EUAmiIsp2YU/0.jpg)](https://www.youtube.com/watch?v=EUAmiIsp2YU)
 
 ## JavaScript dans le navigateur (client)
 
