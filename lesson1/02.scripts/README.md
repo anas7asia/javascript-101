@@ -80,7 +80,7 @@ Créez une page HTML :
 ```html
 <script async src="./small-script.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script> -->
-```
+
 
 ## Reading List
 
