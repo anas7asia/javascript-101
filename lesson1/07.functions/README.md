@@ -83,7 +83,7 @@ console.log(count2) // accessible here ?
 ```
 > Préférez toujours les variables locales
 
-## Fonctions pures et impures
+<!-- ## Fonctions pures et impures
 
 Une fonction pure est
 ​
@@ -103,7 +103,7 @@ function calcPrice(price, qty) {
 calcPrice(14, 3);
 ```
 
-> Quand vous pouvez, créez toujours les fonctions pures
+> Quand vous pouvez, créez toujours les fonctions pures -->
 
 ## Fonctions ES6
 
@@ -127,7 +127,7 @@ numbers.sort(function(a, b) {
 })
 ```
 
-## Hoisting
+<!-- ## Hoisting
 
 Expliquez dans un commentaire quelles expressions sont ["hoisted"](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) et quand on peut les appeler.
 
@@ -146,7 +146,7 @@ function multiply(a, b) {
 
 multiply(3, 4); // what's happening here?
 sum(2, 2); // what's happening here?
-```
+``` -->
 
 ## Pour aller plus loin
 

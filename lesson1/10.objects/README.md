@@ -6,14 +6,14 @@
 1. Créez un objet avec les valeurs suivantes: id = 1, name = Jeremy, email = jeremy@ynov.com.
 2. Loggez l'id de cet objet avec un point.
 3. Loggez l'id de cet objet avec les crochets.
-4. Déclarez une variable avec la valeur 'name'. Accédez à la propriété 'name' de votre objet par cette variable et les crochets.
+4. Déclarez une variable avec la valeur 'name'. Accédez à la propriété 'name' de votre objet par cette variable et les crochets [].
 5. Changez la valeur d'id dans votre objet à 2.
 6. Ajoutez à votre objet une nouvelle propriété 'human' de valeur `true`.
 7. Changez la valeur de la propriété 'email' à `undefined`.
-8. Supprimez complètement la propriété 'email'.
-9. Vérifiez si votre objet [a](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) la propriété 'email'/'human'
+<!-- 8. Supprimez complètement la propriété 'email'. -->
+<!-- 9. Vérifiez si votre objet [a](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) la propriété 'email'/'human' -->
 
----
+<!-- ---
 
 Refactorisez ce code pour ne plus utiliser la même référence et pouvoir modifier `myObj2` sans modifier `myObj`.
 Utilisez la métode `Object.create()` ou l'opérateur spread `...`
@@ -24,7 +24,7 @@ const myObj2 = myObj;
 myobj2['name'] = 'Paul';
 console.log(myObj2) // { name: 'Paul' } - What the heck?
 console.log(myObj) // { name: 'Paul' }
-```
+``` -->
 
 ---
 
@@ -58,7 +58,7 @@ const cart = [
 findObjectByProperty('hobby', 'Snowboard') // returns { name: 'Mathieu', age: 18, hobby: 'Snowboard'}
 findObjectByProperty('age', 22) // returns { name: 'Claire', age: 22, hobby: 'Gaming'}
 ```
----
+<!-- ---
 
 Calculez le prix total avec la boucle [For...In](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
 
@@ -68,13 +68,13 @@ const cart = [
   { item: 'y', price: 7, quantity: 5 },
   { item: 'z', price: 4, quantity: 2 },
 ]
-```
+``` -->
 
 ---
 
 Calculez le prix total d'achat avec `.reduce()`, `.forEach()` ou `.map()`. 
-Doublez le prix de chaque élément du tableau. 💰💰💰 
-Trouvez le nouveau prix total. 
+<!-- Doublez le prix de chaque élément du tableau. 💰💰💰 
+Trouvez le nouveau prix total.  -->
 
 ```js
 const cart = [
@@ -84,7 +84,7 @@ const cart = [
 ]
 ```
 
----
+<!-- ---
 
 Trouvez tous les produits qui sont plus chers que 10€.
 
@@ -96,7 +96,7 @@ const cart = [
   { item: 'd', quantity: 4, price: 5 },
   { item: 'e', quantity: 5, price: 23 },
 ]
-```
+``` -->
 
 ---
 

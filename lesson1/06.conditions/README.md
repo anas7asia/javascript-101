@@ -13,19 +13,19 @@
 ​
 + Ecrivez en ligne de code un moyen de vérifier si 2 est supérieur à 1.
 + Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 1.
-+ Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 5.
+<!-- + Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 5. -->
 + Ecrivez en ligne de code un moyen de vérifier si 20 est supérieur ou égal à 10.
 + Ecrivez en ligne de code un moyen de vérifier si 10 est supérieur ou égal à 10.
 + Ecrivez en ligne de code un moyen de vérifier si 5 est inférieur ou égal à 10.
 + Ecrivez en ligne de code un moyen de vérifier si 4 n'est pas égal à 6.
-+ Ecrivez en ligne de code un moyen de vérifier si '5' converti en nombre n'est pas égal à 5.
-+ Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité simple.
+<!-- + Ecrivez en ligne de code un moyen de vérifier si '5' converti en nombre n'est pas égal à 5. -->
+<!-- + Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité simple. -->
 + Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité stricte.
 + Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas égal à '0'.
-+ Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas strictement égal à '0'.
+<!-- + Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas strictement égal à '0'. -->
 + Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'hello'.
 + Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'Hello'.
-+ Ecrivez en ligne de code un moyen de vérifier si `'true'` est égal à `true`.
+<!-- + Ecrivez en ligne de code un moyen de vérifier si `'true'` est égal à `true`. -->
 
 ## If ... Else
 
@@ -35,7 +35,7 @@ Ecrivez en ligne de code un moyen de vérifier si `5` est supérieur à 0 ET inf
 
 Ecrivez en ligne de code un moyen de vérifier si `20` divisé par `2` est supérieur ou égal à 10 OU inférieur à 15 dans la même expression. Si vrai, loggez `'Yes'`, sinon loggez `'No'`.
 
----
+<!-- ---
 
 Un groupe peut être publique ou privé. Un utilisateur peut accéder au contenu d’un groupe si ce groupe est publique ou si le groupe est privé mais qu’il est membre ce groupe.
 ​
@@ -56,13 +56,13 @@ let isMember = false;
 let isPrivate = true;
 let isMember = true;
 
-```
+``` -->
 
 ## Vrai ou faux?
 
 ![null comparisons](https://i.ibb.co/99xX5c7/comparisons.png)
 
-Assignez à une variable chaque valeur suivante précédé par l'opérateur `!`. Observez comment il transforme les valeurs.
+<!-- Assignez à une variable chaque valeur suivante précédé par l'opérateur `!`. Observez comment il transforme les valeurs.
 Expliquez dans un commentaire pourquoi on utilise cet opérateur.
 ```js
 '', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World'}, {}, [1, 2, 3], []
@@ -84,12 +84,12 @@ Expliquez dans un commentaire pourquoi on utilise cet opérateur.
 '', '0', 1, 0, undefined, null, NaN, 'Hello World', {hello: 'World'}, {}, [1, 2, 3], []
 ```
 
----
+--- -->
 
 Demandez à l’utilisateur de se présenter avec la méthode [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt). Si le prénom est saisi, [alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) 'Nice to meet you $username ($username est le prénon saisi)!', sinon alert 'Don't be shy!'
-Utilisez l'opérateur `!!`.
+<!-- Utilisez l'opérateur `!!`. -->
 
----
+<!-- ---
 
 Testez les valeurs suivantes dans la construction `if`. Lesquelles sont TRUTHY et lesquelles sont FALSY? 
 ```js
@@ -98,7 +98,7 @@ Testez les valeurs suivantes dans la construction `if`. Lesquelles sont TRUTHY e
 // List falsy values here:
 ```
 
-Copiez collez le code de la tâche ("Demandez à l’utilisateur de se présenter...") puis refactorisez-le pour vérifier que la valeur saisie est simplement truthy/falsy.
+Copiez collez le code de la tâche ("Demandez à l’utilisateur de se présenter...") puis refactorisez-le pour vérifier que la valeur saisie est simplement truthy/falsy. -->
 
 ## Nested if
 
@@ -117,7 +117,7 @@ Si un utilisateur est un 'website owner' loggez 'Hello powerful'.
 
 Copier coller le code de la tâche précédante puis refactorisez-le pour utiliser l'instruction [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 
----
+<!-- ---
 
 Obtenez le jour de la semaine avec l'objet [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) et sa méthode `getDay`.
 Utilisez l'instruction `switch` pour traduire les jours de la semaine en français. 
@@ -125,13 +125,13 @@ En JavaScript, le premier jour de la semaine est dimanche 😉.
 ```js
 const today = new Date();
 const todayDay = today.getDay();
-```
----
+``` -->
+<!-- ---
 
 Obtenez le mois en cours toujours avec l'objet Date.
-Utilisez l'instruction `switch` avec le regroupement des cas pour dire dans quelle saison on se trouve: hiver, été ou mi-saison.
+Utilisez l'instruction `switch` avec le regroupement des cas pour dire dans quelle saison on se trouve: hiver, été ou mi-saison. -->
 
-## Opérateur ternaire
+<!-- ## Opérateur ternaire
 
 Utilisez l'opérateur ternaire pour effectuer l'opération suivante:
 Si l'id du client est valide, sauvegarder ces achats dans la base de données (ou juste loggez 'Saved'). Sinon loggez 'Cancel'.
@@ -143,7 +143,7 @@ Un utilisateur arrive sur votre site web. Si c'est sa première fois ici, vous d
 ```js
 const isFirstTimeHere = true; // ou false
 const isCookiesVisible = // use ternary operator here to assign value to isCookiesVisible variable
-```
+``` -->
 
 ## Pour aller plus loin
 

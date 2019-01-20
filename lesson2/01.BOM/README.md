@@ -39,22 +39,22 @@ Affichez sur la page:
 + l'adresse (racine) de la page
 + les [query params](https://en.wikipedia.org/wiki/Query_string) s'ils sont présents, sinon affichez 'No query params'
 
----
+<!-- ---
 
-Créez une fonction qui trouve le nom du sous-domaine d'un site (ou retourne null s'il n'y a pas). Pour faciliter la tâche prenez directement le nom d'hôte et découpez cette chaîne de caractères.
+Créez une fonction qui trouve le nom du sous-domaine d'un site (ou retourne null s'il n'y a pas). Pour faciliter la tâche prenez directement le nom d'hôte et découpez cette chaîne de caractères. -->
 
----
+<!-- ---
 
 Créez une fonction qui génère un nombre aléatoire entre 0 et 10.
-Si le nombre est inférieur ou égal à 5, rafraîchissez complètement la page, sinon utilisez la méthode alert de l'objet `window`.
+Si le nombre est inférieur ou égal à 5, rafraîchissez complètement la page, sinon utilisez la méthode alert de l'objet `window`. -->
 
-## history
+<!-- ## history
 
 Créez une fonction pour pouvoir revenir à la page précédente.
 
 ---
 
-Créez une fonction pour pouvoir revenir à la page suivante.
+Créez une fonction pour pouvoir revenir à la page suivante. -->
 
 
 ## Reading List
