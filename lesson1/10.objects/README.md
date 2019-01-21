@@ -210,7 +210,7 @@ Affichez le jour de la semaine du 1 janvier 2005
 
 ---
 
-Créez une horloge qui logge le temps chaque seconde en format heures:minutes:secondes
+Créez une horloge qui loggue dans la console le temps chaque seconde en format heures:minutes:secondes
 
 
 ## Reading List

@@ -16,7 +16,7 @@
 <!-- + Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 5. -->
 + Ecrivez en ligne de code un moyen de vérifier si 20 est supérieur ou égal à 10.
 + Ecrivez en ligne de code un moyen de vérifier si 10 est supérieur ou égal à 10.
-+ Ecrivez en ligne de code un moyen de vérifier si 5 est inférieur ou égal à 10.
+<!-- + Ecrivez en ligne de code un moyen de vérifier si 5 est inférieur ou égal à 10. -->
 + Ecrivez en ligne de code un moyen de vérifier si 4 n'est pas égal à 6.
 <!-- + Ecrivez en ligne de code un moyen de vérifier si '5' converti en nombre n'est pas égal à 5. -->
 <!-- + Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité simple. -->

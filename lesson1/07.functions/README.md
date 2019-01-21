@@ -116,7 +116,7 @@ numbers.sort(function(a, b) {
 })
 ```
 
-## Expression de fonction  
+<!-- ## Expression de fonction  
 
 Refactorisez ce code pour utiliser une [expression de fonction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
 
@@ -125,7 +125,7 @@ const numbers = [4, 2, 5, 1, 3];
 numbers.sort(function(a, b) {
   return a - b;
 })
-```
+``` -->
 
 <!-- ## Hoisting
 
@@ -150,7 +150,9 @@ sum(2, 2); // what's happening here?
 
 ## Pour aller plus loin
 
-Copiez collez le code du calculateur de BMI que vous avez créé puis refactorisez-le pour utiliser les fonctions pures.
+Copiez collez le code du calculateur de BMI que vous avez créé puis refactorisez-le pour utiliser les fonctions.
+
+<!-- pures. -->
 ​
 ## Reading List
 
