@@ -151,7 +151,7 @@ Utilisez une autre boucle `for` pour augmenter de 1 chaque élément de ce nouve
 
 Triez le tableau `[0, 1, 2, 3, 4, 5, 6, 7]` avec une boucle `for` pour obtenir que des nombres impairs.
 
-<!-- ## Boucle while
+## Boucle while
 
 ![While loop](https://i.ibb.co/gFGS4hy/while-loop.jpg)
 
@@ -160,7 +160,7 @@ Dans une boucle [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 ---
 
 Pour avoir accès à votre site web, il faut saisir le mot de passe 'qwerty'.
-Continuez à demander utilisateur le mot de passe avec la méthode `prompt` jusqu'à ce qu'il soit correct. -->
+Continuez à demander utilisateur le mot de passe avec la méthode `prompt` jusqu'à ce qu'il soit correct.
 
 
 ## Pour aller plus loin
