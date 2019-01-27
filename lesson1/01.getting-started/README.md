@@ -38,6 +38,29 @@ Généralement la meilleure pratique est d'écrire le code et les commentaires e
 
 ## Préparer l'espace de travail
 
+<details>
+<summary>Utiliser GitHub Desktop</summary>
+
+1. Connectez-vous sur <https://github.com>.
+
+2. Installez [git](https://git-scm.com/book/fr/v2) sur votre ordinateur : <https://git-scm.com/book/fr/v2/Démarrage-rapide-Installation-de-Git>.
+
+3. Téléchargez et installez l'application Github Desktop : <https://desktop.github.com/>.
+
+4. Lancez l'application Github Desktop, connectez-vous avec votre compte GitHub.
+
+5. Créez un nouveau projet *privé* et publiez-le.
+
+6. Ajoutez l’utilisateur `anas7asia` en tant que collaborateur: https://github.com/YOUR_USER_NAME/YOUR_PROJECT_NAME/settings/collaboration
+
+> A la fin de chaque cours n'oubliez pas de [faire un commit et l'envoyer sur le serveur GitHub](https://help.github.com/desktop/guides/contributing-to-projects/committing-and-reviewing-changes-to-your-project/).
+
+</details>
+
+
+<details>
+<summary>Utiliser git avec CLI</summary>
+
 1. Installez [git](https://git-scm.com/book/fr/v2) sur votre ordinateur : <https://git-scm.com/book/fr/v2/Démarrage-rapide-Installation-de-Git>
 
 2. Connectez-vous sur <https://github.com>.
@@ -59,14 +82,25 @@ git clone https://github.com/anas7asia/javascript-101-template.git
 cd javascript-101-template
 ```
 
-7. Changez l'origin du projet en éxécutant les commandes suivantes une par une :
+7. Changez l'origin du projet en éxécutant les commandes suivantes une par une. **Attention**, utilisez l'adresse du projet que vous venez de créer au lieu de *URL_TO_YOUR_GITHUB_REPO.git*
 ```
 git remote rename origin upstream
 git remote add origin URL_TO_YOUR_GITHUB_REPO.git
 git push -u origin master
 ```
 
-8. Ajoutez l’utilisateur `anas7asia` en tant que collaborateur: https://github.com/anas7asia/YOUR_PROJECT_NAME/settings/collaboration
+8. Ajoutez l’utilisateur `anas7asia` en tant que collaborateur: https://github.com/YOUR_USER_NAME/YOUR_PROJECT_NAME/settings/collaboration
+
+
+A la fin de chaque cours n'oubliez pas de faire un commit et l'envoyer sur le serveur GitHub
+```
+// dans votre projet
+git add .
+git commit -m "YOUR COMMIT NAME"
+git push origin master
+```
+</details>
+
 
 ## Code style
 
@@ -91,6 +125,8 @@ cd /Users/yourname/path/to/project/javascript-101-template
 ```
 npm install
 ```
+
+4. Installez le plugin ESLint dans votre IDE.
 
 <details>
 <summary>
