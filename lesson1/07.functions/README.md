@@ -36,7 +36,7 @@ const loveIt5 = toCelsius(17);
 >
 > from [3 Key Software Principles You Must Understand](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161)
 
-![Super function](http://www.commitstrip.com/wp-content/uploads/2014/12/La-fonctoin-utile-650-finalenglish.jpg)
+![Super function](http://www.commitstrip.com/wp-content/uploads/2014/12/La-fonctoin-utile-650-final.jpg)
 
 1. Créez une fonction qui log `'Hello World'`
 2. Créez une fonction qui retourne `'Hello World'`
@@ -116,7 +116,7 @@ numbers.sort(function(a, b) {
 })
 ```
 
-<!-- ## Expression de fonction  
+## Expression de fonction  
 
 Refactorisez ce code pour utiliser une [expression de fonction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
 
@@ -125,9 +125,9 @@ const numbers = [4, 2, 5, 1, 3];
 numbers.sort(function(a, b) {
   return a - b;
 })
-``` -->
+```
 
-<!-- ## Hoisting
+## Hoisting
 
 Expliquez dans un commentaire quelles expressions sont ["hoisted"](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) et quand on peut les appeler.
 
@@ -146,7 +146,7 @@ function multiply(a, b) {
 
 multiply(3, 4); // what's happening here?
 sum(2, 2); // what's happening here?
-``` -->
+```
 
 ## Pour aller plus loin
 

@@ -29,7 +29,7 @@
 5. Reassignez la valeur de `userRole` à 2.
 6. Loggez la valeur de `userRole`.
 7. Observez si vous avez eu une erreur. Si oui, pourquoi?
-8. Déclarez une variable en mode ES5. Pourquoi ne faut-il plus l'utiliser?
+<!-- 8. Déclarez une variable en mode ES5. Pourquoi ne faut-il plus l'utiliser? -->
 
 ## Nommez une variable
 ![Nommer une variable](https://www.commitstrip.com/wp-content/uploads/2015/10/Strip-Trouver-le-nom-de-variable-650-final.jpg)

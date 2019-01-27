@@ -8,23 +8,22 @@
 ![ifs](https://pics.me.me/a-programmers-wife-sends-him-to-the-grocery-store-with-31715874.png)
 
 ## Opérateurs de comparaison
-
-> “Vérifiez” veux dire “Ecrivez en ligne de code un moyen de vérifier”
 ​
 + Ecrivez en ligne de code un moyen de vérifier si 2 est supérieur à 1.
-+ Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 1.
-<!-- + Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 5. -->
++ Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 1. 
 + Ecrivez en ligne de code un moyen de vérifier si 20 est supérieur ou égal à 10.
-+ Ecrivez en ligne de code un moyen de vérifier si 10 est supérieur ou égal à 10.
-<!-- + Ecrivez en ligne de code un moyen de vérifier si 5 est inférieur ou égal à 10. -->
-+ Ecrivez en ligne de code un moyen de vérifier si 4 n'est pas égal à 6.
-<!-- + Ecrivez en ligne de code un moyen de vérifier si '5' converti en nombre n'est pas égal à 5. -->
-<!-- + Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité simple. -->
++ Ecrivez en ligne de code un moyen de vérifier si 10 est supérieur ou égal à 10. 
++ Ecrivez en ligne de code un moyen de vérifier si 4 n'est pas égal à 6. 
 + Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité stricte.
-+ Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas égal à '0'.
-<!-- + Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas strictement égal à '0'. -->
++ Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas égal à '0'. 
 + Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'hello'.
 + Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'Hello'.
+
+<!-- + Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 5. -->
+<!-- + Ecrivez en ligne de code un moyen de vérifier si 5 est inférieur ou égal à 10. -->
+<!-- + Ecrivez en ligne de code un moyen de vérifier si '5' converti en nombre n'est pas égal à 5. --> 
+<!-- + Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité simple. -->
+<!-- + Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas strictement égal à '0'. -->
 <!-- + Ecrivez en ligne de code un moyen de vérifier si `'true'` est égal à `true`. -->
 
 ## If ... Else
@@ -35,7 +34,7 @@ Ecrivez en ligne de code un moyen de vérifier si `5` est supérieur à 0 ET inf
 
 Ecrivez en ligne de code un moyen de vérifier si `20` divisé par `2` est supérieur ou égal à 10 OU inférieur à 15 dans la même expression. Si vrai, loggez `'Yes'`, sinon loggez `'No'`.
 
-<!-- ---
+---
 
 Un groupe peut être publique ou privé. Un utilisateur peut accéder au contenu d’un groupe si ce groupe est publique ou si le groupe est privé mais qu’il est membre ce groupe.
 ​
@@ -56,7 +55,7 @@ let isMember = false;
 let isPrivate = true;
 let isMember = true;
 
-``` -->
+```
 
 ## Vrai ou faux?
 
@@ -111,13 +110,13 @@ S'il n'est pas connecté, loggez 'Please, connect'.
 Si un utilisateur est connecté, vérifiez son statut.
 Si un utilisateur est un 'standard user', loggez 'Hello %username'.
 Si un utilisateur est un 'admin', loggez 'Hello powerful'. 
-Si un utilisateur est un 'website owner' loggez 'Hello powerful'.
+Si un utilisateur est un 'website owner' loggez 'Hello almighty'.
 
 ## Switch
 
 Copier coller le code de la tâche précédante puis refactorisez-le pour utiliser l'instruction [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 
-<!-- ---
+---
 
 Obtenez le jour de la semaine avec l'objet [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) et sa méthode `getDay`.
 Utilisez l'instruction `switch` pour traduire les jours de la semaine en français. 
@@ -125,13 +124,14 @@ En JavaScript, le premier jour de la semaine est dimanche 😉.
 ```js
 const today = new Date();
 const todayDay = today.getDay();
-``` -->
-<!-- ---
+```
+
+---
 
 Obtenez le mois en cours toujours avec l'objet Date.
-Utilisez l'instruction `switch` avec le regroupement des cas pour dire dans quelle saison on se trouve: hiver, été ou mi-saison. -->
+Utilisez l'instruction `switch` avec le regroupement des cas pour dire dans quelle saison on se trouve: hiver, été ou mi-saison.
 
-<!-- ## Opérateur ternaire
+## Opérateur ternaire
 
 Utilisez l'opérateur ternaire pour effectuer l'opération suivante:
 Si l'id du client est valide, sauvegarder ces achats dans la base de données (ou juste loggez 'Saved'). Sinon loggez 'Cancel'.
@@ -143,7 +143,7 @@ Un utilisateur arrive sur votre site web. Si c'est sa première fois ici, vous d
 ```js
 const isFirstTimeHere = true; // ou false
 const isCookiesVisible = // use ternary operator here to assign value to isCookiesVisible variable
-``` -->
+```
 
 ## Pour aller plus loin
 

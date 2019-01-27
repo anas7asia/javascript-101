@@ -16,7 +16,7 @@ Créez des variables contenant:
 + [w3schools](https://www.w3schools.com/js/js_type_conversion.asp)
 + [JavaScript.info](https://javascript.info/type-conversions)
 
-### String
+<!-- ### String
 + Transformez la chaîne de caractères '1' en nombre (`1`)
 + Transformez la chaîne de caractères 'Hello' en nombre (`NaN`)
 + Transformez la chaîne de caractères '0' en nombre (`0`)
@@ -49,7 +49,7 @@ Créez des variables contenant:
 ### Undefined
 + Transformez undefined en chaîne de caractères (`'undefined'`)
 + Transformez undefined en nombre (`NaN`)
-+ Transformez undefined en boolean (`false`)
++ Transformez undefined en boolean (`false`) -->
 
 ### Conversion automatique
 Assignez à une variable chaque operation arithmétique suivante. 
