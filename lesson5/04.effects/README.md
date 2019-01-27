@@ -98,6 +98,9 @@ Créez un `<div>` de taille `5rem` sur `5rem` et un bouton qui déclenche les an
 
 Créez un autre bouton qui arrete l'animation en cours et annule toutes les autres animations.
 
+![Chained animation](https://i.ibb.co/Rj0GwhQ/chained-animation.gif) ![Chained animation stopped](https://i.ibb.co/XkGQ0s3/chained-animation-stopped.gif)
+
+
 ---
 
 Voici quatre `<div>`.
@@ -112,32 +115,55 @@ Voici quatre `<div>`.
 Ce code JavaScript applique l'animation aux trois `<div>` choisis aléatoirement.
 
 ```js
-const randomNums = getArrayOfRandomNums($('.yourclass').length);
-const divsToAnimate = randomNums.sort().reduce((acc, currVal, currIndex, array) => {
-  return acc += `#js-animated-${currVal}${currIndex !== array.length - 1 ? ',' : ''}`
-}, '')
+const randomDivsAnimation = {
 
-animateDivs(divsToAnimate)
+  init: () => {
+    this.config = {
+      items: $('.animated'),
+    };
+    this.setup();
+  },
 
-function animateDivs() {
-  $( divsToAnimate ).slideToggle( "slow", animateDivs );
-}
+  setup: () => {
+    const randomNums = this.getArrayOfRandomNums(this.config.items.length);
+    // animate divs
+    const divsToAnimate = this.getDivsToAnimate(randomNums);
+    this.animateDivs(divsToAnimate);
+  },
 
-function getArrayOfRandomNums(itemsCount) {
-  const randomNums = [];
-  // itemsCount - 1 to make sure that final array is one item less than all of the divs in HTML
-  while (randomNums.length < itemsCount - 1) {
-    const randomNum = getRandomNumber(itemsCount)
-    if (!randomNums.includes(randomNum)) {
-      randomNums.push(randomNum)
+  animateDivs: (divsToAnimate) => {
+    $(divsToAnimate).slideToggle('slow', this.animateDivs); // ATTENTION: recursion here
+  },
+
+  getDivsToAnimate: (randomNums) => {
+    return randomNums.sort().reduce((acc, currVal, currIndex, array) => {
+      acc += `#js-animated-${currVal}${currIndex !== array.length - 1 ? ',' : ''}`;
+      return acc 
+    }, '');
+  },
+
+  getRandomNumber: max => Math.floor(Math.random() * max + 1),
+
+  getArrayOfRandomNums: (itemsCount) => {
+    const nums = [];
+    // itemsCount - 1 to make sure that final array is one item less than all of the divs in HTML
+    while (nums.length < itemsCount - 1) {
+      const randomNum = this.getRandomNumber(itemsCount);
+      if (!nums.includes(randomNum)) {
+        nums.push(randomNum);
+      }
     }
-  }
-  return randomNums
-}
+    return nums;
+  },
+};
 
-function getRandomNumber(max) {
-  return Math.floor(Math.random() * max + 1)
-}
+$('document').ready(() => {
+  randomDivsAnimation.init();
+
+  // HERE: select divs that are animated
+});
 ```
 
 Créez une fonction qui sélectionne tous les divs animés et change leur couleur de fond.
+
+![4 divs animés](https://i.ibb.co/fnHPWLH/4-animated-divs.gif)
