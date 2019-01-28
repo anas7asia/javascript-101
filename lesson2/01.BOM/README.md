@@ -28,16 +28,16 @@ Affichez sur la page:
 + hauteur de la fenêtre d'affichage de votre navigateur
 + largeur de votre navigateur
 + hauteur de votre navigateur
-+ décalage du haut de la page 
+<!-- + décalage du haut de la page  -->
 
 ## location
 
 Affichez sur la page:
 + url complet de la page
-+ nom d'hôte (sans http:// ou https://)
-+ le nom du protocole utilisé (http: ou https:)
-+ l'adresse (racine) de la page
-+ les [query params](https://en.wikipedia.org/wiki/Query_string) s'ils sont présents, sinon affichez 'No query params'
++ nom d'hôte (sans http:// ou https:// ou file://)
++ le nom du protocole utilisé (http: ou https: ou file:)
+<!-- + l'adresse (racine) de la page -->
+<!-- + les [query params](https://en.wikipedia.org/wiki/Query_string) s'ils sont présents, sinon affichez 'No query params' -->
 
 <!-- ---
 
