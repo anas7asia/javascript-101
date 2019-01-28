@@ -20,7 +20,7 @@
 Créez un formulaire de connexion qui comprend deux champs: email et mot de passe.
 Quand ce formulaire est [soumis](https://developer.mozilla.org/en-US/docs/Web/Events/submit), vérifez que:
 1. Email est saisi.
-2. Email est [valide](https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript).
+2. *Optionnel:* Email est [valide](https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript).
 3. Mot de passe est saisi.
 4. Mot de passe est plus long que 8 symboles.
 
