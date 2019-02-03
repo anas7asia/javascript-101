@@ -53,6 +53,8 @@ Ajoutez un attribut `alt` non vide à l'image.
 
 Donnez la couleur 'blue' au premier paragraphe du div et la taille de police '1.5rem'.
 
+Ajoutez la classe `img` à l'image.
+
 ```html
 <p class="first-p"></p>
 <p class="second-p"></p>

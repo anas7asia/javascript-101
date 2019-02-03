@@ -4,7 +4,7 @@
 + [MDN > Window object](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 
 Dans la console loggez l'objet global `window` et regardez quelles propriétés il possède.
-Regardez plus précisement les propriétés `document`, `history`, `location`, `navigator`, `screen`.
+Regardez plus précisement les propriétés `location`, `navigator`, `screen`.
 
 ## navigator
 

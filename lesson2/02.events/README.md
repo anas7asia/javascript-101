@@ -6,9 +6,9 @@
 
 ## Evénements de souris
 
-Créez un bouton dans votre HTML. Associez-lui un événement `onclick` avec un attribut directement dans HTML. Si le bouton est cliqué, loggez 'Clicked!'.
+<!-- Créez un bouton dans votre HTML. Associez-lui un événement `onclick` avec un attribut directement dans HTML. Si le bouton est cliqué, loggez 'Clicked!'.
 
-Créez un bouton dans votre HTML. Avec JavaScript associez à la propriété `onclick` à une fonction qui logge 'Clicked!' si le bouton est cliqué.
+Créez un bouton dans votre HTML. Avec JavaScript associez à la propriété `onclick` à une fonction qui logge 'Clicked!' si le bouton est cliqué. -->
 
 Créez un bouton dans votre HTML. Ajoutez-lui un écouteur d'événements côté JavaScript. Si le bouton est cliqué, loggez 'Clicked!'. Loggez également [l'événement](https://developer.mozilla.org/en-US/docs/Web/API/Event) passé et explorez ces propriétés.
 
