@@ -58,7 +58,7 @@ Ajoutez la classe `img` à l'image.
 ```html
 <p class="first-p"></p>
 <p class="second-p"></p>
-<img src="path/to/image.jpg" width="10" height="10">
+<img src="http://lorempixel.com/10/10/" width="10" height="10">
 <div><p>I'm inside of a div</p></div>
 
 ```
@@ -105,7 +105,7 @@ Recréez le HTML suivant uniquement avec JavaScript.
     <h1>Main title</h1>
     <p>Here goes the <strong>description</strong></p>
   
-    <img src="path/to/image.jpg" alt="My image" width="30%">
+    <img src="http://lorempixel.com/400/200/" alt="My image" width="30%">
   </main>
 
   <div class="cookies" style="background-color:#fdfdfd; border-radius: 4px;">

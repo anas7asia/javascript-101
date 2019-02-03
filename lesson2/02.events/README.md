@@ -36,11 +36,11 @@ Créez un bouton, associez-lui un événement `click`. Si ce bouton a été cliq
 
 ---
 
-Créez 20 boutons (côté JavaScript bien sûr!). Chaque bouton logge 'Button number $son_numéro_de_1_à_20 has been clicked' s'il a été cliqué. 
+Créez 20 boutons (côté JavaScript bien sûr!). Chaque bouton loggue 'Button number $son_numéro_de_1_à_20 has been clicked' s'il a été cliqué. 
 
----
+<!-- ---
 
-Créez un [menu déroulant](https://getbootstrap.com/docs/4.0/components/dropdowns/#single-button-dropdowns) avec HTML, CSS et JavaScript.
+Créez un [menu déroulant](https://getbootstrap.com/docs/4.0/components/dropdowns/#single-button-dropdowns) avec HTML, CSS et JavaScript. -->
 
 ## Cible d'événement
 
@@ -97,9 +97,9 @@ Sur la page créez un div avec des boutons (ou des liens). Si le div ou les bout
 
 ![Click outside](https://i.ibb.co/6tNfRxM/click-outside.gif)
 
----
+<!-- ---
 
-Creéz un système d'affichage de contenu de type ["accordeon"](https://getbootstrap.com/docs/4.1/components/collapse/#accordion-example) avec JavaScript.
+Creéz un système d'affichage de contenu de type ["accordeon"](https://getbootstrap.com/docs/4.1/components/collapse/#accordion-example) avec JavaScript. -->
 
 
 ## Reading List

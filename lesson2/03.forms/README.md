@@ -11,26 +11,30 @@
 1. Créez un champ de texte. 
 2. Quand la page est entièrement [chargée](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload), appelez une fonction qui met le champ en avant. 
 3. Ecrivez du texte dedans. 
-4. Quand le champ n'est plus mis en avant, loggez le texte écrit.
+4. Quand le champ n'est plus mis en avant, logguez le texte écrit.
 
 ---
 
 ![Password](http://www.commitstrip.com/wp-content/uploads/2014/01/Strips-Mot-de-passe-650-final.jpg)
 
+> Vous pouvez utiliser [Bootstrap](https://getbootstrap.com/docs/4.1/components/forms/) ou un autre framework pour donner des styles à votre formulaire.
+
 Créez un formulaire de connexion qui comprend deux champs: email et mot de passe.
-Quand ce formulaire est [soumis](https://developer.mozilla.org/en-US/docs/Web/Events/submit), vérifez que:
+Quand ce formulaire est [soumis](https://developer.mozilla.org/en-US/docs/Web/Events/submit), vérifiez que:
 1. Email est saisi.
-2. *Optionnel:* Email est [valide](https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript).
+2. Email est [valide](https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript).
 3. Mot de passe est saisi.
 4. Mot de passe est plus long que 8 symboles.
 
+Si un de champs est mis en avant et ensuite ne l'est plus, passez la couleur de sa bordure en rouge (seulement si la valeur saisie n'est pas valide) et mettez une erreur sous ce champ.
+
 Si tous les champs du formulaire sont vides ajoutez l'attribut `disabled` au bouton du type `submit`.
 
-Quand le formulaire est soumis, vérifiez que toutes les conditions sont remplis, si oui loggez 'Welcome!', sinon affichez les erreurs et demandez de re-saisir les champs.
+Quand le formulaire est soumis, vérifiez que toutes les conditions sont remplis, si oui logguez 'Welcome!', sinon logguez 'Please, do not forget to fill the form'.
 
 > Attention à la [propagation d'événements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture), n'oubliez pas d'utiliser la méthode [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) d'événement `submit`.
 
----
+<!-- ---
 
 Créez un formulaire d'inscription d'un utilisateur sur votre site qui comprend les champs suivants:
 
@@ -47,9 +51,9 @@ Si l'information saisie dans un champ est invalide et ce champ devient n'est plu
 Si tous les champs du formulaire sont vides ajoutez l'attribut `disabled` au bouton du type `submit`.
 Quand le formulaire est soumis, vérifiez que tous les champs sont valides:
 + Si non, passez la couleur de bordure en rouge de tous les champs invalides et mettez l'erreur sous chaque champ.
-+ Si tous les champs sont valides, loggez 'Welcome!'.
++ Si tous les champs sont valides, logguez 'Welcome!'.
 
-Vous pouvez utiliser [Bootstrap](https://getbootstrap.com/docs/4.1/components/forms/) ou un autre framework pour donner des styles à votre formulaire.
+Vous pouvez utiliser [Bootstrap](https://getbootstrap.com/docs/4.1/components/forms/) ou un autre framework pour donner des styles à votre formulaire. -->
 
 ## Pour aller plus loin
 
