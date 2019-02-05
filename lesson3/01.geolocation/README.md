@@ -8,10 +8,18 @@ Tout d'abord vérifiez que votre navigateur supporte Geolocation API.
 Essayez d'obtenir la longitude et la latitude de votre positionnement.
 
 En cas d'échec, traitez les [erreurs](https://developer.mozilla.org/en-US/docs/Web/API/PositionError) suivantes: permission refusée par utilisateur, position indisponible, temps d'attente expiré, erreur non-connue. Loggez la raison de l'échec.
+```js
+const GEO_ERRORS = {
+  PERMISSION_DENIED: 1,
+  POSITION_UNAVAILABLE: 2,
+  TIMEOUT: 3
+}
+```
 
 Regardez les propriétés de l'objet [Position](https://developer.mozilla.org/en-US/docs/Web/API/Position).
 
-Si vous avez réussi à obtenir la latitude et la longitude, affichez une carte en forme d'image (son `src` est égal à `"https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false"`).
+Si vous avez réussi à obtenir la latitude et la longitude, affichez un lien qui mène vers le site avec l'url suivant: ``https://www.latlong.net/c/?lat=${latitude}&long=${longitude}``
+<!-- une carte en forme d'image (son `src` est égal à `"https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false"`). -->
 
 ---
 

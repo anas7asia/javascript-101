@@ -22,13 +22,14 @@ Facile à manipuler | Pas vraiment | Oui | Oui
 
 Créez un cookie *lang* égal à `'fr'`.
 
-Créez un cookie *previewSeen* égal à `true` qui va expirer dans 5 minutes.
+Créez un cookie *previewSeen* égal à `true` qui va expirer le lendement.
 
-Créez un cookie *test* égal à `'test'` qui va expirer à minuit.
+Créez un cookie *test* égal à `'test'` qui va expirer le 31 décembre 2019.
 
-Créez un cookie *userId* égal à `123` qui sera `secure`.
+Créez un cookie *userId* égal à `123` 
+ <!-- qui sera `secure`. -->
 
-Créez un cookie *superSecret* qui sera accessible uniquement dans une requête http (inacessible par JavaScript).
+<!-- Créez un cookie *superSecret* qui sera accessible uniquement dans une requête http (inacessible par JavaScript). -->
 
 Récupérez et loggez les valeurs des cookies *lang*, *previewSeen* et *userId*
 
