@@ -52,20 +52,21 @@ Les expressions asynchrones:
 
 ## setTimeout
 
-Loggez `'Hello'` 3 secondes après le rendu de la page.
+Logguez dans la console `'Hello'` 3 secondes après le rendu de la page.
 
 ---
 
-Ajoutez un écouteur d'événement 'click' à l'objet window 10 secondes après le rendu de la page.
+Ajoutez un écouteur d'événement `'click'` à l'objet `window` pour logguer dans la console `'Clicked'` 3 secondes après le clique.
 
 
 ## onload et onerror
 
-Créez dynamiquement une [image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image) avec `src` égal à `http://lorempixel.com/400/200/`. Pas besoin de l'afficher sur la page.
+Créez dynamiquement une [image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image) avec `src` égal à `http://lorempixel.com/400/200/`. 
+<!-- Pas besoin de l'afficher sur la page. -->
 
-Quand l'image sera entièrement chargé, loggez `'Done!'`.
+Quand l'image sera entièrement chargée, logguez dans la console `'Done!'` et l'affichez sur la page.
 
-En cas d'erreur de chargement, loggez `'Error'`.
+En cas d'erreur de chargement, logguez dans la console `'Error'`.
 
 ---
 

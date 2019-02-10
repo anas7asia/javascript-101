@@ -32,7 +32,7 @@ Voir toutes les méthodes HTTP: [https://developer.mozilla.org/en-US/docs/Web/HT
 
 ## Headers
 
-![Headers](https://i.ibb.co/pz5jVTL/Request.png)
+![Headers](https://i.ibb.co/7NRhQ2S/headers.png)
 
 Pour communiquer des informations additionnelles dans une requête HTTP on utilise les [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 
 
