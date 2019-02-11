@@ -37,7 +37,7 @@ xhttp.send();
 
 ## C'est en forgeant qu'on devient forgeron
 
-`https://swapi.co/documentation` est un API RESTful qui fournit les données de l'univers Star Wars et ne nécessite pas d'autorization.
+[swapi.co](https://swapi.co/documentation) est un API RESTful qui fournit les données de l'univers Star Wars et ne nécessite pas d'autorization.
 
 ![Star Wars](http://www.commitstrip.com/wp-content/uploads/2015/12/Strip-Star-wars-650-final.jpg)
 
