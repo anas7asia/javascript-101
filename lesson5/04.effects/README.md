@@ -7,7 +7,7 @@
 
 ### hide/show
 ```html
-<div class="alert alert-primary" style="display: none;">
+<div class="alert alert-primary" style="display: none;" id="js-alert">
   Hide me!
   <button id="js-hide-alert">✕</button>
 </div>
@@ -21,15 +21,15 @@ Affichez l'alerte si le bouton `#js-show-alert` est cliqué. Cachez-la si le bou
 
 ```html
 <form>
-  <input type="radio" name="side" value="false">Sith
-  <input type="radio" name="side" value="true">Jedi
+  <input type="radio" name="side" value="false" id="js-sith">Sith
+  <input type="radio" name="side" value="true" id="js-jedi">Jedi
 
-  <div class="alert alert-danger" style="display: none;">Come to the Dark Side</div>
+  <div class="alert alert-danger" style="display: none;" id="js-jedi-alert">Come to the Dark Side</div>
 </form>
 ```
 Utilisez le HTML ci-dessus.
-Si le bouton radio 'Jedi' est sélectionné, montrez l'alerte. Si ce bouton n'est plus sélectionné, cachez-la.
-(Pour cela utilisez la méthode `toggle`)
+Si le bouton radio 'Jedi' est sélectionné, montrez l'alerte. Sinon cachez-la.
+<!-- (Pour cela utilisez la méthode `toggle`) -->
 
 ### slide
 
@@ -49,7 +49,7 @@ Utilisez les méthodes `slideUp`, `slideDown` ou `slideToggle` pour afficher/cac
 
 ```html
 <div class="alert alert-warning" style="display: none;">
-  This alert will be hidden automatically in 3 secons!
+  This alert will be hidden automatically in 3 seconds!
 </div>
 
 <button id="js-show-disappearing-alert">Show alert</button>

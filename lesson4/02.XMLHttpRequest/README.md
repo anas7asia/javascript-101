@@ -71,23 +71,27 @@ Pour chaque clé json, si la valeur est primitive (string, number, etc), affiche
 Des fois c'est très utile de tester le code avec des données fictives en attendant que la vrai API soit prête. 
 ![API](http://www.commitstrip.com/wp-content/uploads/2013/07/Strips-Unknown-error-600-final.jpg)
 
-### Placeholder API: 
-
-> Placeholder API: [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/)
-
-Récupérez et affichez un article avec l'id 25, ensuite récupérez et affichez ses commentaires.
-
----
-
-Récupérez et affichez 5 articles, sous chaque article récupérez et affichez leurs comentaires.
-
-```js
-const articles = [1, 2, 3, 4, 5];
-```
-
 ### Reqres
 
 > API RESTful https://reqres.in/ accepte les données en format JSON.
+
+```html
+<form id="js-signin-form">
+
+  <fieldset id="js-signin-fields">
+    <div class="form-group">
+      <label for="js-signin-email">Email</label>
+      <input type="email" name="email" placeholder="Email" value="test@ynov.com" id="js-signin-email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="js-signin-password">Password</label>
+      <input type="password" name="password" placeholder="Password" id="js-signin-password" value="qwerty" class="form-control">
+    </div>
+  </fieldset>
+
+  <input type="submit" value="Sign in" class="btn btn-primary">
+</form>
+```
 
 Créez un formulaire de **connexion** qui comprend les champs *email* et *mot de passe*. A la soumission du formulaire, envoyez la requête de connexion à l’API `https://reqres.in/`. En cas de succès, mettez le token dans les cookies, en cas d’erreur, affichez l’erreur sous le formulaire.
 
@@ -96,6 +100,32 @@ Créez un formulaire de **connexion** qui comprend les champs *email* et *mot de
 Créez un bouton de deconnexion. Au clique sur ce bouton effacez le token sauvegardé dans les cookies.
 
 ---
+
+```html
+<form id="js-signup-form">
+
+  <fieldset id="js-signup-fields">
+    <div class="form-group">
+      <label for="js-signup-email">Email</label>
+      <input type="email" name="email" placeholder="Email" value="test@ynov.com" id="js-signup-email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="js-signup-password">Password</label>
+      <input type="password" name="password" placeholder="Password" id="js-signup-password" value="qwerty" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="js-signup-lastname">Last name</label>
+      <input type="text" name="lastname" placeholder="Last name" id="js-signup-lastname" value="Besson" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="js-signup-firstname">First name</label>
+      <input type="text" name="firstname" placeholder="First name" id="js-signup-firstname" value="Luc" class="form-control">
+    </div>
+  </fieldset>
+
+  <input type="submit" value="Sign up" class="btn btn-primary">
+</form>
+```
 
 Créez un formulaire d'**inscription** qui comprend les champs *nom*, *prénom*, *email* et *mot de passe*. A la soumission du formulaire, envoyez la requête d'inscription à l’API https://reqres.in/. En cas de succès, mettez ses informations et le token renvoyé dans les cookies, en cas d’erreur, affichez l’erreur sous le formulaire.
 

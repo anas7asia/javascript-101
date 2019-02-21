@@ -56,11 +56,9 @@ Quand le rendu de la page sera terminé, utilisez les selecteurs jQuery pour sé
 + toutes les balises avec le nom de classe `js-paragraph`
 + la balise avec l'id `js-unique-paragraph`
 + le premier titre `<h3>`
-+ le premier `<td>` du premier `<tr>` 
++ le premier `<th>` du premier `<tr>` 
 + le premier `<td>` du chaque `<tr>`
 + tous les liens
 + tous les lien externes (ceux qui ont l'attribut `target` égal à `_blank`)
 + tous les lien internes (ceux qui n'ont pas d'attribut `target` égal à `_blank`)
-+ toutes les balises `<th>` impairs
-+ toutes les balises `<th>` pairs
 + tous les boutons dans un formulaire

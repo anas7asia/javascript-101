@@ -25,7 +25,7 @@ Desactivez le comportement par defaut du click du bouton droit de la souris sur 
   <input type="radio" name="pettype" value="cat" id="js-radio-cat">Cat
   <input type="radio" name="pettype" value="dog" id="js-radio-dog">Dog
 
-  <input type="text" placeholder="Your pet name" id="js-input">
+  <input type="text" name="petname" placeholder="Your pet name" id="js-input">
 
   <input type="submit" value="Submit" id="js-submit">
 </form>
