@@ -3,15 +3,15 @@
 + [MDN > Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/promise)
 + [Handling async operations gracefully with Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 
-Créez une *promise* (promesse) qui retourne une chaîne de caractères 'Hello' immediatement. Récupérez et loggez la valeur qu'elle retourne.
+Créez une *promise* (promesse) qui retourne une chaîne de caractères 'Hello' immediatement. Récupérez et logguez la valeur qu'elle retourne.
 
 ---
 
-Créez une *promise* qui retourne une chaîne de caractères 'Hello' dans 3 secondes. Récupérez et loggez la valeur qu'elle retourne.
+Créez une *promise* qui retourne une chaîne de caractères 'Hello' dans 3 secondes. Récupérez et logguez la valeur qu'elle retourne.
 
 ---
 
-Créez une *promise* qui retourne une erreur 'Something went wrong!'. Récupérer et loggez cette erreur.
+Créez une *promise* qui retourne une erreur 'Something went wrong!'. Récupérer et logguez cette erreur.
 
 ---
 
@@ -20,7 +20,7 @@ Créez une *promise* qui retourne un nombre N. [Enchaînez](https://developer.mo
 + ensuite soustraire 1
 + ensuite decrementer de 2
 + ensuite augmenter de 10. 
-Loggez le résultat réçu.
+Logguez le résultat réçu.
 
 ---
 

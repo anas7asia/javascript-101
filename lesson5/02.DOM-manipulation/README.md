@@ -23,13 +23,13 @@ Utilisez les méthodes `text`, `html`, `val`, `attr` pour travailler avec le HTM
 <input type="text" id="js-search" placeholder="Search something..." value="Poodles">
 ```
 
-Récupérez et loggez dans la console le contenu du titre de la page.
+Récupérez et logguez dans la console le contenu du titre de la page.
 
 ---
 Changez le contenu du titre de la page à `'My page title'`.
 
 ---
-Récupérez et loggez dans la console le HTML de l'article.
+Récupérez et logguez dans la console le HTML de l'article.
 
 ---
 Changez le contenu de l'article à 
@@ -41,13 +41,13 @@ Changez le contenu de l'article à
 ```
 
 ---
-Récupérez et loggez dans la console la valeur du champ de saisie avec l'id `js-search`.
+Récupérez et logguez dans la console la valeur du champ de saisie avec l'id `js-search`.
 
 ---
 Changez la valeur du champ de saisie à `'Beagles'`
 
 ---
-Récupérez et loggez dans la console la valeur du placeholder du champ de saisie.
+Récupérez et logguez dans la console la valeur du placeholder du champ de saisie.
 
 ---
 Changez la valeur du placeholder du champ de saisie à `'Search'`
@@ -56,7 +56,7 @@ Changez la valeur du placeholder du champ de saisie à `'Search'`
 Ajoutez un attribut `data-article-id` avec la valeur `1` à l'article avec l'id `js-article`. Pour en savoir plus sur les attributs de données: [https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
 
 ---
-Récupérez et loggez dans la console la valeur de l'attribut `data-article-id` que vous venez d'ajouter.
+Récupérez et logguez dans la console la valeur de l'attribut `data-article-id` que vous venez d'ajouter.
 
 ## Insérer/supprimer du contenu
 
@@ -132,7 +132,7 @@ Vérifiez si le `<div>` possède déjà la classe `'alert-warning'`. Si oui, sup
 En cliquant sur le bouton `#js-btn`, basculez la classe `'alert-success'`: premier clique ajoute la classe, deuxième clique l'enlève, troisième l'ajoute de nouveau, etc.
 
 ---
-Récupérez et loggez dans la console la couleur du fond du bouton.
+Récupérez et logguez dans la console la couleur du fond du bouton.
 
 ---
 Passez la couleur du fond du bouton en `#71b8af`.
