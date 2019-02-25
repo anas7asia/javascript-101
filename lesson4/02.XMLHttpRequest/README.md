@@ -35,6 +35,24 @@ xhttp.send();
 
 ![Ajax](https://i.ibb.co/CK86F0R/ajax.gif)
 
+VSCode JavaScript Snippet:
+
+```json
+"XMLHttpRequest": {
+  "prefix": "xml",
+  "body": [
+    "let xhttp = new XMLHttpRequest();",
+    "xhttp.onreadystatechange = () => {",
+    "  if (xhttp.readyState == 4 && xhttp.status == 200) {",
+    "    console.log(xhttp.responseText)",
+    "  }",
+    "};",
+    "xhttp.open('GET', 'url', true);",
+    "xhttp.send();"
+  ]
+},
+```
+
 ## C'est en forgeant qu'on devient forgeron
 
 [swapi.co](https://swapi.co/documentation) est un API RESTful qui fournit les données de l'univers Star Wars et ne nécessite pas d'autorization.
