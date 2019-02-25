@@ -18,6 +18,37 @@ Desactivez le comportement par defaut du click du bouton droit de la souris sur 
 
 ![Clicks not allowed](http://www.commitstrip.com/wp-content/uploads/2016/06/Strip-Les-codeurs-et-les-images-650-final-1.jpg)
 
+---
+
+Ajoutez un écouteur d'événement 'click' à l'objet `window`. Si cet événement est déclenché, ajoutez le HTML `<p>Cette page a été cliquée <strong>une fois</strong></p>` au body.
+Ajoutez un autre écouteur d'événement 'dblclick'. Si la page a été cliquée deux fois d'affilé, remplacez le HTML du body par `<p>Cette page a été cliquée <strong>deux fois d'affilé</strong></p>`.
+
+---
+
+```css
+.tooltip-wrapper {
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  transform: translateY(100%);
+}
+```
+
+```html
+<p class="tooltip-wrapper" id="js-tooltip-wrapper">
+  <span class="tooltip" id="js-tooltip">En informatique, un langage de programmation est une notation conventionnelle destinée à formuler des algorithmes et produire des programmes informatiques qui les appliquent.</span>
+  JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.
+</p>
+```
+
+Si le paragraphe avec l'id `js-tooltip-wrapper` est survolé, affichez le span avec l'id `js-tooltip`. Si il n'est plus survolé, cachez le span.
+
 ## Evénements de formulaire
 
 ```html

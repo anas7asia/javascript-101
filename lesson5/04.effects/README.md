@@ -63,6 +63,17 @@ Utilisez les méthodes `fadeIn`, `fadeOut` et le principe de callback.
 ---
 
 ```html
+<div style="background:#2E9AFE;width:200px;height:200px;margin-bottom:30px;" id="js-div-fade-in-out"></div>
+<button class="btn btn-success" id="js-btn-fade-in">Fade In</button>
+<button class="btn btn-danger" id="js-btn-fade-out">Fade Out</button>
+```
+
+Au clique sur le bouton avec l'id `js-btn-fade-in` faites apparaître le div avec l'animation fondu (fade in).
+Au clique sur le bouton avec l'id `js-btn-fade-out` faites disparaître le div avec l'animation fondu (fade out).
+
+---
+
+```html
 <div id="js-div-1"></div>
 <div id="js-div-2"></div>
 <div id="js-div-3"></div>
@@ -76,6 +87,14 @@ Après le rendu de la page tous les `<div>` ont l'opacité de 30%. Quand un `<di
 Utilisez la méthode `fadeTo`.
 
 ![Choose one div](https://i.ibb.co/NYhBZV1/choose-one-div.gif)
+
+---
+
+```html
+<p id="js-p-fade-to">Cliquez sur ce paragraphe pour baisser son opacité à 10%.</p>
+```
+
+Au clique sur le paragraphe avec l'id `js-p-fade-to` faites baisser son opacité jusque 10%.
 
 
 ## Gérer l'animation
@@ -100,6 +119,14 @@ Créez un autre bouton qui arrete l'animation en cours et annule toutes les autr
 
 ![Chained animation](https://i.ibb.co/Rj0GwhQ/chained-animation.gif) ![Chained animation stopped](https://i.ibb.co/XkGQ0s3/chained-animation-stopped.gif)
 
+---
+
+```html
+<div id="js-animate-div" style="background:#98bf21;height:100px;width:100px"></div>
+<button class="btn btn-success" id="js-animate-div-btn">Animate!</button>
+```
+
+Au clique sur le bouton appliquez l'animation au `<div>` en changeant sa largeur et sa hauteur à `200px`.
 
 ---
 

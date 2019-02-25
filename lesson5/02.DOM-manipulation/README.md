@@ -52,11 +52,41 @@ Récupérez et logguez dans la console la valeur du placeholder du champ de sais
 ---
 Changez la valeur du placeholder du champ de saisie à `'Search'`
 
----
-Ajoutez un attribut `data-article-id` avec la valeur `1` à l'article avec l'id `js-article`. Pour en savoir plus sur les attributs de données: [https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
+<!-- ---
+Ajoutez un attribut `data-article-id` avec la valeur `1` à l'article avec l'id `js-article`. Pour en savoir plus sur les attributs de données: [https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes). -->
+
+<!-- ---
+Récupérez et logguez dans la console la valeur de l'attribut `data-article-id` que vous venez d'ajouter. -->
 
 ---
-Récupérez et logguez dans la console la valeur de l'attribut `data-article-id` que vous venez d'ajouter.
+
+```html
+  <div class="container">
+    <form class="form-row" id="js-search-form">
+
+      <div class="col-auto">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Search</div>
+          </div>
+          <input type="text" class="form-control" id="js-search" placeholder="Recherche">
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <button class="btn btn-primary" type="submit">Rechercher</button>
+      </div>
+    </form>
+
+    <div id="js-search-result"></div>
+  </div>
+
+```
+
+Sélectionnez le formulaire dans le DOM.
+Ajoutez un écouteur d'événements 'submit' au formulaire pour déclencher un événement à chaque fois que le formulaire est soumis.
+Quand ce formulaire est soumis, récupérez la valeur saisie dans le champ de recherche.
+Si la valeur saisie est égale à 'Chat', insérez le texte 'Miaou!' dans le <div> avec l'id `js-search-result`. Sinon dans ce même <div> insérez du HTML `<p>Pas de resultats pour la recherche : <strong>' + keyword + '</strong></p>`.
 
 ## Insérer/supprimer du contenu
 
@@ -104,6 +134,23 @@ Supprimez le contenu de l'article `#js-article-2`.
 ---
 Supprimez du DOM l'article `#js-article-2`.
 
+---
+```html
+<div id="js-cat-problems" class="container"></div>
+```
+Dans le `<div>` avec l'id `js-cat-problems` insérez dynamiquement :
+1. [append] Une image avec `src` égal à `https://img.buzzfeed.com/buzzfeed-static/static/2014-12/23/9/enhanced/webdr12/anigif_enhanced-23685-1419343761-9.gif?downsize=800:*&output-format=auto&output-quality=auto`
+2. [prepend] Un paragraphe avec le texte `Votre chat a de l'humour. Par exemple, il adore se mettre à chasser une souris invisible, faire des dérapages contrôlés ou gratter sous votre lit à 5h11 du matin.` en tant que **premier enfant du div**.
+3. [append] Un paragraphe avec le texte `Et ne vous avisez pas de trop remuer les pieds : vous pourriez le regretter.` en tant que **dernier enfant du div**.
+4. [before] Un paragraphe avec le texte `C'est la raison pour laquelle il peut aussi remplir la fonction « réveil », ce qui est bien pratique. Enfin, sauf les week-ends.` **juste avant l'image**.
+5. [after] Un paragraphe avec le texte `S'il dort dans votre lit, il y a de grandes chances pour qu'il s'installe pile au centre et que vous vous retrouviez au bord, prêt(e) à tomber.` **juste après l'image**.
+
+Le texte final sera : Votre chat a de l'humour. Par exemple, il adore se mettre à chasser une souris invisible, faire des dérapages contrôlés ou gratter sous votre lit à 5h11 du matin. 
+C'est la raison pour laquelle il peut aussi remplir la fonction « réveil », ce qui est bien pratique. Enfin, sauf les week-ends.
+(image)
+S'il dort dans votre lit, il y a de grandes chances pour qu'il s'installe pile au centre et que vous vous retrouviez au bord, prêt(e) à tomber.
+Et ne vous avisez pas de trop remuer les pieds : vous pourriez le regretter.'
+
 ## Manipuler le CSS
 
 Utilisez les méthodes `addClass`, `removeClass`, `toggleClass`, `hasClass`, `css` pour travailler avec le HTML suivant.
@@ -140,4 +187,20 @@ Passez la couleur du fond du bouton en `#71b8af`.
 ---
 Changez *d'un coup* la couleur du texte du bouton à `#fff2d5` et le radius de la bordure à `3px`.
 
+---
 
+```css
+.text-danger {
+  color: red;
+}
+```
+
+```html
+<div class="alert alert-danger" id="js-danger-alert">
+  <p>My alert</p>
+  <button class="btn btn-success" id="js-danger-alert-btn">Ok</button>
+</div>
+```
+
+Vérifiez si le `<div>` a la classe `alert-danger`. Si oui, ajoutez la classe `text-danger` au `<p>` et supprimez la classe `btn-success` du bouton. 
+Au clique sur le bouton ajoutez la propriété css `display` égale à `none` au `<div>`.
