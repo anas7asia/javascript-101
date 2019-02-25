@@ -86,7 +86,7 @@ Récupérez et logguez dans la console la valeur de l'attribut `data-article-id`
 Sélectionnez le formulaire dans le DOM.
 Ajoutez un écouteur d'événements 'submit' au formulaire pour déclencher un événement à chaque fois que le formulaire est soumis.
 Quand ce formulaire est soumis, récupérez la valeur saisie dans le champ de recherche.
-Si la valeur saisie est égale à 'Chat', insérez le texte 'Miaou!' dans le <div> avec l'id `js-search-result`. Sinon dans ce même <div> insérez du HTML `<p>Pas de resultats pour la recherche : <strong>' + keyword + '</strong></p>`.
+Si la valeur saisie est égale à 'Chat', insérez le texte 'Miaou!' dans le `<div>` avec l'id `js-search-result`. Sinon dans ce même `<div>` insérez du HTML `<p>Pas de resultats pour la recherche : <strong>' + keyword + '</strong></p>`.
 
 ## Insérer/supprimer du contenu
 
