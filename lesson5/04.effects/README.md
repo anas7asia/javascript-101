@@ -12,7 +12,7 @@
   <button id="js-hide-alert">✕</button>
 </div>
 
-<button id="js-show-alert">Show alert</button>
+<button class="btn btn-primary" id="js-show-alert">Show alert</button>
 ```
 Utilisez le HTML ci-dessus.
 Affichez l'alerte si le bouton `#js-show-alert` est cliqué. Cachez-la si le bouton `#js-hide-alert` est cliqué.
@@ -33,9 +33,29 @@ Si le bouton radio 'Jedi' est sélectionné, montrez l'alerte. Sinon cachez-la.
 
 ### slide
 
+```css
+#js-slide-example-address {
+  margin: 0;
+  padding: 2rem;
+  background-color:	#b9bdd4;
+}
+
+#js-slide-example-links {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: #6e6f87;
+  color: #fff;
+}
+
+#js-slide-example-links a {
+  margin-right: 2rem;
+  color: inherit;
+}
+```
+
 ```html
-<p id="js-slide-example-1">Quai de Chartrons 33000 Bordeaux</p>
-<div class="js-slide-example-links" style="display: none;">
+<p id="js-slide-example-address">Quai de Chartrons 33000 Bordeaux</p>
+<div id="js-slide-example-links" style="display: none;">
   <a href="#">Voir sur la carte</a>
   <a href="#">Directions</a>
 </div>
@@ -63,9 +83,9 @@ Utilisez les méthodes `fadeIn`, `fadeOut` et le principe de callback.
 ---
 
 ```html
-<div style="background:#2E9AFE;width:200px;height:200px;margin-bottom:30px;" id="js-div-fade-in-out"></div>
 <button class="btn btn-success" id="js-btn-fade-in">Fade In</button>
 <button class="btn btn-danger" id="js-btn-fade-out">Fade Out</button>
+<div style="background:#2E9AFE; width:200px; height:200px; margin-top:30px;" id="js-div-fade-in-out"></div>
 ```
 
 Au clique sur le bouton avec l'id `js-btn-fade-in` faites apparaître le div avec l'animation fondu (fade in).
@@ -89,6 +109,15 @@ Utilisez la méthode `fadeTo`.
 ![Choose one div](https://i.ibb.co/NYhBZV1/choose-one-div.gif)
 
 ---
+```css
+#js-animation-1 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 0 solid red;
+}
+```
 
 ```html
 <p id="js-p-fade-to">Cliquez sur ce paragraphe pour baisser son opacité à 10%.</p>

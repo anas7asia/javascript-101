@@ -126,7 +126,7 @@ Dans la balise `<div>` de l'article `#js-article-1` ajoutez un autre paragraphe 
 <article id="js-article-3">
   <h1>Cats are the weirdest-3</h1>
   <p>My cat brought me two large potatoes in the middle of the night from the kitchen counter.</p>
-</article
+</article>
 ```
 ---
 Supprimez le contenu de l'article `#js-article-2`.

@@ -9,6 +9,19 @@ Créez un bouton. Si ce bouton est cliqué, logguez dans la console `'Clicked!'`
 Si ce bouton est cliqué plus de 5 fois, enlevez son écouteur d'événement 'click'.
 
 ---
+
+```css
+#js-hovered {
+  background-color: blue;
+  width: 7rem;
+  height: 7rem;
+}
+```
+
+```html
+<div id="js-hovered"></div>
+```
+
 Créez un div bleu. Si on le survole, il passe en vert. Si on sort le curseur du div, il redevient bleu. 
 Utilisez les méthodes `mouseenter`, `mouseleave` ou `hover`.
 
@@ -36,6 +49,7 @@ Ajoutez un autre écouteur d'événement 'dblclick'. Si la page a été cliquée
   bottom: 0;
   background-color: rgba(0,0,0,.7);
   color: #fff;
+  opacity: 1;
   transform: translateY(100%);
 }
 ```
