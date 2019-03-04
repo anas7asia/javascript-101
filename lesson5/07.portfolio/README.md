@@ -1,5 +1,7 @@
 # Portfolio
 
+![Demo](https://i.ibb.co/f0j6qJm/Users-anastasia-Documents-javascript-101-answers-lesson7-index-html-5.png)
+
 ## Premier bloc
 
 Installez un carousel pour montrer 5 photos et leurs titres par dessus. Ces photos doivent defiler toutes les 7 secondes à la vitesse de 500 millisecondes.
