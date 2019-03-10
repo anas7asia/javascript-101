@@ -19,7 +19,7 @@ C’est possible de créer un sprite automatiquement grace aux task managers, pa
 
 ### Lazy load
 
-Tous les images de la page commence à charger de suite après son overture. Ça se trouve que l’utilisateur ne va jamais descendre en bas de la page, et ces images vont être chargées pour rien.
+Toutes les images de la page commencent à charger de suite après son overture. Ça se trouve que l’utilisateur ne va jamais descendre en bas de la page, et ces images vont être chargées pour rien.
 Le principe de lazy load est retarder le chargement des images qui se trouvent plus bas que la partie visible de la page et commencer à les charger seulement si l’utilisiteur descend jusque leur position. Voir la [démonstration](https://davidwalsh.name/demo/lazyload-2.0.php).
 
 Plusieurs plugins ont été créé pour nous faciliter la tache:

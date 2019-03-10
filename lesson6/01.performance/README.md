@@ -8,7 +8,7 @@
 
 C'est très important de se prendre la tête avec l'optimisation du site à la fin de son développement, parce que personne aime les sites lents 😱 
 
-Les sites qui load lentement même causent du stress à leurs utilisateurs.
+Les sites lents même causent du stress à leurs utilisateurs.
 
 ![Web horror](https://i.ibb.co/NmwXrjW/stress-by-web.png)
 
@@ -17,12 +17,32 @@ Les sites qui load lentement même causent du stress à leurs utilisateurs.
 
 <!-- // TODO: Si le site est 3% plus lent, il perd tant d'utilisateurs -->
 
-Google Search [pénalise](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html) les sites mobiles lents et les placent plus bas dans les résultats des recherches.
+Google Search [pénalise](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html) les sites mobiles lents et les placent plus bas dans les résultats de recherche.
 
 
 > Une fois de plus, optimisez vos sites
 
 ## Pourquoi les sites sont peu performants?
+
+# Optimisation du code
+
+Utiliser les fonction si le code est réutilisé plusieurs fois - les fonction peuvent être mis en cache.
+
+Accessing the HTML DOM is very slow, compared to other JavaScript statements.
+If you expect to access a DOM element several times, access it once, and use it as a local variable.
+Essayez d’écrire le stricte minimum de HTML pour que le navigateur passe moins de temps à chercher les élément dedans.
+
+Eviter de loop plusieurs fois dans la même tableau -> optimiser le nombre des boucles.
+
+Minimiser le nombre de variables globales.
+
+## Optimiser le code avant le mettre sur le serveur
+
+Préparer le code JavaScript pour la stade de production
++ Grouper les fichiers
++ Transpiler pour rendre votre code accessible aux navigateur qui ne supportent pas ES6
++ Minifier les fichiers : cela permet de réduire la taille de fichier [par 20-40%](https://www.gribble.org/techreports/minification/)
+
 
 ### Trop de requêtes HTTPS
 
@@ -42,7 +62,7 @@ Trop de variables globales. Les variables globales sont jamais détruites, donc 
 
 Les écouteurs d'événements sont pas detachés. Les écouteurs d'événements consomment beaucoup de mémoire, si on les detache pas, leur nombre va incrementer et ralentir votre site. **N'oubliez pas de les detacher.**
 
-Trop d'animations ralentissent le site et font bogger le rendu de la page.
+Trop d'animations ralentissent le site et font bugguer le rendu de la page.
 
 Le sites a trop de plugins qui consomment beaucoup de CPU.
 
