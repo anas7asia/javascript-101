@@ -1,78 +1,40 @@
 # Performance de site
 
 + [Les métriques RAILS de Google](https://developers.google.com/web/fundamentals/performance/rail)
-+ []()
++ [14 Important Website Performance Metrics You Should Be Analyzing](https://www.keycdn.com/blog/website-performance-metrics)
 
-## L'impacte
+## L'importance de sites légers et rapides
 
-
-C'est très important de se prendre la tête avec l'optimisation du site à la fin de son développement, parce que personne aime les sites lents 😱 
-
-Les sites lents même causent du stress à leurs utilisateurs.
+C'est très important d'optimisation du code et des resources (images, vidéos, etc) pour augmenter la conversion sur votre site. Les sites lents causent du stress à leurs utilisateurs aussi grand que les filmes d'horreur 😱.
 
 ![Web horror](https://i.ibb.co/NmwXrjW/stress-by-web.png)
 
-
-<!-- Les metrics RAILS pour augmenter la satisfation de l'itilisateur de votre site: <https://developers.google.com/web/fundamentals/performance/rail> -->
-
-<!-- // TODO: Si le site est 3% plus lent, il perd tant d'utilisateurs -->
-
 Google Search [pénalise](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html) les sites mobiles lents et les placent plus bas dans les résultats de recherche.
 
-
-> Une fois de plus, optimisez vos sites
+![Slow Websites Study](https://neilpatel-qvjnwj7eutn3.netdna-ssl.com/wp-content/uploads/2011/04/loading-time-sml.jpg)
 
 ## Pourquoi les sites sont peu performants?
 
-# Optimisation du code
-
-Utiliser les fonction si le code est réutilisé plusieurs fois - les fonction peuvent être mis en cache.
-
-Accessing the HTML DOM is very slow, compared to other JavaScript statements.
-If you expect to access a DOM element several times, access it once, and use it as a local variable.
-Essayez d’écrire le stricte minimum de HTML pour que le navigateur passe moins de temps à chercher les élément dedans.
-
-Eviter de loop plusieurs fois dans la même tableau -> optimiser le nombre des boucles.
-
-Minimiser le nombre de variables globales.
-
-## Optimiser le code avant le mettre sur le serveur
-
-Préparer le code JavaScript pour la stade de production
-+ Grouper les fichiers
-+ Transpiler pour rendre votre code accessible aux navigateur qui ne supportent pas ES6
-+ Minifier les fichiers : cela permet de réduire la taille de fichier [par 20-40%](https://www.gribble.org/techreports/minification/)
-
-
-### Trop de requêtes HTTPS
-
-Multiple requests means more latency
-Chaque requête HTTP ajoute en moyenne ~700-800 octets (pas très grave) et 100ms de latence (grave!). Donc le but ultime est de faire le moins de requêtes que possible.
+### Le site est trop lourd
 
 ![Average website size](https://i.ibb.co/9W06tvT/website-average-weight.png)
 
-Si le site télécharge trop de scripts JavaScript, CSS et d'images le temps de leurs evaluation et de rendu augmente et la satisfaction de l'utilisateur baisse.
+Si le site télécharge des **grands** fichiers HTML, des scripts JavaScript et CSS **lourds**, le temps de leurs evaluation et de rendu augmente et la satisfaction de l'utilisateur baisse.
 
+### Trop de requêtes HTTPS
 
-### Memoire
+Chaque requête HTTP ajoute en moyenne ~700-800 octets (pas très grave) et 100ms de latence (grave !). Donc le but ultime est de faire le moins de requêtes que possible.
 
-Il n'y a pas besoin de gerer la memoire avec JS. [Garbage collector](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management) s'occupe de libérer la mémoire. Par contre, les memory leaks peuvent avoir place.
+Si le site télécharge **trop de scripts** JavaScript, CSS et d'images le temps de leurs evaluation et de rendu augmente et la satisfaction de l'utilisateur baisse.
 
-Trop de variables globales. Les variables globales sont jamais détruites, donc la mémoire qui leur est donnée, n'est jamais libérée.
-
-Les écouteurs d'événements sont pas detachés. Les écouteurs d'événements consomment beaucoup de mémoire, si on les detache pas, leur nombre va incrementer et ralentir votre site. **N'oubliez pas de les detacher.**
-
-Trop d'animations ralentissent le site et font bugguer le rendu de la page.
-
-Le sites a trop de plugins qui consomment beaucoup de CPU.
 
 ## Tester la performance d'un site
 
-Vous pouvez tester les performance d'un site directement dans la console de Chrome (tab 'Audit')
+Vous pouvez tester la performance d'un site directement dans la console de Chrome (tab 'Audit')
 
 ![Ynov Audit](https://i.ibb.co/vvpw7wD/ynov-audit.png)
 
-Il y a aussi les sites qui mésure la performance des sites qui permettent de tester les sites qui sont déjà en ligne :
+Il y a aussi les services qui mésurent la performance des sites déjà mis en ligne :
 + [Web Page Test](https://www.webpagetest.org/)
 + [Pingdom](https://tools.pingdom.com/)
 + [Google Page Speed](https://developers.google.com/speed/pagespeed/insights/)

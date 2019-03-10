@@ -1,13 +1,13 @@
 # Configuration de Webpack
 
++ [Npm](https://docs.npmjs.com/)
 + [Webpack Concepts](https://webpack.js.org/concepts/)
-+ [Npm]()
 
 ## Introduction dans npm
 
 > N'oubliez d'[installer](https://nodejs.org/en/download/) les dernières versions Node.js et npm
 
-On utilise Node.js et [npm](https://docs.npmjs.com/about-npm/) (Node Packages Manager) pour sauvegarder et utiliser les dependences d'un projet.
+On utilise Node.js et [npm](https://docs.npmjs.com/about-npm/) (Node Packages Manager) pour sauvegarder, gérer et utiliser les dependences d'un projet.
 Chaque projet npm doit avoir à sa racine un fichier `package.json` qui contient tous les informations relatives à ce projet. Au fur et à mesure de développement ce fichier est mis à jour.
 
 ```json
@@ -54,7 +54,6 @@ C'est commandes sont exécutées en CLI dans Terminal (Mac) ou CommandLine (Wind
 
 ## Webpack
 
-c'est 
 Webpack est un système de construction (build) de fichiers et un outil qui permet de mieux organiser notre code, le regrouper, appliquer certaines transformations.
 Il impacte aussi la structure de nos projets. Si on utilise Webpack, on met tous les fichiers sur lesquels on travaille dans le dossier `/src`. Les fichiers transformés par Webpack vont se trouver dans le dossier `/dist`.
 
@@ -78,11 +77,106 @@ Pas à pas on va créer un fichier de configuration Webpack pour un site multipa
 3. Insérer dynamiquement les fichiers `.js` dans les fichiers `.html`.
 4. Grouper, minifier, convertir en CSS et préfixer automatiquement les fichiers `.scss`.
 
-Pour avoir la configuration complète, il vous suffit de copier coller ensemple la configuration de toutes les parties et installer les plugins nécessaires.
+<details>
+  <summary>Voir la configuration complète </summary>
+
+```js
+const path = require('path');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+module.exports = (env, argv) => ({
+	devServer: {
+	    contentBase: path.join(__dirname, 'dist'),
+	    compress: true,
+	    port: 9000
+	},
+	entry: {
+		vendor: './src/scripts/vendor.js', // all the not development dependencies from node_modules go here
+		scripts: './src/scripts/scripts.js', // all the code shared between different pages goes here
+		index: './src/scripts/index.js', // code specific to index page
+		'contact-form': './src/scripts/contact-form.js', // code specific to contact-form page
+	  },
+	  // compiled code
+	  output: {
+		filename: argv.mode == 'development' ? '[name].js' : '[name].[hash].js', // '[name].[hash].js' for production
+		path: path.resolve(__dirname, 'dist'), // folder where all tranformed files will be placed
+	  },
+	  module: {
+		rules: [
+			{
+				test: /\.(sa|sc|c)ss$/, // look for .sass, .scss or .css files
+				use: [
+				  MiniCssExtractPlugin.loader, // minify css files
+				  "css-loader", // translate CSS to JavaScript
+				  { 
+					loader: "postcss-loader", // perform some actions on compiled css
+					options: {
+					  plugins: [require("autoprefixer")] // add prefixes to css properties if needed for browsers mentioned in 'browserslist' property in package.json
+					}
+				  },
+				  "sass-loader" // convert SASS/SCSS to css
+				],
+      },
+      {
+				test: /\.m?js$/,
+				exclude: /node_modules/,
+				use: {
+				  loader: 'babel-loader',
+				  options: {
+					presets: ['@babel/preset-env'] // transpile ES6 to ES5
+				  }
+				}
+      },
+			  // convert an image lighter than 10.000 bytes to Base64 URL
+      // otherwise reduce its size
+      {
+        test: /\.(png|jpe?g)/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              name: "./assets/images/[name].[ext]",
+              limit: 10000 // 10k bytes
+            }
+          },
+          {
+            loader: "img-loader"
+          }
+        ]
+      },
+		  {
+			test: /\.html$/,
+			use: [{ 
+			  loader: "html-loader", 
+			  options: { minimize: true } 
+			}]
+		  },
+		]
+  },
+  plugins: [
+  // create an instance of HtmlWebPackPlugin for every page of a multipage website
+  new HtmlWebPackPlugin({
+    template: "src/index.html", // take html from this path
+    filename: "./index.html", // name it 'index.html' and insert to the root of output folder
+    chunks: ['vendor', 'scripts', 'index'] // insert dymamically vendor.js, scripts.js and index.js to index.html
+  }),
+  new HtmlWebPackPlugin({
+    template: "src/contact-form.html",
+    filename: "./contact-form.html",
+    chunks: ['vendor', 'scripts', 'contact-form']
+  }),
+  new MiniCssExtractPlugin({
+    filename: argv.mode == 'development' ? '[name].css' : '[name].[hash].css', // '[name].[hash].css for production - hash this file, so users always will get the newest version of this file and not that one from cache
+    })
+  ]
+});
+```
+</details>
 
 ![Webpack](https://i.ibb.co/Rzcwk1k/webpack-is-coming.png)
 
-Comment fonctionne webpack?
+Comment fonctionne Webpack?
 ```js
 {
   test: /\.YOUR_FILE_EXTENSION$/, // il cherche tous les fichiers précisé dans "entry" avec certain format
@@ -105,7 +199,7 @@ node_modules/
 dist/
 ```
 
-Créez un fichier `package.json` avec la commande. Repondez aux questions ou appuyez Enter pour mettre la reponse par defaut
+Créez un fichier `package.json` avec la commande. Repondez aux questions ou appuyez sur 'Enter' pour mettre la reponse par defaut
 ```
 npm init
 ```
@@ -115,15 +209,7 @@ Ensuite installez `webpack` et `webpack-cli` dans votre projet en tant que les d
 npm install --save-dev webpack webpack-cli
 ```
 
-Toujours dans le même dossier créez un fichier `webpack.config.js` où vous allez mettre toute la configuration de Webpack (webpack pourra la trouver automatiquement par le nom du fichier) :
-
-```js
-const path = require('path');
-
-module.exports = (env, argv) => ({
-  // all properties go here
-});
-```
+Toujours dans le même dossier créez un fichier `webpack.config.js` où vous allez mettre toute la configuration de Webpack (webpack pourra la trouver automatiquement par le nom du fichier).
 
 ### Serveur de développement
 
@@ -133,15 +219,6 @@ Installez le plugin [webpack-dev-server](https://github.com/webpack/webpack-dev-
 npm install webpack-dev-server --save-dev
 ```
 
-Ajoutez la configuration dans `module.exports`:
-```
-devServer: {
-  contentBase: path.join(__dirname, 'dist'),
-  compress: true,
-  port: 9000
-}
-```
-
 Dans `package.json` ajoutez la commande du lancement du serveur, on peut en avour plusieurs scripts séparés par une virgule :
 ```json
 "scripts": {
@@ -149,7 +226,7 @@ Dans `package.json` ajoutez la commande du lancement du serveur, on peut en avou
 }
 ```
 
-Installer de suite la dernière version de `jQuery` parce qu'elle est utilisée dans le projet:
+Installez de suite la dernière version de `jQuery` parce qu'elle est utilisée dans le projet:
 
 ```
 npm install jquery@latest --save
@@ -230,7 +307,7 @@ Les [preprocesseur CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS_pr
 
 Dans cette exemple on va utiliser [SASS](http://sass-lang.com/), le preprocesseur le plus populaire.
 
-La configuration suivante permet de compiler scss en css, le minifier et ajouter les préfixer pour les 2 dernières versions des navigateurs modernes les plus repandus (Chrome, Firefox, Safari, Edge).
+La configuration suivante permet de compiler scss en css, le minifier et ajouter les préfixes pour les 2 dernières versions des navigateurs modernes les plus repandus (Chrome, Firefox, Safari, Edge).
 
 Tous d'abord installez les packages suivants :
 ```
@@ -283,19 +360,24 @@ Installez le plugin [Babel](https://babeljs.io/docs/en/) responsable de transpil
 npm i -D babel-loader @babel/core @babel/preset-env 
 ```
 
-Les fichiers `.js` sont déjà mis dans la propriété `entry`, il reste qu'à ajouter le loader pour exécuter les actions nécessaires :
-```js
-{
-  test: /\.m?js$/,
-  exclude: /node_modules/,
-  use: {
-    loader: 'babel-loader',
-    options: {
-      presets: ['@babel/preset-env'] // transpile ES6 to ES5
+Les fichiers `.js` sont déjà mis dans la propriété `entry`
+
+<details>
+  <summary>Voir la configuration</summary>
+
+  ```js
+  {
+    test: /\.m?js$/,
+    exclude: /node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env'] // transpile ES6 to ES5
+      }
     }
   }
-}
-```
+  ```
+</details>
 
 Les scripts `vendor`, `scripts` et `index` sont chargé sur la page `index.html`
 ![Webpack Index page](https://i.ibb.co/yYBm6JG/webpack-index.png)
@@ -305,7 +387,8 @@ Les scripts `vendor`, `scripts` et `contact-form` sont chargé sur la page `cont
 
 ### Images
 
-Pour diminuer le nombre de requêtes envoyées on peut transformer les toutes petites images [en Base64 URL](https://stackoverflow.com/questions/11736159/advantages-and-disadvantages-of-using-base64-encoded-images) parce que le poids d'header est supérieur au poids de l'image elle-même.
+Pour diminuer le nombre de requêtes envoyées on peut transformer les toutes petites images [en Base64 URL](https://stackoverflow.com/questions/11736159/advantages-and-disadvantages-of-using-base64-encoded-images).
+<!-- parce que le poids d'header est supérieur au poids de l'image elle-même. -->
 
 Grandes images doivent être optimisées en poids. Reduisez leurs poids automatiqument sans perdre en qualité avec Webpack.
 
@@ -368,6 +451,7 @@ npm run build:prod
 ```
 
 Résultat:
+
 ![Webpack-Prod](https://i.ibb.co/fFv2mcY/webpack-prod.png)
 
 ## Pour aller plus loin

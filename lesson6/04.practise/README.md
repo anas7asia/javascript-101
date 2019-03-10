@@ -20,6 +20,8 @@ Le menu déroulant est visible après le clique sur lien 'Know more':
 
 Dans le `<footer>` affichez l'année en cours en modifiant le texte du `<span>` avec l'id `js-current-year`. Récupérez la date d'aujourd'hui avec l'objet [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) et sa méthode [getFullYear](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear).
 
+![Footer](https://i.ibb.co/mFQ78x9/final-project-footer.png)
+
 ## Premier bloc
 
 Créez un calculateur de [Body Mass Index](https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle).
@@ -78,7 +80,9 @@ const bmiFacts = [
 ];
 ```
 
-Parcourez le tableau bmiFacts pour afficher la liste des faits sur BMI dans le `<div>` avec l'id `js-facts`. Au final, la structure HTML pour chaque fait sera suivante (remplacez le texte en majuscule par les valeurs dynamiques) :
+Parcourez le tableau bmiFacts pour afficher la liste des faits sur BMI dans le `<div>` avec l'id `js-facts`.
+Avant chaque titre ajoutez un nombre pour énumérer les cartes. Ce nombre sera dynamique et égal à l'indice de l'élément du tableau en cours de traitement plus un.
+Au final, la structure HTML pour chaque fait sera suivante (remplacez le texte en majuscule par les valeurs dynamiques) :
 
 ```html
 <div class="col col-12 col-sm-6 col-lg-3 mb-3">
@@ -92,7 +96,7 @@ Parcourez le tableau bmiFacts pour afficher la liste des faits sur BMI dans le `
 </div>
 ```
 
-![BMI Facts](https://i.ibb.co/7N0frt3/final-project-facts.png)
+![BMI Facts](https://i.ibb.co/JHVsLdQ/final-project-facts.png)
 
 ## Troisième bloc
 
