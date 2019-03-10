@@ -21,11 +21,6 @@ Chaque projet npm doit avoir à sa racine un fichier `package.json` qui contient
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "webpack --mode development"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ashleygwilliams/my_package.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -55,7 +50,7 @@ C'est commandes sont exécutées en CLI dans Terminal (Mac) ou CommandLine (Wind
 ## Webpack
 
 Webpack est un système de construction (build) de fichiers et un outil qui permet de mieux organiser notre code, le regrouper, appliquer certaines transformations.
-Il impacte aussi la structure de nos projets. Si on utilise Webpack, on met tous les fichiers sur lesquels on travaille dans le dossier `/src`. Les fichiers transformés par Webpack vont se trouver dans le dossier `/dist`.
+Il impacte aussi la structure de nos projets. Si on utilise Webpack, on met tous les fichiers sur lesquels on travaille dans le dossier `/src`. Les fichiers transformés par Webpack vont être ajouté automatiquement dans le dossier `/dist`.
 
 ```
 package.json
@@ -70,15 +65,59 @@ webpack.config.js
 
 ```
 
-Pas à pas on va créer un fichier de configuration Webpack pour un site multipage qui permettra de
+![Webpack](https://i.ibb.co/Rzcwk1k/webpack-is-coming.png)
+
+Comment fonctionne Webpack?
+```js
+{
+  test: /\.YOUR_FILE_EXTENSION$/, // il cherche tous les fichiers précisé dans "entry" avec certain format
+  exclude: /SOMETHING THAT IS THAT EXTENSION BUT SHOULD NOT BE PROCESSED/, // mais pas avec ce nom
+  use: {
+    loader: "loader for your file extension or a group of loaders" // ensuite il les prétraite et leurs applique transformations nécessaires
+  }
+}
+```
+
+Webpack ne connaît pas autres formats que `.js`, donc il faut installer les plugins (loaders) pour charger les fichiers .html, .css, des images, des polices, etc.
+
+
+## Préparer l'environnement du travail
+
+> Travaillez toujours dans le dossier `webpack-test`.
+
+Créez un fichier `.gitignore` avec le contenu suivant qui interdira envoyer certains dossiers ou fichiers inutiles à partager :
+```
+node_modules/
+dist/
+```
+
+Exécutez la commande suivante pour créez un fichier `package.json`. Repondez aux questions posées dans le terminal ou appuyez sur 'Enter' pour mettre la reponse par defaut.
+```
+npm init
+```
+
+Installez de suite la dernière version de `jQuery` parce qu'elle est utilisée dans le projet. jQuery se trouvera dans le dossier `node_modules`.
+
+```
+npm install jquery@latest --save
+```
+
+Ensuite installez `webpack` et `webpack-cli` dans votre projet en tant que les dependences de développement :
+```
+npm install --save-dev webpack webpack-cli
+```
+
+Toujours dans le même dossier créez un fichier `webpack.config.js`. Copiez-collez la configuration de Webpack (il pourra la trouver automatiquement par le nom du fichier) dans ce fichier.
+
+<details>
+  <summary>Voir la configuration</summary>
+
+Cette configuration Webpack pour un site multipage permet de
 
 1. Grouper les fichiers `.js` dans un seul ou plusieurs fichiers
 2. Transpiler le code ES6 en ES5 et le minifier
 3. Insérer dynamiquement les fichiers `.js` dans les fichiers `.html`.
 4. Grouper, minifier, convertir en CSS et préfixer automatiquement les fichiers `.scss`.
-
-<details>
-  <summary>Voir la configuration complète </summary>
 
 ```js
 const path = require('path');
@@ -91,18 +130,19 @@ module.exports = (env, argv) => ({
 	    compress: true,
 	    port: 9000
 	},
+  // code that you work on in 'src' folder
 	entry: {
 		vendor: './src/scripts/vendor.js', // all the not development dependencies from node_modules go here
 		scripts: './src/scripts/scripts.js', // all the code shared between different pages goes here
 		index: './src/scripts/index.js', // code specific to index page
 		'contact-form': './src/scripts/contact-form.js', // code specific to contact-form page
-	  },
-	  // compiled code
-	  output: {
+  },
+  // compiled code
+  output: {
 		filename: argv.mode == 'development' ? '[name].js' : '[name].[hash].js', // '[name].[hash].js' for production
 		path: path.resolve(__dirname, 'dist'), // folder where all tranformed files will be placed
-	  },
-	  module: {
+  },
+  module: {
 		rules: [
 			{
 				test: /\.(sa|sc|c)ss$/, // look for .sass, .scss or .css files
@@ -174,77 +214,37 @@ module.exports = (env, argv) => ({
 ```
 </details>
 
-![Webpack](https://i.ibb.co/Rzcwk1k/webpack-is-coming.png)
+Installez les plugins nécessaires suivants :
 
-Comment fonctionne Webpack?
-```js
-{
-  test: /\.YOUR_FILE_EXTENSION$/, // il cherche tous les fichiers précisé dans "entry" avec certain format
-  exclude: /SOMETHING THAT IS THAT EXTENSION BUT SHOULD NOT BE PROCESSED/, // mais pas avec ce nom
-  use: {
-    loader: "loader for your file extension or a group of loaders" // ensuite il les prétraite et leurs applique transformations nécessaires
-  }
-}
+Installez le plugin [Babel](https://babeljs.io/docs/en/) responsable de transpilation de **JavaScript** :
+```
+npm i -D babel-loader @babel/core @babel/preset-env 
 ```
 
-Webpack connaît pas d'autres formats que `.js`, donc il faut installer les loaders pour charger les fichiers .html, .css, des images, des polices, etc.
-
-## Webpack
-
-> Travaillez dans le dossier `webpack-test`.
-
-Créez un fichier `.gitignore` avec le contenu suivant qui interdira envoyer certains dossiers ou fichiers lourds ou inutiles à partager :
-```
-node_modules/
-dist/
-```
-
-Créez un fichier `package.json` avec la commande. Repondez aux questions ou appuyez sur 'Enter' pour mettre la reponse par defaut
-```
-npm init
-```
-
-Ensuite installez `webpack` et `webpack-cli` dans votre projet en tant que les dependences de développement :
-```
-npm install --save-dev webpack webpack-cli
-```
-
-Toujours dans le même dossier créez un fichier `webpack.config.js` où vous allez mettre toute la configuration de Webpack (webpack pourra la trouver automatiquement par le nom du fichier).
-
-### Serveur de développement
-
-Installez le plugin [webpack-dev-server](https://github.com/webpack/webpack-dev-server) dans le projet qui permet de recompiler votre code à chaque changement et le visualisez à l'adresse : `http://localhost:9000`
-
-```
-npm install webpack-dev-server --save-dev
-```
-
-Dans `package.json` ajoutez la commande du lancement du serveur, on peut en avour plusieurs scripts séparés par une virgule :
-```json
-"scripts": {
-  "start:dev": "webpack-dev-server"
-}
-```
-
-Installez de suite la dernière version de `jQuery` parce qu'elle est utilisée dans le projet:
-
-```
-npm install jquery@latest --save
-```
-
-Executez cette commande pour voir vos changements en live (c'est normale si vous avez une erreur tout au debut, vu que la config est vide) :
-```
-npm run start:dev
-```
-> Attention! Si vous modifiez `webpack.config.js`, n'oubliez pas de relancer le serveur
-
-### HTML
-
-Installez le plugin webpack pour charger des fichiers HTML :
+Pour **HTML** :
 ```
 npm install html-loader html-webpack-plugin --save-dev
 ```
 
+Pour **CSS** :
+```
+npm install css-loader sass-loader postcss-loader autoprefixer node-sass mini-css-extract-plugin --save-dev
+```
+
+Pour les **images** :
+```
+npm i -D img-loader url-loader file-loader
+```
+
+
+
+<!-- ### HTML
+
+Installez le plugin webpack pour charger des fichiers HTML :
+```
+npm install html-loader html-webpack-plugin --save-dev
+``` -->
+<!-- 
 <details>
 <summary>Voir la configuration</summary>
 
@@ -297,8 +297,7 @@ Dans la propriété `plugins` (qui est un tableau) de `module.exports` ajoutez c
     chunks: ['vendor', 'scripts', 'contact-form']
   })
 ```
-</details>
-
+</details> -->
 
 
 ### CSS
@@ -309,13 +308,8 @@ Dans cette exemple on va utiliser [SASS](http://sass-lang.com/), le preprocesseu
 
 La configuration suivante permet de compiler scss en css, le minifier et ajouter les préfixes pour les 2 dernières versions des navigateurs modernes les plus repandus (Chrome, Firefox, Safari, Edge).
 
-Tous d'abord installez les packages suivants :
-```
-npm install css-loader sass-loader postcss-loader autoprefixer node-sass mini-css-extract-plugin --save-dev
-```
-
 Le fichier `global.scss` est inséré dans `scripts.js` pour le rendre visible à Webpack.
-
+<!-- 
 <details>
 <summary>Voir la configuration</summary>
 
@@ -348,21 +342,16 @@ new MiniCssExtractPlugin({
   filename: argv.mode == 'development' ? '[name].css' : '[name].[hash].css', // '[name].[hash].css for production - hash this file, so users always will get the newest version of this file and not that one from cache
 })
 ```
-</details>
+</details> -->
 
 
 ### JS
 
-ES6 n'est pas supporté par tous les navigateurs modernes, donc il faut convertir (*transpiler*) les fichiers .js écrits en ES6 en ES5. Au passage on va minifier tous le code et grouper certains fichiers.
+ES6 n'est pas supporté par tous les navigateurs modernes, donc il faut convertir (*transpiler*) les fichiers `.js` écrits en ES6 en ES5. Au passage on va minifier tous le code et grouper certains fichiers.
 
-Installez le plugin [Babel](https://babeljs.io/docs/en/) responsable de transpilation :
-```
-npm i -D babel-loader @babel/core @babel/preset-env 
-```
+Les fichiers `.js` sont déjà mis dans la propriété `entry`.
 
-Les fichiers `.js` sont déjà mis dans la propriété `entry`
-
-<details>
+<!-- <details>
   <summary>Voir la configuration</summary>
 
   ```js
@@ -377,12 +366,13 @@ Les fichiers `.js` sont déjà mis dans la propriété `entry`
     }
   }
   ```
-</details>
+</details> -->
 
-Les scripts `vendor`, `scripts` et `index` sont chargé sur la page `index.html`
+
+Les scripts `vendor`, `scripts` et `index` sont chargés sur la page `index.html`
 ![Webpack Index page](https://i.ibb.co/yYBm6JG/webpack-index.png)
 
-Les scripts `vendor`, `scripts` et `contact-form` sont chargé sur la page `contact-form.html`
+Les scripts `vendor`, `scripts` et `contact-form` sont chargés sur la page `contact-form.html`
 ![Webpack Contac Form page](https://i.ibb.co/qRKMHjm/webpack-contact-form.png)
 
 ### Images
@@ -392,12 +382,8 @@ Pour diminuer le nombre de requêtes envoyées on peut transformer les toutes pe
 
 Grandes images doivent être optimisées en poids. Reduisez leurs poids automatiqument sans perdre en qualité avec Webpack.
 
-Tous d'abord installez les plugins necessaires:
-```
-npm i -D img-loader url-loader file-loader
-```
 
-<details>
+<!-- <details>
 <summary>Voir la configuration</summary>
 
 Ajoutez un loader des images dans la propriété `module.rules` de `module.exports` :
@@ -420,7 +406,29 @@ Ajoutez un loader des images dans la propriété `module.rules` de `module.expor
   ]
 }
 ```
-</details>
+</details> -->
+
+### Serveur de développement
+
+Installez le plugin [webpack-dev-server](https://github.com/webpack/webpack-dev-server) dans le projet qui permet de recompiler votre code à chaque changement et le visualisez à l'adresse : `http://localhost:9000`
+
+```
+npm install webpack-dev-server --save-dev
+```
+
+Dans `package.json` ajoutez la commande du lancement du serveur, on peut en avour plusieurs scripts séparés par une virgule :
+```json
+"scripts": {
+  "start:dev": "webpack-dev-server"
+}
+```
+
+Exécutez cette commande pour voir vos changements en live (c'est normale si vous avez une erreur tout au debut, vu que la config est vide) :
+```
+npm run start:dev
+```
+> Attention! Si vous modifiez `webpack.config.js`, n'oubliez pas de relancer le serveur
+
 
 ## Compilation
 

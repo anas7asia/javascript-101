@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BMI Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">BMI Calculator</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#calculator">Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Know more
+          </a>
+          <div class="dropdown-menu" id="navbarDropdownMenu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">What is BMI?</a>
+            <a class="dropdown-item" href="#">Ask a specialist</a>
+            <a class="dropdown-item" href="#">Can I trust the result?</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 2. BMI CALCULATOR -->
+  <section class="jumbotron" id="calculator">
+    <div class="container">
+      <h1 class="display-4">Calculate your BMI</h1>
+      <p class="lead">The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres. <strong>This test is not the most reliable, but if you are concerned about the result, check it with your doctor.</strong></p>
+      <hr class="my-4">
+      <p>BMI = WEIGHT / (HEIGHT / 100 * HEIGHT / 100). To calculate your BMI, please, enter your weight and height.</p>
+  
+      <form id="js-bmi-form">
+        <div class="row">
+          <div class="col col-12 col-sm-5">
+            <div class="form-group">
+              <label for="js-bmi-weight"><strong>Your weight</strong></label>
+              <input type="text" class="form-control" id="js-bmi-weight" placeholder="Weight">
+            </div>
+          </div>
+          <div class="col col-12 col-sm-5">
+            <div class="form-group">
+              <label for="js-bmi-height"><strong>Your height</strong></label>
+              <input type="text" class="form-control" id="js-bmi-height" placeholder="Height">
+            </div>
+          </div>
+
+          <div class="col col-12 col-sm-2 d-flex align-center">
+            <button type="submit" class="btn btn-primary mb-3 align-self-end">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 3. FACTS -->
+  <section class="container mb-5">
+    <h2>BMI facts</h2>
+    <div class="row" id="js-facts"></div>
+  </section>
+
+  <!-- 4. ADVERTISEMENT -->
+  <section class="container">
+    <div id="js-ad">
+      <a href="https://cat-bounce.com">
+        <img src="https://i.ibb.co/JqYJjtr/pets.jpg" alt="Miaou!" width="100%">
+      </a>
+      <a role="button" id="js-ad-close"></a>
+    </div>
+  </section>
+
+  <!-- 5. CONTACT FORM -->
+  <section class="container mt-5" id="contact">
+    <h2>Contact Us</h2>
+
+    <form id="js-contact-form" class="mb-4">
+
+      <div class="form-row">
+        <div class="col">
+          <div class="form-group">
+            <label class="label" for="js-contact-form-lastname">Last name</label>
+            <input class="form-control" type="text" id="js-contact-form-lastname" placeholder="Last name" value="Oudin">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label class="label" for="js-contact-form-firstname">First name</label>
+            <input class="form-control" type="text" id="js-contact-form-firstname" placeholder="First name" value="Anastasia">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col">
+          <div class="form-group">
+            <label class="label" for="js-contact-form-class">Class</label>
+            <input class="form-control" type="text" id="js-contact-form-class" placeholder="Class" value="Ynov Cats B2">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label class="label" for="js-contact-form-email">Email</label>
+            <input class="form-control" type="email" id="js-contact-form-email" placeholder="Email" value="anastasia.oudin@ynov.com">
+          </div>
+        </div>
+      </div>
+
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="form-group">
+            <label class="label" for="js-contact-form-birthday">Birthday</label>
+            <input class="form-control" type="text" id="js-contact-form-birthday" placeholder="Birthday">
+          </div>
+        </div>
+      </div>
+
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="form-group">
+            <label class="label" for="js-contact-form-message">Message</label>
+            <textarea class="form-control" id="js-contact-form-message" rows="4" placeholder="Your message">Hello!</textarea>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </form>
+  </section>
+
+  <!-- 6. FOOTER -->
+  <footer class="bg-dark">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <span class="nav-link text-info">
+            Anastasia Oudin @ Ynov © <span id="js-current-year"></span>
+          </span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Stupid link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">To nowhere</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- 7. COOKIES -->
+  <section id="js-cookies" class="cookies text-light d-none">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <p class="mb-0">
+          By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+        </p>
+        <button type="button" class="btn btn-success ml-4" id="js-accept-cookies">Ok</button>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
