@@ -3,12 +3,12 @@
 + [Npm](https://docs.npmjs.com/)
 + [Webpack Concepts](https://webpack.js.org/concepts/)
 
-## Introduction dans npm
+## Introduction à npm
 
 > N'oubliez d'[installer](https://nodejs.org/en/download/) les dernières versions Node.js et npm
 
-On utilise Node.js et [npm](https://docs.npmjs.com/about-npm/) (Node Packages Manager) pour sauvegarder, gérer et utiliser les dependences d'un projet.
-Chaque projet npm doit avoir à sa racine un fichier `package.json` qui contient tous les informations relatives à ce projet. Au fur et à mesure de développement ce fichier est mis à jour.
+On utilise Node.js et [npm](https://docs.npmjs.com/about-npm/) (Node Packages Manager) pour télécharger, gérer et utiliser les dependences d'un projet.
+Chaque projet npm doit avoir à sa racine un fichier `package.json` qui contient toutes les informations relatives à ce projet. Au fur et à mesure du développement ce fichier est mis à jour.
 
 ```json
 {
@@ -49,8 +49,8 @@ C'est commandes sont exécutées en CLI dans Terminal (Mac) ou CommandLine (Wind
 
 ## Webpack
 
-Webpack est un système de construction (build) de fichiers et un outil qui permet de mieux organiser notre code, le regrouper, appliquer certaines transformations.
-Il impacte aussi la structure de nos projets. Si on utilise Webpack, on met tous les fichiers sur lesquels on travaille dans le dossier `/src`. Les fichiers transformés par Webpack vont être ajouté automatiquement dans le dossier `/dist`.
+Webpack est un système de construction (build) de fichiers et un outil qui permet de mieux organiser notre code, le regrouper et appliquer certaines transformations.
+Il impacte aussi la structure de nos projets. Si on utilise Webpack, on met tous les fichiers sur lesquels on travaille dans le dossier `/src`. Les fichiers transformés par Webpack vont être ajoutés automatiquement dans le dossier `/dist`.
 
 ```
 package.json
@@ -70,54 +70,55 @@ webpack.config.js
 Comment fonctionne Webpack?
 ```js
 {
-  test: /\.YOUR_FILE_EXTENSION$/, // il cherche tous les fichiers précisé dans "entry" avec certain format
+  test: /\.YOUR_FILE_EXTENSION$/, // il cherche tous les fichiers précisés dans "entry" avec un format spécifique
   exclude: /SOMETHING THAT IS THAT EXTENSION BUT SHOULD NOT BE PROCESSED/, // mais pas avec ce nom
   use: {
-    loader: "loader for your file extension or a group of loaders" // ensuite il les prétraite et leurs applique transformations nécessaires
+    loader: "loader for your file extension or a group of loaders" // ensuite il les pré-traite et leurs applique les transformations nécessaires
   }
 }
 ```
 
-Webpack ne connaît pas autres formats que `.js`, donc il faut installer les plugins (loaders) pour charger les fichiers .html, .css, des images, des polices, etc.
+Webpack ne connaît pas d'autres formats que `.js`, il faut donc installer les plugins (loaders) pour charger les fichiers .html, .css, les images, les polices, etc.
 
 
-## Préparer l'environnement du travail
+## Préparer l'environnement de travail
 
 > Travaillez toujours dans le dossier `webpack-test`.
 
-Créez un fichier `.gitignore` avec le contenu suivant qui interdira envoyer certains dossiers ou fichiers inutiles à partager :
+Créez un fichier `.gitignore` avec le contenu suivant qui interdira l'envoie de certains dossiers ou fichiers inutiles à partager sur GitHub :
 ```
 node_modules/
 dist/
 ```
 
-Exécutez la commande suivante pour créez un fichier `package.json`. Repondez aux questions posées dans le terminal ou appuyez sur 'Enter' pour mettre la reponse par defaut.
+Exécutez la commande suivante pour créez un fichier `package.json`. Répondez aux questions posées dans le terminal ou appuyez sur 'Enter' pour mettre la réponse par defaut.
 ```
 npm init
 ```
 
-Installez de suite la dernière version de `jQuery` parce qu'elle est utilisée dans le projet. jQuery se trouvera dans le dossier `node_modules`.
+Installez tout de suite la dernière version de `jQuery` parce qu'elle est utilisée dans le projet. jQuery se trouvera dans le dossier `node_modules`.
 
 ```
 npm install jquery@latest --save
 ```
 
-Ensuite installez `webpack` et `webpack-cli` dans votre projet en tant que les dependences de développement :
+Ensuite installez `webpack` et `webpack-cli` dans votre projet en tant que dependences de développement :
 ```
 npm install --save-dev webpack webpack-cli
 ```
 
-Toujours dans le même dossier créez un fichier `webpack.config.js`. Copiez-collez la configuration de Webpack (il pourra la trouver automatiquement par le nom du fichier) dans ce fichier.
+Toujours dans le même dossier créez un fichier `webpack.config.js`. Copiez-collez la configuration de Webpack (il pourra la trouver automatiquement avec le nom du fichier) dans ce fichier.
 
 <details>
   <summary>Voir la configuration</summary>
 
 Cette configuration Webpack pour un site multipage permet de
 
-1. Grouper les fichiers `.js` dans un seul ou plusieurs fichiers
-2. Transpiler le code ES6 en ES5 et le minifier
+1. Grouper les fichiers `.js` dans un seul ou plusieurs fichiers.
+2. Transpiler le code ES6 en ES5 et le minifier.
 3. Insérer dynamiquement les fichiers `.js` dans les fichiers `.html`.
 4. Grouper, minifier, convertir en CSS et préfixer automatiquement les fichiers `.scss`.
+5. Réduire le poids des images lourdes ou transformer en `Base64 URL` les images de moins de 10Ko.
 
 ```js
 const path = require('path');
@@ -214,9 +215,9 @@ module.exports = (env, argv) => ({
 ```
 </details>
 
-Installez les plugins nécessaires suivants :
+Installez tous les plugins suivants :
 
-Installez le plugin [Babel](https://babeljs.io/docs/en/) responsable de transpilation de **JavaScript** :
+[Babel](https://babeljs.io/docs/en/) pour transpiler le code **JavaScript** :
 ```
 npm i -D babel-loader @babel/core @babel/preset-env 
 ```
@@ -304,9 +305,9 @@ Dans la propriété `plugins` (qui est un tableau) de `module.exports` ajoutez c
 
 Les [preprocesseur CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor) ajoutent les fonctionnalités qui n'existent pas dans CSS mais qui sont très utiles en stade de développement.
 
-Dans cette exemple on va utiliser [SASS](http://sass-lang.com/), le preprocesseur le plus populaire.
+Dans cette exemple on va utiliser [SASS](http://sass-lang.com/) - le preprocesseur le plus populaire.
 
-La configuration suivante permet de compiler scss en css, le minifier et ajouter les préfixes pour les 2 dernières versions des navigateurs modernes les plus repandus (Chrome, Firefox, Safari, Edge).
+Avec la configuration Webpack ci-dessus il est possible de compiler scss en css, le minifier et ajouter les préfixes pour les 2 dernières versions des navigateurs modernes les plus repandus (Chrome, Firefox, Safari, Edge).
 
 Le fichier `global.scss` est inséré dans `scripts.js` pour le rendre visible à Webpack.
 <!-- 
@@ -347,9 +348,9 @@ new MiniCssExtractPlugin({
 
 ### JS
 
-ES6 n'est pas supporté par tous les navigateurs modernes, donc il faut convertir (*transpiler*) les fichiers `.js` écrits en ES6 en ES5. Au passage on va minifier tous le code et grouper certains fichiers.
+ES6 n'est pas supporté par tous les navigateurs modernes, il faut donc convertir (*transpiler*) les fichiers `.js` écrits en ES6 en ES5. Au passage on va minifier tous le code et grouper certains fichiers.
 
-Les fichiers `.js` sont déjà mis dans la propriété `entry`.
+<!-- Les fichiers `.js` sont déjà mis dans la propriété `entry`. -->
 
 <!-- <details>
   <summary>Voir la configuration</summary>
@@ -377,10 +378,9 @@ Les scripts `vendor`, `scripts` et `contact-form` sont chargés sur la page `con
 
 ### Images
 
-Pour diminuer le nombre de requêtes envoyées on peut transformer les toutes petites images [en Base64 URL](https://stackoverflow.com/questions/11736159/advantages-and-disadvantages-of-using-base64-encoded-images).
-<!-- parce que le poids d'header est supérieur au poids de l'image elle-même. -->
+Pour diminuer le nombre de requêtes envoyées on peut transformer toutes les petites images [en Base64 URL](https://stackoverflow.com/questions/11736159/advantages-and-disadvantages-of-using-base64-encoded-images).
 
-Grandes images doivent être optimisées en poids. Reduisez leurs poids automatiqument sans perdre en qualité avec Webpack.
+Les grandes images doivent être optimisées en poids. Reduisez leurs poids automatiqument sans perdre en qualité avec Webpack.
 
 
 <!-- <details>
@@ -410,20 +410,20 @@ Ajoutez un loader des images dans la propriété `module.rules` de `module.expor
 
 ### Serveur de développement
 
-Installez le plugin [webpack-dev-server](https://github.com/webpack/webpack-dev-server) dans le projet qui permet de recompiler votre code à chaque changement et le visualisez à l'adresse : `http://localhost:9000`
+Installez le plugin [webpack-dev-server](https://github.com/webpack/webpack-dev-server) dans le projet qui permet de recompiler votre code à chaque changement et de le visualisez à l'adresse : `http://localhost:9000`
 
 ```
 npm install webpack-dev-server --save-dev
 ```
 
-Dans `package.json` ajoutez la commande du lancement du serveur, on peut en avour plusieurs scripts séparés par une virgule :
+Dans `package.json` ajoutez la commande de lancement du serveur. On peut avoir plusieurs scripts séparés par une virgule :
 ```json
 "scripts": {
   "start:dev": "webpack-dev-server"
 }
 ```
 
-Exécutez cette commande pour voir vos changements en live (c'est normale si vous avez une erreur tout au debut, vu que la config est vide) :
+Exécutez cette commande pour voir vos changements en temps réel :
 ```
 npm run start:dev
 ```
@@ -448,7 +448,7 @@ Exécutez celui pour le serveur de développement :
 npm run build:dev
 ```
 
-Vous devez avoir les mêmes fichiers comme résultat:
+Vous devez avoir les mêmes fichiers que sur l'image ci-dessous :
 
 ![Webpack-Dev](https://i.ibb.co/W5gbMN1/webpack-dev.png)
 
@@ -461,7 +461,7 @@ npm run build:prod
 Résultat:
 
 ![Webpack-Prod](https://i.ibb.co/fFv2mcY/webpack-prod.png)
-
+<!-- 
 ## Pour aller plus loin
 
-Créez la configuration de [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) - le moyen de mettre à jour la page avec le nouveau code sans refraîchir cette page.
+Créez la configuration de [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) - le moyen de mettre à jour la page avec le nouveau code sans refraîchir cette page. -->

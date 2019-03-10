@@ -1,5 +1,4 @@
-# Projet finale
-
+# Projet final
 
 > Laissez un commentaire sur chaque ligne de votre code pour expliquer pourquoi vous l'utiliser ou comment ça marche. 
 
@@ -30,7 +29,7 @@ Pour calculer le BMI utilisez la formule suivante: poids / ((hauteur / 100) * (h
 Ecrivez une construction `if` pour trouver le résultat:
 Si l'indice est inférieur à 18.5, le résultat est `'considered underweight'`;
 Si l'indice est égal ou supérieur à 18.5 ET égal ou inférieur à 25, le résultat est `'a healthy weight'`;
-Si l'indice est supérieur à 25, le résultat est `'considered underweight'`;
+Si l'indice est supérieur à 25, le résultat est `'considered overweight'`;
 
 Afficher le résultat sous le formulaire: 'Your Body Mass Index is INSERT_CALCULATED_BMI_HERE. It is INSERT_THE_RESULT_MESSAGE_HERE.'
 
@@ -39,16 +38,16 @@ Afficher le résultat sous le formulaire: 'Your Body Mass Index is INSERT_CALCUL
 <details>
   <summary>Step by step instructions</summary>
 
-1. Interceptez la soumission du formulaire
-2. Récupérez la valeur du champ de sasie 'Your weight'
-3. Convertissez cette valeur en nombre
-4. Récupérez la valeur du champ de sasie 'Your height'
-5. Convertissez cette valeur en nombre
-6. Calculez le BMI
-7. Vérifiez que BMI n'est pas égal à [NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) avec la méthode [isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
-8. Ecrivez la construction `if` pour determiner le résultat
-9. Si BMI est égal à NaN, cachez l'alerte
-10. Si BMI n'est pas égal à NaN, affichez l'alerte avec le résultat
+1. Interceptez la soumission du formulaire.
+2. Récupérez la valeur du champ de saisie 'Your weight'.
+3. Convertissez cette valeur en nombre.
+4. Récupérez la valeur du champ de saisie 'Your height'.
+5. Convertissez cette valeur en nombre.
+6. Calculez le BMI.
+7. Vérifiez que le BMI n'est pas égal à [NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) avec la méthode [isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN).
+8. Ecrivez une construction `if` pour determiner le résultat.
+9. Si BMI est égal à `NaN`, cachez l'alerte.
+10. Si BMI n'est pas égal à `NaN`, affichez l'alerte avec le résultat.
 </details>
 
 Le résultat: 
@@ -80,9 +79,9 @@ const bmiFacts = [
 ];
 ```
 
-Parcourez le tableau bmiFacts pour afficher la liste des faits sur BMI dans le `<div>` avec l'id `js-facts`.
+Parcourez le tableau `bmiFacts` pour afficher la liste des faits sur le BMI dans le `<div>` avec l'id `js-facts`.
 Avant chaque titre ajoutez un nombre pour énumérer les cartes. Ce nombre sera dynamique et égal à l'indice de l'élément du tableau en cours de traitement plus un.
-Au final, la structure HTML pour chaque fait sera suivante (remplacez le texte en majuscule par les valeurs dynamiques) :
+Au final, la structure HTML pour chaque fait sera comme ci-dessous (remplacez le texte en majuscule par les valeurs dynamiques) :
 
 ```html
 <div class="col col-12 col-sm-6 col-lg-3 mb-3">
@@ -107,7 +106,7 @@ Si le bouton avec l'id `js-ad-close` est cliqué pour la première fois, récup�
 window.open(url, '_blank');
 ```
 
-Si le lien est cliqué pour la deuxième fois, supprimez le div avec l'id `js-ad` du DOM et enlèvez l'écouteur d'événement `click` lui associé.
+Si le lien est cliqué pour la deuxième fois, supprimez le div avec l'id `js-ad` du DOM et enlèvez l'écouteur d'événement `click` qui lui est associé.
 
 ## Quatrième bloc
 
@@ -128,7 +127,7 @@ N'oubliez pas d'ajouter un header `Accept` égal à `application/json` à votre 
 
 Si la requête est executée avec succès, afficher une alerte verte avec le texte `'Your message was sent successfully'` qui disparaît au bout de 3 secondes.
 
-Si il y a une erreur survenue, affichez une alerte rouge avec le texte `'Oups! An error has occured, please, try again later'` qui disparaît au bout de 3 secondes.
+Si une erreur est survenue, affichez une alerte rouge avec le texte `'Oups! An error has occured, please, try again later'` qui disparaît au bout de 3 secondes.
 
 Le CDN du datepicker:
 + JS: `https://code.jquery.com/ui/1.12.1/jquery-ui.min.js`
@@ -145,7 +144,7 @@ Datepicker jQueryUI:
 
 Vérifiez que l'objet localStorage est présent dans votre navigateur.
 Si il est présent, vérifiez que l'entrée `cookiesAccepted` est presente dans localStorage et sa valeur est égale à `true`. Si c'est le cas, ne faites rien. Sinon affichez la bannière avec l'id `js-cookies`.
-Au clique sur le bouton avec l'id `js-accept-cookies`, créez une entrée 'cookiesAccepted' égale à `true` et cachez la bannière avec l'id `js-cookies`.
+Au clique sur le bouton avec l'id `js-accept-cookies`, créez une entrée `cookiesAccepted` égale à `true` et cachez la bannière avec l'id `js-cookies`.
 
 ![Cookies](https://i.ibb.co/xjd2YFM/final-project-cookies.png)
 
