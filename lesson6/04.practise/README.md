@@ -45,8 +45,8 @@ Afficher le résultat sous le formulaire: 'Your Body Mass Index is INSERT_CALCUL
 5. Convertissez cette valeur en nombre.
 6. Calculez le BMI.
 7. Vérifiez que le BMI n'est pas égal à [NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) avec la méthode [isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN).
-8. Ecrivez une construction `if` pour determiner le résultat.
-9. Si BMI est égal à `NaN`, cachez l'alerte.
+8. Si BMI est égal à `NaN`, cachez l'alerte.
+9. Si BMI n'est pas égal à `NaN`, écrivez une construction `if` pour determiner le résultat..
 10. Si BMI n'est pas égal à `NaN`, affichez l'alerte avec le résultat.
 </details>
 
@@ -79,7 +79,7 @@ const bmiFacts = [
 ];
 ```
 
-Parcourez le tableau `bmiFacts` pour afficher la liste des faits sur le BMI dans le `<div>` avec l'id `js-facts`.
+Parcourez le tableau `bmiFacts` avec une méthode [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) pour afficher la liste des faits sur le BMI dans le `<div>` avec l'id `js-facts`.
 Avant chaque titre ajoutez un nombre pour énumérer les cartes. Ce nombre sera dynamique et égal à l'indice de l'élément du tableau en cours de traitement plus un.
 Au final, la structure HTML pour chaque fait sera comme ci-dessous (remplacez le texte en majuscule par les valeurs dynamiques) :
 
@@ -94,6 +94,16 @@ Au final, la structure HTML pour chaque fait sera comme ci-dessous (remplacez le
   </div>
 </div>
 ```
+
+<details>
+  <summary>Step by step instructions</summary>
+
+  1. Parcourir le tableau
+  2. Créer un div avec la méthode [document.createElement](https://developer.mozilla.org/fr/docs/Web/API/Document/createElement)
+  3. Insérer du HTML fourni dans le div créé
+  4. Séléctionner le div avec l'id `js-facts`
+  5. Insérer le div créé dans le div avec l'id `js-facts` 
+</details>
 
 ![BMI Facts](https://i.ibb.co/JHVsLdQ/final-project-facts.png)
 
