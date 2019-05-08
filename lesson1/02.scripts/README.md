@@ -55,8 +55,7 @@ Créez une page HTML :
 + Si le navigateur de l'utilisateur de votre site n'a pas JavaScript d'activé, montrez-lui une bannière "Pour accéder à toutes les fonctionnalités de notre site vous avez besoin de JavaScript".
 
 
-
-<!-- ## async et defer
+## async et defer
 
 1. Quel script est téléchargé en premier?
 ```html
@@ -79,8 +78,8 @@ Créez une page HTML :
 4. Quel script est téléchargé en premier?
 ```html
 <script async src="./small-script.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script> -->
-
+<script defer src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+```
 
 ## Reading List
 

@@ -9,6 +9,7 @@ Comment déboger mieux et pas seulement avec `console.log`: les [conseils](https
 Débogez ce code défectueux :
 
 ```js
+'use strict';
 
 myCharacter = 'Luna Lovegood';
 

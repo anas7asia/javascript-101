@@ -5,7 +5,7 @@
 
 Assignez à une variable chaque operation suivante :
 
-+ Enchaînez (concatenate) deux chaînes de caractères: `'Hello'` et `'World'`.
++ Enchaînez (concaténez) deux chaînes de caractères: `'Hello'` et `'World'`.
 + Ajoutez 10 et 32. Incrémentez le résultat de 8 avec l'opérateur `+=`.
 + Soustrayez 5 de 10. Décrémentez le résultat de 5 avec l'opérateur `-=`.
 + Multipliez 5 par 7. Multipliez le résultat par 2 avec l'opérateur `*=`.
