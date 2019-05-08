@@ -19,6 +19,10 @@
 + Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'hello'.
 + Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'Hello'.
 
+
++ Ecrivez en ligne de code un moyen de vérifier si `5` est supérieur à `0` OU inférieur à `10`.
++ Ecrivez en ligne de code un moyen de vérifier si `10` est supérieur à `5` ET inférieur ou égal à `10`.
+
 <!-- + Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 5. -->
 <!-- + Ecrivez en ligne de code un moyen de vérifier si 5 est inférieur ou égal à 10. -->
 <!-- + Ecrivez en ligne de code un moyen de vérifier si '5' converti en nombre n'est pas égal à 5. --> 
@@ -28,18 +32,77 @@
 
 ## If ... Else
 
-Ecrivez en ligne de code un moyen de vérifier si `5` est supérieur à 0 ET inférieur à 10 dans la même expression if.
+Ecrivez en ligne de code un moyen de vérifier si `20` divisé par `2` est supérieur ou égal à 10 OU inférieur à 15 dans la même expression. Si vrai, loggez `'Yes'`, sinon loggez `'No'`.
+
+<!-- ---
+
+!!!!!!!!!!! TODO:
+Check data type
+Log 'C'est un boolean/une cahine de caracters, nombre'. Utiliser un operateur `typeof`. -->
 
 ---
 
-Ecrivez en ligne de code un moyen de vérifier si `20` divisé par `2` est supérieur ou égal à 10 OU inférieur à 15 dans la même expression. Si vrai, loggez `'Yes'`, sinon loggez `'No'`.
+Déclarez une variable qui contient un nombre.
+Ecrivez une instruction `if ... else` pour determiner si ce nombre est pair ou impair avec l'aide de l'opérateur `%`.
+
+---
+
+Déclarez deux variables qui contiennent des nombres.
+Ecrivez une instruction `if ... else` pour choisir le plus grand nombre entre eux. Ensuite loggez dans la console: "The greater number of NUMBER1 and NUMBER2 is BIGGEST_NUMBER".
+> N'oubliez pas de changer les valeurs des variables pour tester votre solution.
+
+<!-- !!! Write a JavaScript program that accept two integers and display the larger
+Write a function named greaterNum that:
+takes 2 arguments, both numbers.
+returns whichever number is the greater (higher) number.
+Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10."). -->
+
+---
+
+Déclarez une variable represantant une note d'élève qui contient un nombre entre 0 et 100.
+Ecrivez une instruction `if ... else if ... else` pour transformer une note numerique en lettre: A - entre 90 et 100, B entre 90 et 80, C - entre 80 et 70, D - entre 70 et 60, F - inférieur à 60. 
+
+<!-- !!! Write a JavaScript program which compute, the average marks of the following students Then, this average is used to determine the corresponding grade.
+Range	Grade
+<60	F
+<70	D
+<80	C
+<90	B
+<100	A -->
+
+---
+
+Déclarez une variable qui contient une chaîne de caractères: 'es', 'de' ou 'en'.
+Ecrivez une instruction `if ... else if ... else` pour choisir un salutation selon la langue utilisée: '¡Hola mundo!', 'Hallo, wereld!', 'Hello World'. La salutation par defaut doit être en français ('Salut le Monde!').
+
+<!-- !!! 
+Write a function named helloWorld that:
+takes 1 argument, a language code (e.g. "es", "de", "en")
+returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
+Call that function for each of the supported languages and log the result to make sure it works. -->
+
+---
+
+Déclarez deux variables, première contient une chaîne de caractères (un nom, par exemple, 'pomme', 'orange', 'personne'), deuxième un nombre entre 1 et 100.
+Ecrivez une instruction `if ... else` pour transformer le nom en pluriel si le nombre est supérieur à 1. 
+Loggez le resultat dans la console.
+
+<!-- !!!
+Write a function named pluralize that:
+takes 2 arguments, a noun and a number.
+returns the number and pluralized form, like "5 cats" or "1 dog".
+Call that function for a few different scores and log the result to make sure it works.
+Bonus: Make it handle a few collective nouns like "sheep" and "geese". -->
+
+---
+
+Demandez à l’utilisateur de se présenter avec la méthode [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt). Si le prénom est saisi, [alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) 'Nice to meet you $username ($username est le prénon saisi)!', sinon alert 'Don't be shy!'
 
 ---
 
 Un groupe peut être publique ou privé. Un utilisateur peut accéder au contenu d’un groupe si ce groupe est publique ou si le groupe est privé mais qu’il est membre ce groupe.
 ​
-Utilisez deux variables `isPrivate` et `isMember` pour écrire une seule condition qui vérifie si utilisateur peut accéder au contenu d’un groupe
-​
+Utilisez deux variables `isPrivate` et `isMember` pour écrire une seule condition qui vérifie si utilisateur peut accéder au contenu d’un groupe​
 
 Testez votre solution avec les valeurs suivantes:
 ```js
@@ -57,9 +120,9 @@ let isMember = true;
 
 ```
 
-## Vrai ou faux?
+<!-- ## Vrai ou faux? -->
 
-![null comparisons](https://i.ibb.co/99xX5c7/comparisons.png)
+<!-- ![null comparisons](https://i.ibb.co/99xX5c7/comparisons.png) -->
 
 <!-- Assignez à une variable chaque valeur suivante précédé par l'opérateur `!`. Observez comment il transforme les valeurs.
 Expliquez dans un commentaire pourquoi on utilise cet opérateur.
@@ -85,7 +148,7 @@ Expliquez dans un commentaire pourquoi on utilise cet opérateur.
 
 --- -->
 
-Demandez à l’utilisateur de se présenter avec la méthode [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt). Si le prénom est saisi, [alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) 'Nice to meet you $username ($username est le prénon saisi)!', sinon alert 'Don't be shy!'
+<!-- Demandez à l’utilisateur de se présenter avec la méthode [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt). Si le prénom est saisi, [alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) 'Nice to meet you $username ($username est le prénon saisi)!', sinon alert 'Don't be shy!' -->
 <!-- Utilisez l'opérateur `!!`. -->
 
 <!-- ---
