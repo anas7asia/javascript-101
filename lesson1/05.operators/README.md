@@ -16,3 +16,13 @@ Assignez à une variable chaque operation suivante :
 
 <!-- + Déclarez une variable avec la valeur 10. Multipliez-la par un nombre Float pour avoir 15 comme résultat.   -->
 <!-- + Divisez le résultat de l'opération précédante par un nombre Float pour avoir 30 comme résultat. -->
+
+### Concaténation des chaînes de caractères
+
+Déclarez 4 variables avec des valeurs appropriées : une année, un métier, une ville, un nom d'entreprise.
+Concaténez-les pour avoir une phrase ‘En ANNEE je serais METIER à VILLE chez ENTREPRISE’.
+Faites-le une fois avec l'opérateur `+` et une autre fois avec les backticks (accent grave) "`".
+
+---
+
+Déclarez une variable qui contient un nombre correspondant au rayon d'un cercle. Calculez une [circonférence](http://www.calculer.com/calcul-perimetre-cercle/calcul-perimetre-cercle.php) pour ce rayon et logguez dans la console: ‘Le rayon du cercle est égal à RAYON. La circonférence du cercle est égale à CIRCONFERENCE’.

@@ -51,6 +51,7 @@ Version | Année | Déscription
 7 | ECMAScript 2016 | Mise à jour
 8 | ECMAScript 2017 | Mise à jour
 9 | ECMAScript 2018 | Mise à jour
+10 | ECMAScript 2019 | Mise à jour
 
 Même si ES6 n'est pas supporté dans 100% de navigateurs, il est fortement conseillé de l'utiliser. Il y a des outils spéciaux pour le *transpiler* (transformer) en ES5. Comme il est possible de profiter de toutes les nouvelles fonctionnalités et le code marche sur tous les navigateurs modernes.
 

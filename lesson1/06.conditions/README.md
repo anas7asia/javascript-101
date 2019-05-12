@@ -9,19 +9,19 @@
 
 ## Opérateurs de comparaison
 ​
-+ Ecrivez en ligne de code un moyen de vérifier si 2 est supérieur à 1.
-+ Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 1. 
-+ Ecrivez en ligne de code un moyen de vérifier si 20 est supérieur ou égal à 10.
-+ Ecrivez en ligne de code un moyen de vérifier si 10 est supérieur ou égal à 10. 
-+ Ecrivez en ligne de code un moyen de vérifier si 4 n'est pas égal à 6. 
-+ Ecrivez en ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité stricte.
-+ Ecrivez en ligne de code un moyen de vérifier si 0 n'est pas égal à '0'. 
-+ Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'hello'.
-+ Ecrivez en ligne de code un moyen de vérifier si 'hello' est égal à 'Hello'.
++ Ecrivez en une ligne de code un moyen de vérifier si 2 est supérieur à 1.
++ Ecrivez en une ligne de code un moyen de vérifier si 2 est inférieur à 1. 
++ Ecrivez en une ligne de code un moyen de vérifier si 20 est supérieur ou égal à 10.
++ Ecrivez en une ligne de code un moyen de vérifier si 10 est supérieur ou égal à 10. 
++ Ecrivez en une ligne de code un moyen de vérifier si 4 n'est pas égal à 6. 
++ Ecrivez en une ligne de code un moyen de vérifier si '2' est égal à 2 avec l'opérateur d'égalité stricte.
++ Ecrivez en une ligne de code un moyen de vérifier si 0 n'est pas égal à '0'. 
++ Ecrivez en une ligne de code un moyen de vérifier si 'hello' est égal à 'hello'.
++ Ecrivez en une ligne de code un moyen de vérifier si 'hello' est égal à 'Hello'.
 
 
-+ Ecrivez en ligne de code un moyen de vérifier si `5` est supérieur à `0` OU inférieur à `10`.
-+ Ecrivez en ligne de code un moyen de vérifier si `10` est supérieur à `5` ET inférieur ou égal à `10`.
++ Ecrivez en une ligne de code un moyen de vérifier si `5` est supérieur à `0` OU inférieur à `10`.
++ Ecrivez en une ligne de code un moyen de vérifier si `10` est supérieur à `5` ET inférieur ou égal à `10`.
 
 <!-- + Ecrivez en ligne de code un moyen de vérifier si 2 est inférieur à 5. -->
 <!-- + Ecrivez en ligne de code un moyen de vérifier si 5 est inférieur ou égal à 10. -->
@@ -32,7 +32,7 @@
 
 ## If ... Else
 
-Ecrivez en ligne de code un moyen de vérifier si `20` divisé par `2` est supérieur ou égal à 10 OU inférieur à 15 dans la même expression. Si vrai, loggez `'Yes'`, sinon loggez `'No'`.
+Ecrivez en une ligne de code un moyen de vérifier si `20` divisé par `2` est supérieur ou égal à 10 OU inférieur à 15 dans la même expression. Si vrai, loggez `'Yes'`, sinon loggez `'No'`.
 
 <!-- ---
 
@@ -48,7 +48,7 @@ Ecrivez une instruction `if ... else` pour determiner si ce nombre est pair ou i
 ---
 
 Déclarez deux variables qui contiennent des nombres.
-Ecrivez une instruction `if ... else` pour choisir le plus grand nombre entre eux. Ensuite loggez dans la console: "The greater number of NUMBER1 and NUMBER2 is BIGGEST_NUMBER".
+Ecrivez une instruction `if ... else` pour choisir celui qui est le plus grand. Ensuite loggez dans la console: `'The greater number of NUMBER1 and NUMBER2 is BIGGEST_NUMBER'`.
 > N'oubliez pas de changer les valeurs des variables pour tester votre solution.
 
 <!-- !!! Write a JavaScript program that accept two integers and display the larger
@@ -73,7 +73,7 @@ Range	Grade
 ---
 
 Déclarez une variable qui contient une chaîne de caractères: 'es', 'de' ou 'en'.
-Ecrivez une instruction `if ... else if ... else` pour choisir un salutation selon la langue utilisée: '¡Hola mundo!', 'Hallo, wereld!', 'Hello World'. La salutation par defaut doit être en français ('Salut le Monde!').
+Ecrivez une instruction `if ... else if ... else` pour choisir une salutation selon la langue utilisée: '¡Hola mundo!', 'Hallo, wereld!', 'Hello World'. La salutation par defaut doit être en français ('Salut le Monde!').
 
 <!-- !!! 
 Write a function named helloWorld that:
@@ -83,8 +83,8 @@ Call that function for each of the supported languages and log the result to mak
 
 ---
 
-Déclarez deux variables, première contient une chaîne de caractères (un nom, par exemple, 'pomme', 'orange', 'personne'), deuxième un nombre entre 1 et 100.
-Ecrivez une instruction `if ... else` pour transformer le nom en pluriel si le nombre est supérieur à 1. 
+Déclarez deux variables, la première contient une chaîne de caractères (un nom, par exemple, 'pomme', 'orange', 'personne'), la deuxième un nombre entre 1 et 100.
+Ecrivez une instruction `if ... else` pour mettre le nom au pluriel en ajoutant la lettre 's' à la fin si le nombre est supérieur à 1. 
 Loggez le resultat dans la console.
 
 <!-- !!!
