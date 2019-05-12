@@ -38,10 +38,10 @@ const loveIt5 = toCelsius(17);
 
 ![Super function](http://www.commitstrip.com/wp-content/uploads/2014/12/La-fonctoin-utile-650-final.jpg)
 
-1. Créez une fonction qui log `'Hello World'`
-2. Créez une fonction qui retourne `'Hello World'`
-3. Sauvegardez la valeur retournée par la première fonction
-3. Sauvegardez la valeur retournée par la deuxième fonction
+1. Créez une fonction qui loggue `'Hello World'`.
+2. Créez une fonction qui retourne `'Hello World'`.
+3. Sauvegardez la valeur retournée par la première fonction.
+3. Sauvegardez la valeur retournée par la deuxième fonction.
 4. Comparez ces deux résultat. Est-ce que l'instruction `return` est obligatoire? Expliquez dans un commentaire.
 
 ---
@@ -51,6 +51,40 @@ Créez une fonction qui retourne un paramètre de cette fonction
 ---
 
 Créez une fonction qui retourne la somme de deux nombres passés en paramètre de cette fonction
+
+---
+
+<!-- !!!!!!! TODO: wishmaker -->
+Créez une fonction `planMyTrip` qui prend 4 paramètres (noms de ville) et retourne une chaîne de caractères `'I want to visit CITY1, CITY2, CITY3 and CITY4'`.
+
+---
+
+<!-- !!!!!!! TODO -->
+###### Calculer "l'age humain" de chien
+
+Créez une fonction `calculateDogAge` qui prend 1 paramètre (age de chien).
+Calculez l'age humain de chien selon la formule : AGE_DE_CHIEN fois 7.
+Retournez une chaîne de caractères `'This dog is HUMAN_AGE years old'`.
+Appelez cette fonction 3 fois avec les valeurs différentes.
+
+---
+
+<!-- !!!!!!! TODO -->
+Créez une fonction `calculateSupply` pour calculer le nombre nécessaire d'approvisionnement à vie de votre snack préféré.
+Cette fonction prend trois paramètres: votre age, nom du snack, quantité consommée par jour.
+Calculez la quantité selon la formule : (espérance-de-vie - votre-age) * nombre-de-jour * nombre-de-snack-par-jour (espérance de vie en France est ~83 ans).
+Retournez `'You will need NN to last you until the ripe old age of X'`.
+Appelez cette fonction 3 fois avec les valeurs différentes.
+
+**BONUS :** Faites possible de passer les nombres decimals comme troisième paramètre et arondissez le resultat.
+
+---
+
+<!-- !!!!!!! TODO -->
+Créez une fonction qui prend le radius d'un cercle comme paramètre pour calculer sa [circonférence](http://www.calculer.com/calcul-perimetre-cercle/calcul-perimetre-cercle.php) et son [aire](https://www.lememento.fr/surface-et-cercle-aire-dun-disque).
+> Utilisez `Math.PI` pour accéder à la valeur de Pi
+Retournez une chaîne de caractères `'The circumference is CIRCONFERENCE. The area is AIRE.'`.
+Appelez cette fonction 3 fois avec les valeurs différentes.
 
 ---
 

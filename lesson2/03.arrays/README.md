@@ -35,50 +35,19 @@ Les méthodes à utiliser:
 ```
 + Supprimez le premier élément du tableau.
 + Supprimez le dernier élément du tableau.
-+ Ajoutez un élément au début du tableau.
-+ Ajoutez un élément à la fin du tableau.
++ Ajoutez un élément `10` au début du tableau.
++ Ajoutez un élément `100` à la fin du tableau.
+
+```js
+// result: 
+[10, 2, 3, 4, 5, 6, 100]
+```
 
 ---
 
 Fusionnez deux tableau dans un seul: `[1, 2, 3]` et `[4, 5, 6]`
 Fusionnez plusieurs tableaux dans un seul: `[1, 2, 3]` et `[4, 5, 6]` et `[7, 8, 9, 10]` et `[11, 12, 13, 14]`
 
----
-
-Les méthodes à utiliser: 
-[slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice),
-[splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
-
-+ Extrayez les éléments de la position 2 à 4 sans modifier le tableau original: `[1, 2, 3, 4, 5, 6, 7]`
-+ Extrayez le dernier élément du tableau sans modifier le tableau original: `[1, 2, 3]`
-+ Supprimez les deux premiers éléments du tableau original: `[1, 2, 3, 4, 5]`
-+ Insérez trois éléments dans un tableau à la position 2: `[1, 2, 3, 4, 5]`
-+ Remplacer l’élément en position 1 par un autre élément: `[1, 2, 3, 4, 5]`
-​
-
-## Référence et valeur
-
-Refactoriser ce code pour ne plus utiliser la [même référence](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#value-vs-reference) et pouvoir modifier `myArr2` sans modifier `myArr`.
-Utilisez la métode `slice` ou l'opérateur spread `...`
-
-```js
-const myArr = [1, 2, 3];
-const myArr2 = myArr;
-myArr2[0] = 0;
-console.log(myArr) // [0, 2, 3] - What the heck? Why? How?
-console.log(myArr2) // [0, 2, 3]
-```
-
-## Transformer les tableaux
-Les méthodes à utiliser: 
-[reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse),
-[join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join),
-[sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-
-+ Transformez la chaîne de caractères `'Hello World'` en `'dlroW olleH'`. Utilisez la méthode ['split'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) pour transformez chaque lettre en un élément du tableau.
-+ Triez tous les éléments du tableau `[10, 3, 5, 2, 7, 9, 8, 6, 1, 0, 4]` de plus petit au plus grand.
-+ Ensuite triez tous les éléments de ce tableau de plus grand au plus petit.
-+ Triez les éléments du tableau `['One', 'two', 'Three', 'Four', 'Five']` par ordre alphabétique.
 
 ## Itération
 Les méthodes à utiliser: 
@@ -103,6 +72,17 @@ Pouvez vous trouver la différence entre .map et .forEach? Répondez dans un com
 ---
 
 Utilisez la méthode `reduce` pour rassembler (concatener) tous les éléments du tableau `['Hello', 'World', 'I', 'am', 'John', 'Doe']` en une chaîne de caractères `'Hello World I am John Doe'`. 
+
+## Transformer les tableaux
+Les méthodes à utiliser: 
+[reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse),
+[join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join),
+[sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
++ Transformez la chaîne de caractères `'Hello World'` en `'dlroW olleH'`. Utilisez la méthode ['split'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) pour transformez chaque lettre en un élément du tableau.
++ Triez tous les éléments du tableau `[10, 3, 5, 2, 7, 9, 8, 6, 1, 0, 4]` de plus petit au plus grand.
++ Ensuite triez tous les éléments de ce tableau de plus grand au plus petit.
++ Triez les éléments du tableau `['One', 'two', 'Three', 'Four', 'Five']` par ordre alphabétique.
 
 ## Trier le tableau
 Les méthodes à utiliser: 
@@ -139,6 +119,31 @@ Vérifiez si 'Alex' est present dans le tableau: `['Mary', 'Thibaud', 'JF', 'Ale
 
 Vérifiez si 'Alex' est present dans le tableau: `['Mary', 'Alex', 'Thibaud', 'JF', 'Alex']`. Si oui, loggez le premier emplacement (index) où il se trouve dans le tableau.
 
+
+## Modifier le tableau
+
+Les méthodes à utiliser: 
+[slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice),
+[splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+
++ Extrayez les éléments de la position 2 à 4 sans modifier le tableau original: `[1, 2, 3, 4, 5, 6, 7]`
++ Extrayez le dernier élément du tableau sans modifier le tableau original: `[1, 2, 3]`
++ Supprimez les deux premiers éléments du tableau original: `[1, 2, 3, 4, 5]`
++ Insérez trois éléments dans un tableau à la position 2: `[1, 2, 3, 4, 5]`
++ Remplacer l’élément en position 1 par un autre élément: `[1, 2, 3, 4, 5]`
+
+## Référence et valeur
+
+Refactoriser ce code pour ne plus utiliser la [même référence](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch2.md#value-vs-reference) et pouvoir modifier `myArr2` sans modifier `myArr`.
+Utilisez la métode `slice` ou l'opérateur spread `...`
+
+```js
+const myArr = [1, 2, 3];
+const myArr2 = myArr;
+myArr2[0] = 0;
+console.log(myArr) // [0, 2, 3] - What the heck? Why? How?
+console.log(myArr2) // [0, 2, 3]
+```
 
 ## Boucle for
 

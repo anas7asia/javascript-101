@@ -6,7 +6,7 @@
 
 Comment déboger mieux et pas seulement avec `console.log`: les [conseils](https://developers.google.com/web/tools/chrome-devtools/javascript/) d'experts Google pour les développeurs.
 
-Débogez ce code défectueux :
+Débogguez ce code défectueux :
 
 ```js
 'use strict';
@@ -20,16 +20,17 @@ isMyCharacterRich = checkMyGringottAccount()
 function useSortngHat(char) {
   let choice = ''
   
-  switch (ch) {
-    case 'Harry Potter':
-      choice = 'Gryffindor';
-    case 'Draco Malfoy':
-      choice = 'Ravenclaw';
-    case 'Luna Lovegood':
-      choice = 'Ravenclaw';
-    default:
-      'Gryffindor'
+  if (ch = 'Harry Potter') {
+    let choice = 'Gryffindor';
+  } else (ch = 'Draco Malfoy') {
+    let choice = 'Ravenclaw';
+  } else (ch = 'Luna Lovegood') {
+    choice = 'Ravenclaw';
+  } elseif {
+    ch = 'Gryffindor'
   }
+
+  return '${char} goes to ${ch}'
 }
 
 const checkMyGringottsAccount = () {
