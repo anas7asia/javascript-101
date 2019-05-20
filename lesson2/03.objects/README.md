@@ -35,6 +35,18 @@ Loggez la couleur de la voiture.
 
 ---
 
+Créez un objet avec les informations de votre musicien préféré:
++ nom
++ prénom
++ pseudo
++ une liste des albums (au moins 2) :
+  + titre de l’album
+  + année de sortie
+  + nombre de chansons
+  + la liste des chansons
+
+---
+
 Créez un objet 'cat' avec les propriétés suivantes :
 + propriété 'name' égale à 'Cookie'
 + propriété 'favoritePlaces' égale à un tableau `['random box', 'laps', 'Christmas tree']`

@@ -42,8 +42,9 @@ Log 'C'est un boolean/une cahine de caracters, nombre'. Utiliser un operateur `t
 
 ---
 
-Déclarez une variable qui contient un nombre.
-Ecrivez une instruction `if ... else` pour determiner si ce nombre est pair ou impair avec l'aide de l'opérateur `%`.
+Déclarez deux variables, la première contient une chaîne de caractères (un nom, par exemple, 'pomme', 'orange', 'personne'), la deuxième un nombre entre 1 et 100.
+Ecrivez une instruction `if ... else` pour mettre le nom au pluriel en ajoutant la lettre 's' à la fin si le nombre est supérieur à 1. 
+Loggez le resultat dans la console.
 
 ---
 
@@ -51,48 +52,20 @@ Déclarez deux variables qui contiennent des nombres.
 Ecrivez une instruction `if ... else` pour choisir celui qui est le plus grand. Ensuite loggez dans la console: `'The greater number of NUMBER1 and NUMBER2 is BIGGEST_NUMBER'`.
 > N'oubliez pas de changer les valeurs des variables pour tester votre solution.
 
-<!-- !!! Write a JavaScript program that accept two integers and display the larger
-Write a function named greaterNum that:
-takes 2 arguments, both numbers.
-returns whichever number is the greater (higher) number.
-Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10."). -->
-
 ---
 
 Déclarez une variable represantant une note d'élève qui contient un nombre entre 0 et 100.
 Ecrivez une instruction `if ... else if ... else` pour transformer une note numerique en lettre: A - entre 90 et 100, B entre 90 et 80, C - entre 80 et 70, D - entre 70 et 60, F - inférieur à 60. 
-
-<!-- !!! Write a JavaScript program which compute, the average marks of the following students Then, this average is used to determine the corresponding grade.
-Range	Grade
-<60	F
-<70	D
-<80	C
-<90	B
-<100	A -->
 
 ---
 
 Déclarez une variable qui contient une chaîne de caractères: 'es', 'de' ou 'en'.
 Ecrivez une instruction `if ... else if ... else` pour choisir une salutation selon la langue utilisée: '¡Hola mundo!', 'Hallo, wereld!', 'Hello World'. La salutation par defaut doit être en français ('Salut le Monde!').
 
-<!-- !!! 
-Write a function named helloWorld that:
-takes 1 argument, a language code (e.g. "es", "de", "en")
-returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
-Call that function for each of the supported languages and log the result to make sure it works. -->
-
 ---
 
-Déclarez deux variables, la première contient une chaîne de caractères (un nom, par exemple, 'pomme', 'orange', 'personne'), la deuxième un nombre entre 1 et 100.
-Ecrivez une instruction `if ... else` pour mettre le nom au pluriel en ajoutant la lettre 's' à la fin si le nombre est supérieur à 1. 
-Loggez le resultat dans la console.
-
-<!-- !!!
-Write a function named pluralize that:
-takes 2 arguments, a noun and a number.
-returns the number and pluralized form, like "5 cats" or "1 dog".
-Call that function for a few different scores and log the result to make sure it works.
-Bonus: Make it handle a few collective nouns like "sheep" and "geese". -->
+Déclarez une variable qui contient un nombre.
+Ecrivez une instruction `if ... else` pour determiner si ce nombre est pair ou impair avec l'aide de l'opérateur `%`.
 
 ---
 
