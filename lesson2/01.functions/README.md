@@ -72,7 +72,7 @@ Appelez cette fonction 3 fois avec les valeurs différentes.
 <!-- !!!!!!! TODO -->
 Créez une fonction `calculateSupply` pour calculer le nombre nécessaire d'approvisionnement à vie de votre snack préféré.
 Cette fonction prend trois paramètres: votre age, nom du snack, quantité consommée par jour.
-Calculez la quantité selon la formule : (espérance-de-vie - votre-age) * nombre-de-jour * nombre-de-snack-par-jour (espérance de vie en France est ~83 ans).
+Calculez la quantité selon la formule : (espérance-de-vie - votre-age) * nombre-de-jour-dans-l'année * nombre-de-snack-par-jour (espérance de vie en France est ~83 ans).
 Retournez `'You will need NN to last you until the ripe old age of X'`.
 Appelez cette fonction 3 fois avec les valeurs différentes.
 
