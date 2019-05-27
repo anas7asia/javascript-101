@@ -29,9 +29,9 @@ console.log(myObj) // { name: 'Paul' }
 ---
 
 Créez un objet imbriqué 'user' avec les propriétés: id, name, car. 'Car' est aussi un objet avec les propriétés: id, brand, color.
-Loggez l'id de user.
-Loggez l'id de voiture.
-Loggez la couleur de la voiture.
+Logguez l'id de user.
+Logguez l'id de voiture.
+Logguez la couleur de la voiture.
 
 ---
 
@@ -58,6 +58,61 @@ Logguez dans la console `'Mrrr'` grâce à la fonction 'petMyCat' de l'objet 'ca
 
 ---
 
+Parcourez le tableau suivant et pour chaque élément du tableau logguez dans la console `My pet PET named PET_NAME loves PET_OCCUPATION and keeps saying 'PET_SOUND'`.
+
+```js
+const myPets = [
+  {
+    pet: 'cat',
+    name: 'Cookie',
+    occupation: 'sleeping all day',
+    says: () => { 'Miaou!' }
+  },
+  {
+    pet: 'dog',
+    name: 'Toffee',
+    occupation: 'walking in the park',
+    says: () => { 'Wouf!' }
+  },
+  {
+    pet: 'parrot',
+    name: 'Kesha',
+    occupation: 'mocking other pets',
+    says: () => { 'Hehe, that was fun!' }
+  }
+]
+```
+
+---
+
+1. Calculez le prix total d'achat. 
+2. Doublez le prix de chaque élément du tableau. 💰💰💰 
+3. Recalculez le prix total. 
+
+```js
+const cart = [
+  { item: 'a', price: 2, quantity: 1 }
+  { item: 'b', price: 3, quantity: 1 }
+  { item: 'c', price: 4, quantity: 1 }
+]
+```
+---
+
+Créez un nouveau tableau qui contiendra tous les produits du tableau `cart` qui sont plus chers que 10€.
+<!-- Trouvez tous les produits qui sont plus chers que 10€. -->
+
+```js
+const cart = [
+  { item: 'a', quantity: 1, price: 8 },
+  { item: 'b', quantity: 2, price: 10 },
+  { item: 'c', quantity: 3, price: 13 },
+  { item: 'd', quantity: 4, price: 5 },
+  { item: 'e', quantity: 5, price: 23 },
+]
+```
+
+---
+
 Trouvez dans un tableau l'objet avec une certaine propriété:
 
 ```js
@@ -70,45 +125,6 @@ const cart = [
 findObjectByProperty('hobby', 'Snowboard') // returns { name: 'Mathieu', age: 18, hobby: 'Snowboard'}
 findObjectByProperty('age', 22) // returns { name: 'Claire', age: 22, hobby: 'Gaming'}
 ```
-<!-- ---
-
-Calculez le prix total avec la boucle [For...In](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
-
-```js
-const cart = [
-  { item: 'x', price: 3 , quantity: 1 },
-  { item: 'y', price: 7, quantity: 5 },
-  { item: 'z', price: 4, quantity: 2 },
-]
-``` -->
-
----
-
-Calculez le prix total d'achat avec `.reduce()`, `.forEach()` ou `.map()`. 
-<!-- Doublez le prix de chaque élément du tableau. 💰💰💰 
-Trouvez le nouveau prix total.  -->
-
-```js
-const cart = [
-  { item: 'a', price: 2, quantity: 1 }
-  { item: 'b', price: 3, quantity: 1 }
-  { item: 'c', price: 4, quantity: 1 }
-]
-```
-
-<!-- ---
-
-Trouvez tous les produits qui sont plus chers que 10€.
-
-```js
-const cart = [
-  { item: 'a', quantity: 1, price: 8 },
-  { item: 'b', quantity: 2, price: 10 },
-  { item: 'c', quantity: 3, price: 13 },
-  { item: 'd', quantity: 4, price: 5 },
-  { item: 'e', quantity: 5, price: 23 },
-]
-``` -->
 
 ---
 
@@ -214,15 +230,21 @@ yourFunction([20, 3, 18]); // returns 2
 
 Utilisez les méthodes de l'objet `Date`. N'oubliez d'*instancier* cet objet.
 
-Affichez la date d'aujourd'hui en format DD/MM/YYYY
+Affichez la date d'aujourd'hui en format DD/MM/YYYY.
 
 ---
 
-Affichez le jour de la semaine du 1 janvier 2005
+Affichez le jour de la semaine du 1 janvier 2005.
 
 ---
 
-Créez une horloge qui loggue dans la console le temps chaque seconde en format heures:minutes:secondes
+Créez une fonction qui prend une date en format 'DD/MM/YYYY' et retourne le nom de mois.
+
+---
+
+Logguez dans la console le temps en format 'heures:minutes:secondes'.
+
+<!-- Créez une horloge qui loggue dans la console le temps chaque seconde en format heures:minutes:secondes -->
 
 
 ## Reading List

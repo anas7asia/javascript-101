@@ -45,9 +45,17 @@ Les méthodes à utiliser:
 
 ---
 
-Fusionnez deux tableau dans un seul: `[1, 2, 3]` et `[4, 5, 6]`
-Fusionnez plusieurs tableaux dans un seul: `[1, 2, 3]` et `[4, 5, 6]` et `[7, 8, 9, 10]` et `[11, 12, 13, 14]`
+Fusionnez deux tableau dans un seul: `[1, 2, 3]` et `[4, 5, 6]`. Logguez le résultat dans la console.
+```js
+// result:
+[1, 2, 3, 4, 5, 6]
+```
 
+Fusionnez plusieurs tableaux dans un seul: `[1, 2, 3]` et `[4, 5, 6]` et `[7, 8, 9, 10]` et `[11, 12, 13, 14]`. Logguez le résultat dans la console.
+```js
+// result:
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+```
 
 ## Itération
 Les méthodes à utiliser: 
@@ -55,23 +63,39 @@ Les méthodes à utiliser:
 [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach),
 [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
-Divisez chaque élément du tableau `[0, 1, 2, 3, 4, 5]` par 2 sans modifier le tableau original.
+Parcourez le tableau `['What', 'A', 'Wonderful', 'World']` et logguez chaque élément dans la console.
 
 ---
 
-Passez chaque élément du tableau original en majuscule: `['Hello', 'World', 'I', 'am', 'John', 'Doe']`. Si l'index d'itération est égal à 3, laissez l'élément comme il est.
-
+Parcourez le tableau `['Hello', 'World', 'I', 'am', 'John', 'Doe']` pour rassembler (concatener) tous les éléments du tableau en une chaîne de caractères. Logguez le résultat dans la console.
 ```js
-uppercaseMyArr(['Hello', 'World', 'I', 'am', 'John', 'Doe']) // ['HELLO', 'WORLD', 'I', 'am', 'JOHN', 'DOE']
+// result: 
+'Hello World I am John Doe'`.
 ```
 
 ---
 
-Pouvez vous trouver la différence entre .map et .forEach? Répondez dans un commentaire.
+Parcourez le tableau `[0, 1, 2, 3, 4, 5]` pour calculer la somme de tous ces éléments. Logguez le résultat dans la console.
 
 ---
 
-Utilisez la méthode `reduce` pour rassembler (concatener) tous les éléments du tableau `['Hello', 'World', 'I', 'am', 'John', 'Doe']` en une chaîne de caractères `'Hello World I am John Doe'`. 
+Divisez chaque élément du tableau `[0, 1, 2, 3, 4, 5]` par 2. Logguez le résultat dans la console.
+
+---
+
+Parcourez le tableau `[1, -2, 3, 4, -9, 6]`. Dans un nouveau tableau ajoutez seulement les nombres positifs du premier tableau. Logguez le résultat dans la console.
+
+---
+
+Passez chaque élément du tableau en majuscule: `['Hello', 'World', 'I', 'am', 'John', 'Doe']`. Si l'index d'itération est égal à 3, laissez l'élément comme il est.
+```js
+uppercaseMyArr(['Hello', 'World', 'I', 'am', 'John', 'Doe']) // ['HELLO', 'WORLD', 'I', 'am', 'JOHN', 'DOE']
+```
+
+<!-- Pouvez vous trouver la différence entre .map et .forEach? Répondez dans un commentaire. -->
+
+
+<!-- Utilisez la méthode `reduce` pour rassembler (concatener) tous les éléments du tableau `['Hello', 'World', 'I', 'am', 'John', 'Doe']` en une chaîne de caractères `'Hello World I am John Doe'`.  -->
 
 ## Transformer les tableaux
 Les méthodes à utiliser: 
