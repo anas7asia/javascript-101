@@ -107,7 +107,7 @@ const cart = [
   { item: 'b', quantity: 2, price: 10 },
   { item: 'c', quantity: 3, price: 13 },
   { item: 'd', quantity: 4, price: 5 },
-  { item: 'e', quantity: 5, price: 23 },
+  { item: 'e', quantity: 5, price: 26 },
 ]
 ```
 
