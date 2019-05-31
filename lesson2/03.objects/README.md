@@ -9,7 +9,7 @@
 4. Déclarez une variable avec la valeur 'name'. Accédez à la propriété 'name' de votre objet par cette variable et les crochets [].
 5. Changez la valeur d'id dans votre objet à 2.
 6. Ajoutez à votre objet une nouvelle propriété 'human' de valeur `true`.
-7. Changez la valeur de la propriété 'email' à `undefined`.
+<!-- 7. Changez la valeur de la propriété 'email' à `undefined`. -->
 <!-- 8. Supprimez complètement la propriété 'email'. -->
 <!-- 9. Vérifiez si votre objet [a](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) la propriété 'email'/'human' -->
 

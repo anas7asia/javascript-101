@@ -4,8 +4,87 @@
 + [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 + [JavaScript.info](http://javascript.info/dom-nodes)
 
+## Inspécter une node
+
+Utilisez la console pour regarder toutes les propriétés et méthodes associés à une node.
+Console > Séléctionner un élément > Elements > Properties
+
+![Quick DOM Inspector](https://i.ibb.co/X7bW84V/DOM-inspector.png)
 
 ## Trouver un node
+
+Utilisez le HTML et le CSS ci-dessous:
+<details>
+  <summary>HTML</summary>
+
+  ```html
+  <h1>Qu'est-ce que c'est le DOM ?</h1>
+
+  <p>Le Document Object Model ou DOM (pour modèle objet de document) est une interface de programmation pour les documents HTML, XML et SVG. Il fournit une <span>représentation structurée du document sous forme d'un arbre</span> et définit la façon dont la structure peut être manipulée par les programmes, en termes de style et de contenu.</p>
+
+  <p>Le DOM représente le document <span>comme un ensemble de nœuds</span> et d'objets possédant des propriétés et des méthodes. Les nœuds peuvent également avoir des gestionnaires d'événements qui se déclenchent lorsqu'un événement se produit. Cela permet de manipuler des pages web grâce à des scripts et/ou des langages de programmation.</p>
+
+  <p> Les nœuds peuvent être associés à des gestionnaires d'événements. Une fois qu'un événement est déclenché, les gestionnaires d'événements sont exécutés.</p>
+
+  <div class="circles">
+    <div class="circle">
+      <span>Div 1</span>
+    </div>
+    <div class="circle" id="middle-circle">
+      <span>Div 2</span>
+    </div>
+    <div class="circle">
+      <span>Div 3</span>
+    </div>
+  </div>
+  ```
+</details>
+
+<details>
+  <summary>CSS</summary>
+
+  ```html
+    <style>
+    .circles {
+      display: flex;
+    }
+
+    .circle {
+      position: relative;
+      margin-right: 5%;
+      padding-top: 30%;
+      width: 30%;
+      background-color: palegreen;
+      border-radius: 100%;
+    }
+
+    .circle span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    #middle-circle {
+      background-color: cornflowerblue;
+    }
+
+    p span {
+      text-decoration: underline;
+    }
+  </style>
+  ```
+</details>
+
+Faites les tâches suivantes deux fois. La première fois avec `getElementById / getElementsByClassName / getElementsByTagName`, la deuixème avec `querySelector / querySelectorAll `:
+
++ Sélectionnez tous les paragraphes.
++ Sélectionnez tous les divs par le nom de class.
++ Sélectionnez le div bleu.
++ Sélectionnez les spans qui se trouvent dans les paragraphes.
+
+
+<!-- ---
 
 Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, `querySelectorAll` pour
 
@@ -28,17 +107,9 @@ Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `q
 </div>
 <p class="secondary-paragraph">Paragraph 3</p>
 <span id="js-unique-el"></span>
-```
+``` -->
 
 > **Bonne pratique :** si vous créez une classe ou un id pour manipuler les éléments avec JS, prefixez leurs noms avec 'js-', comme `.js-my-class`
-
-
-## Inspécter une node
-
-Utilisez la console pour regarder toutes les propriétés et méthodes associés à une node.
-Console > Séléctionner un élément > Elements > Properties
-
-![Quick DOM Inspector](https://i.ibb.co/X7bW84V/DOM-inspector.png)
 
 
 ## Modifier une node
@@ -60,7 +131,6 @@ Ajoutez la classe `img` à l'image.
 <p class="second-p"></p>
 <img src="http://lorempixel.com/10/10/" width="10" height="10">
 <div><p>I'm inside of a div</p></div>
-
 ```
 
 ## Supprimer une node

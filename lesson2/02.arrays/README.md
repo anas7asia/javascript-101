@@ -58,6 +58,95 @@ Fusionnez plusieurs tableaux dans un seul: `[1, 2, 3]` et `[4, 5, 6]` et `[7, 8,
 ```
 
 ## Itération
+
+<details>
+  <summary>Itération ?</summary>
+
+  On a besoin de calculer la somme de tous les éléments du tableau `[1, 2, 3]`. 
+
+  La façon habituelle de le faire et de additioner tous les éléments du tableau un par un.
+  ```js
+  let myArray = [1, 2, 3];
+
+  let result = 0;
+  result = result + myArray[0]; // 1
+  result = result + myArray[1]; // 3
+  result = result + myArray[2]; // 6
+  console.log(result); // 6
+  ```
+
+  S'il y a 100 éléments dans ce tableau, le code déviendra trop longue, répétitive et prendra beaucoup de temps à l'écrire. Pour éviter la répétition on utilisera une boucle : le même traitement sera appliqué à chaque élément du tableau dans l'ordre :
+
+  ```js
+
+  let myArray = [1, 2, 3];
+
+  // la fonction sera éxécutée 3 fois - une fois pour chaque élément du tableau
+  myArray.forEach(function(element) {
+    let result = 0;
+    result = result + 1;
+  });
+
+  console.log(result) // undefined
+  ```
+
+  Voyons ce qui se passe à chaque itération.
+ 
+  La prémière itération :
+  ```js
+  // element est égal à 1 (prémier élément du tableau - myArray[0])
+  // result est égal à 0
+  // result est égal à 1 après le calcul // 0 + 1
+  ```
+
+  La deuxième itération :
+  ```js
+  // element est égal à 2 (deuxième élément du tableau - myArray[1])
+  // result est égal à 0 (la variable result est reinitialisée)
+  // result est égal à 2 // 0 + 2
+  ```
+
+  La troisième itération :
+  ```js
+  // element est égal à 3 (deuxième élément du tableau - myArray[1])
+  // result est égal à 0 (la variable result est reinitialisée)
+  // result est égal à 3 après l'addition // 0 + 3
+  ```
+
+  Nous n'avons pas pu obténir le résultat souhaité parce que la variable *result* se trouvait dans la boucle et était reinitialisée à chaque itération. Et si nous déclarons la variable *result* à l'exterieur de la boucle ?
+
+  ```js
+  let result = 0;
+  myArray.forEach(function(element) {
+    result = result + 1;
+  });
+
+  console.log(result); // 6
+  ```
+
+  La prémière itération :
+  ```js
+  // element est égal à 1 (prémier élément du tableau - myArray[0])
+  // result est égal à 0
+  // result est égal à 1 après l'addition // 0 + 1
+  ```
+
+  La deuxième itération :
+  ```js
+  // element est égal à 2 (deuxième élément du tableau - myArray[1])
+  // result est égal à 1 (la variable result est hors de la boucle et n'est pas reinitialisée)
+  // result est égal à 3 après l'addition // 1 + 2
+  ```
+
+  La troisième itération :
+  ```js
+  // element est égal à 3 (deuxième élément du tableau - myArray[2])
+  // result est égal à 3 (la variable result est hors de la boucle et n'est pas reinitialisée)
+  // result est égal à 6 après l'addition // 3 + 3
+  ```
+</details>
+
+
 Les méthodes à utiliser: 
 [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map),
 [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach),
@@ -79,18 +168,38 @@ Parcourez le tableau `[0, 1, 2, 3, 4, 5]` pour calculer la somme de tous ces él
 
 ---
 
-Divisez chaque élément du tableau `[0, 1, 2, 3, 4, 5]` par 2. Logguez le résultat dans la console.
+Déclarez une variable qui est égale à un tableau vide.
+Parcourez le tableau `[0, 1, 2, 3, 4, 5]`, divisez chaque élément par deux et ajoutez le résultat de la division dans le tableau vide.
+Logguez dans la console le tableau avec le résultat.
+
+```js
+// result:
+[0, 0.5, 1, 1.5, 2, 2.5]
+```
 
 ---
 
 Parcourez le tableau `[1, -2, 3, 4, -9, 6]`. Dans un nouveau tableau ajoutez seulement les nombres positifs du premier tableau. Logguez le résultat dans la console.
+```js
+// result:
+[1, 3, 4, 6]
+```
 
 ---
 
-Passez chaque élément du tableau en majuscule: `['Hello', 'World', 'I', 'am', 'John', 'Doe']`. Si l'index d'itération est égal à 3, laissez l'élément comme il est.
+Parcourez le tableau des temperatues en Celcius `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, calculez un equivalent en Fahrenheit pour chaque élément et ajoutez-le dans un nouveau tableau. Logguez le résultat dans la console.
+```js
+// Celcius to Fahrenheit formula:
+(5/9) * (TEMPERATURE_EN_CELCIUS-32)
+
+// result:
+[33.8, 35.6, 37.4, 39.2, 41, 42.8, 44.6, 46.4, 48.2, 50]
+```
+
+<!-- Passez chaque élément du tableau en majuscule: `['Hello', 'World', 'I', 'am', 'John', 'Doe']`. Si l'index d'itération est égal à 3, laissez l'élément comme il est.
 ```js
 uppercaseMyArr(['Hello', 'World', 'I', 'am', 'John', 'Doe']) // ['HELLO', 'WORLD', 'I', 'am', 'JOHN', 'DOE']
-```
+``` -->
 
 <!-- Pouvez vous trouver la différence entre .map et .forEach? Répondez dans un commentaire. -->
 
