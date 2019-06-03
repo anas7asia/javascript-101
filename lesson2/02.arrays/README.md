@@ -64,7 +64,7 @@ Fusionnez plusieurs tableaux dans un seul: `[1, 2, 3]` et `[4, 5, 6]` et `[7, 8,
 
   On a besoin de calculer la somme de tous les éléments du tableau `[1, 2, 3]`. 
 
-  La façon habituelle de le faire et de additioner tous les éléments du tableau un par un.
+  La façon habituelle de le faire et d'additioner tous les éléments du tableau un par un.
   ```js
   let myArray = [1, 2, 3];
 
@@ -75,7 +75,7 @@ Fusionnez plusieurs tableaux dans un seul: `[1, 2, 3]` et `[4, 5, 6]` et `[7, 8,
   console.log(result); // 6
   ```
 
-  S'il y a 100 éléments dans ce tableau, le code déviendra trop longue, répétitive et prendra beaucoup de temps à l'écrire. Pour éviter la répétition on utilisera une boucle : le même traitement sera appliqué à chaque élément du tableau dans l'ordre :
+  S'il y a 100 éléments dans ce tableau, le code déviendra trop long, répétitif et prendra beaucoup de temps à écrire. Pour éviter la répétition on utilisera une boucle : le même traitement sera appliqué à chaque élément du tableau dans l'ordre :
 
   ```js
 
@@ -84,10 +84,10 @@ Fusionnez plusieurs tableaux dans un seul: `[1, 2, 3]` et `[4, 5, 6]` et `[7, 8,
   // la fonction sera éxécutée 3 fois - une fois pour chaque élément du tableau
   myArray.forEach(function(element) {
     let result = 0;
-    result = result + 1;
+    result = result + element;
   });
 
-  console.log(result) // undefined
+  console.log(result) // undefined, on ne peut pas accéder à une variable en dehors de sa portée
   ```
 
   Voyons ce qui se passe à chaque itération.
@@ -118,7 +118,7 @@ Fusionnez plusieurs tableaux dans un seul: `[1, 2, 3]` et `[4, 5, 6]` et `[7, 8,
   ```js
   let result = 0;
   myArray.forEach(function(element) {
-    result = result + 1;
+    result = result + element;
   });
 
   console.log(result); // 6
@@ -168,9 +168,10 @@ Parcourez le tableau `[0, 1, 2, 3, 4, 5]` pour calculer la somme de tous ces él
 
 ---
 
-Déclarez une variable qui est égale à un tableau vide.
-Parcourez le tableau `[0, 1, 2, 3, 4, 5]`, divisez chaque élément par deux et ajoutez le résultat de la division dans le tableau vide.
-Logguez dans la console le tableau avec le résultat.
+Déclarez une variable `dividedNumbers` qui est égale à un tableau vide.
+Déclarez une variable `numbers` égale à `[0, 1, 2, 3, 4, 5]`.
+Parcourez le tableau `numbers`, divisez chaque élément par deux et ajoutez le résultat de la division dans le tableau `dividedNumbers`.
+Logguez dans la console le tableau `dividedNumbers`.
 
 ```js
 // result:
@@ -179,7 +180,7 @@ Logguez dans la console le tableau avec le résultat.
 
 ---
 
-Parcourez le tableau `[1, -2, 3, 4, -9, 6]`. Dans un nouveau tableau ajoutez seulement les nombres positifs du premier tableau. Logguez le résultat dans la console.
+Créez puis parcourez un tableau `[1, -2, 3, 4, -9, 6]`. Dans un nouveau tableau ajoutez seulement les nombres positifs du premier tableau. Logguez le résultat dans la console.
 ```js
 // result:
 [1, 3, 4, 6]
@@ -187,7 +188,7 @@ Parcourez le tableau `[1, -2, 3, 4, -9, 6]`. Dans un nouveau tableau ajoutez seu
 
 ---
 
-Parcourez le tableau des temperatues en Celcius `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, calculez un equivalent en Fahrenheit pour chaque élément et ajoutez-le dans un nouveau tableau. Logguez le résultat dans la console.
+Créez puis parcourez le tableau des temperatures en Celcius `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, calculez un equivalent en Fahrenheit pour chaque élément et ajoutez-le dans un nouveau tableau. Logguez le résultat dans la console.
 ```js
 // Celcius to Fahrenheit formula:
 (5/9) * (TEMPERATURE_EN_CELCIUS-32)

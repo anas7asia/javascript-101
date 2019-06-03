@@ -76,7 +76,7 @@ Utilisez le HTML et le CSS ci-dessous:
   ```
 </details>
 
-Faites les tâches suivantes deux fois. La première fois avec `getElementById / getElementsByClassName / getElementsByTagName`, la deuixème avec `querySelector / querySelectorAll `:
+Faites les tâches suivantes deux fois. La première fois avec les méthodes `getElementById / getElementsByClassName / getElementsByTagName`, la deuixème fois avec les méthodes `querySelector / querySelectorAll `:
 
 + Sélectionnez tous les paragraphes.
 + Sélectionnez tous les divs par le nom de class.
