@@ -133,6 +133,60 @@ Ajoutez la classe `img` à l'image.
 <div><p>I'm inside of a div</p></div>
 ```
 
+---
+
+Copiez-collez le HTML suivant dans votre page web.
+
+<details>
+<summary>HTML</summary>
+
+```html
+<section>
+  <h1 id="js-artist"></h1>
+  <p id="js-artist-real-name"></p>
+
+  <h2>Albums :</h2>
+
+  <article>
+    <h1 class="js-album-title"></h1>
+    <p id="js-release-date">L'année de sortie: <span></span></p>
+    <p><span id="js-songs-count"></span> chansons</p>
+
+    <hr>
+
+    <ul>
+      <li>Ma chanson préférée : <span class="js-favourite-song"></span></li>
+      <li>La chanson la plus connue : <span id="js-famous-song"></span></li>
+      <li>La chanson la plus longue : <span id="js-longest-song"></span></li>
+    </ul>
+  </article>
+</section>
+    
+```
+</details>
+
+
+Prenez l'objet avec les informations de votre musicien préféré que vous avez créez au dernier cours.
+
+Affichez le pseudo, non et prénom de l'artiste.
+
+Affichez les information de son premier album : le titre, année de sortie et nombre de chansons.
+
+Affichez les titres de trois chansons de l'album en gras
+
+
+## Créez une node
+
+Créez un div et insérez le dans la balise `body`.
+
+Créez une balise `ul` avec 5 `li` dedans et insérez la dans un div dans body. 
+<!-- N'hésitez pas à utiliser la boucle `for` pour ne pas répéter la même ligne de code 5 fois. -->
+
+<!-- --- -->
+
+<!-- Créez une balise `script` qui télécharge la librairy jQuery `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js` de manière asynchrone. -->
+
+
 ## Supprimer une node
 
 Supprimez le paragraphe qui se trouve dans un div.
@@ -146,17 +200,58 @@ Supprimez le span.
 <span>I will be deleted</span>
 ```
 
-## Créez une node
 
-Créez un div et insérez le dans la balise `body`.
+## Practise
 
-Créez une balise `ul` avec 5 `li` dedans et insérez la dans un div dans body. N'hésitez pas à utiliser la boucle `for` pour ne pas répéter la même ligne de code 5 fois.
+Utilisez le CSS ci-dessus.
+
+<details>
+  <summary>CSS</summary>
+
+  ```css
+  .cookies-notice {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: rgba(0,0,0,.45);
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .cookies-text {
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  [data-link~="cookies-button"] {
+    display: inline-block;
+    padding: .7rem 1rem;
+    background-color: green;
+    border-radius: 4px;
+    color: #FFF;
+  }
+  ```
+</details>
+
+1. Créez un `div` avec une classe `cookies-notice`. 
+  1. Modifiez la propriété `display` de ce div pour qu'il devienne visible. 
+  2. Passez-lui en position fixée et en bas de l'écran.
+2. Créez un paragraphe `p` avec une classe `cookies-text`. 
+  1. Dans ce paragraphe ajoutez le HTML suivant : 'By using our website, you acknowledge that you have read and understand our <strong>Cookies Policy</strong>'
+3. Créez un lien. 
+  1. Insérez le texte `'Ok'` dans ce lien. 
+  2. Ajoutez un attribut `data-link` avec la valeur `cookies-button`.
+4. Insérez le paragraphe dans le div.
+5. Insérez le lien dans le div.
+6. Insérez le div dans le body de votre page web.
+
+Voici le résultat souhaité :
+
+![Cookies](https://i.ibb.co/f1TYcmJ/Screenshot-2019-06-04-at-11-27-12.png)
 
 ---
-
-Créez une balise `script` qui télécharge la librairy jQuery `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js` de manière asynchrone.
-
-## Pour aller plus loin
 
 Recréez le HTML suivant uniquement avec JavaScript.
 
