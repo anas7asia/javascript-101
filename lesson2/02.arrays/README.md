@@ -191,7 +191,7 @@ Créez puis parcourez un tableau `[1, -2, 3, 4, -9, 6]`. Dans un nouveau tableau
 Créez puis parcourez le tableau des temperatures en Celcius `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, calculez un equivalent en Fahrenheit pour chaque élément et ajoutez-le dans un nouveau tableau. Logguez le résultat dans la console.
 ```js
 // Celcius to Fahrenheit formula:
-(5/9) * (TEMPERATURE_EN_CELCIUS-32)
+(TEMPERATURE_EN_CELCIUS × 9/5) + 32
 
 // result:
 [33.8, 35.6, 37.4, 39.2, 41, 42.8, 44.6, 46.4, 48.2, 50]
