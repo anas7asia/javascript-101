@@ -4,14 +4,21 @@
 + [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 + [JavaScript.info](http://javascript.info/dom-nodes)
 
-## Inspécter une node
+## Inspécter un node
 
-Utilisez la console pour regarder toutes les propriétés et méthodes associés à une node.
+Utilisez la console pour regarder toutes les propriétés et méthodes associés à un node.
 Console > Séléctionner un élément > Elements > Properties
 
 ![Quick DOM Inspector](https://i.ibb.co/X7bW84V/DOM-inspector.png)
 
 ## Trouver un node
+
+| Sélecteurs | Un node | Une liste de nodes |
+| ------------- |:-------------:| :-----:|
+| par id | getElementById <br> querySelector | - |
+| par classe | querySelector | getElementsByClassName <br> querySelectorAll |
+| par un nom de balise | querySelector | getElementsByTagName <br>querySelectorAll |
+| par un sélecteur CSS | querySelector | querySelectorAll |
 
 Utilisez le HTML et le CSS ci-dessous:
 <details>
@@ -112,15 +119,15 @@ Utilisez: `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `q
 > **Bonne pratique :** si vous créez une classe ou un id pour manipuler les éléments avec JS, prefixez leurs noms avec 'js-', comme `.js-my-class`
 
 
-## Modifier une node
+## Modifier un node
 
 Ajoutez le texte 'I am the first paragraph' au premier paragraphe du document.
 
 Ajoutez le HTML `<span>Hello</span>` au deuxième paragraphe du document.
 
-Modifiez les attributs `width` à 50% et `height` à 'auto' de l'image.
+Modifiez la largeur `width` à 50% et `height` à 'auto' de l'image.
 
-Ajoutez un attribut `alt` non vide à l'image.
+<!-- Ajoutez un attribut `alt` non vide à l'image. -->
 
 Donnez la couleur 'blue' au premier paragraphe du div et la taille de police '1.5rem'.
 
@@ -166,20 +173,121 @@ Copiez-collez le HTML suivant dans votre page web.
 </details>
 
 
-Prenez l'objet avec les informations de votre musicien préféré que vous avez créez au dernier cours.
+Prenez l'objet avec les informations de votre musicien préféré que vous avez créé au dernier cours.
 
-Affichez le pseudo, non et prénom de l'artiste.
+Affichez en bleu le pseudo, le nom et le prénom de l'artiste.
 
-Affichez les information de son premier album : le titre, année de sortie et nombre de chansons.
+Affichez les information de son premier album : le titre, l'année de sortie et le nombre de chansons.
 
-Affichez les titres de trois chansons de l'album en gras
+Affichez les titres de trois chansons de l'album en gras.
 
 
-## Créez une node
+---
 
-Créez un div et insérez le dans la balise `body`.
+Copiez-collez le HTML et le CSS suivants dans votre page web.
 
-Créez une balise `ul` avec 5 `li` dedans et insérez la dans un div dans body. 
+<details>
+<summary>HTML</summary>
+
+```html
+  <h1 id="page-title">Page title</h1>
+  <p id="page-subtitle">Page subtitle</p>
+
+  <p class="page-text">
+    <em>Felis catus</em> has had a very long relationship with humans. Ancient Egyptians may have first domesticated cats as early as <span class="text-highlight">4,000 years ago.</span>
+  </p>
+  <p class="page-text">Text to replace</p>
+  <p class="page-text">
+    The cats' skill in killing them may have first earned the <span class="text-highlight">affectionate attention</span> of humans.
+  </p>
+
+  <section>
+    <h2>Our featured articles:</h2>
+
+    <div class="magazine-articles">
+      <article>
+        <img src="http://lorempixel.com/400/300/cats/?id=1">
+        <div class="magazine-article-content">
+          <h1>Cats are one of, if not the most, popular pet in the world.</h1>
+        </div>
+      </article>
+    
+      <article>
+        <img src="http://lorempixel.com/400/300/cats/?id=2">
+        <div class="magazine-article-content">
+          <h1>There are over 500 million domestic cats in the world.</h1>
+        </div>
+      </article>
+    
+      <article>
+        <img src="http://lorempixel.com/400/300/cats/?id=3">
+        <div class="magazine-article-content">
+          <h1>Cats and humans have been associated for nearly 10000 years.</h1>
+        </div>
+      </article>
+    
+      <article>
+        <img src="http://lorempixel.com/400/300/cats/?id=4">
+        <div class="magazine-article-content">
+          <h1>Cats conserve energy by sleeping for an average of 13 hours a day.</h1>
+        </div>
+      </article>
+    </div>
+  </section>
+  ```
+</details>
+
+<details>
+<summary>CSS</summary>
+
+```css
+body {
+  background-color: #efeeed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.magazine-articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.magazine-article {
+  width: 24%;
+  background-color: #FFF;
+  border-radius: 4px;
+}
+
+.magazine-article img {
+  width: 100%;
+}
+
+.magazine-article-content {
+  padding: 0 1rem;
+}
+
+.text-highlight {
+  text-decoration: line-through;
+}
+```
+
+</details>
+
+1. Sélectionnez le titre principal de la page avec la méthode `getElementById`. Remplacez son texte par ‘Cats are awesome’ avec la propriété `innerText`. Changez sa propriété `text-decoration` en `underline`.
+2. Sélectionnez le paragraphe sous le titre principal de la page avec la méthode `querySelector`. Ajoutez le HTML suivant avec la propriété `innerHTML`: `'Domestic cats, no matter their breed, are <strong>all members of one species.</strong>'`. Changez sa couleur en gris.
+3. Sélectionnez tous les paragraphes avec le nom de classe `page-text` grace à la méthode `getElementsByClassName`. Remplacer le contenu du deuxième paragraphe par `'Plentiful rodents probably drew wild felines to human communities.'` avec la propriété `innerText`.
+4. Sélectionnez toutes les balises `span` avec la classe `text-highlight` grace à la méthode `querySelectorAll`. Parcourez la liste des nodes sélectionnés. Supprimez la classe `text-highlight` de chacun d'eux.
+5. Sélectionnez toutes les images de la page avec la méthode `getElementsByTagName`. Ajoutez un filtre CSS `grayscale(100%)` à la première et à la dernière image.
+6. Sélectionnez toutes les balises `article` avec la méthode `querySelectorAll`. Parcourez la liste des nodes sélectionnés. Ajoutez à chacun la classe `magazine-article` pour leurs appliquer les styles prédéfinies.
+
+Le résultat :
+
+![Resultat](https://i.ibb.co/8Yy0hZr/DOM-practise.png)
+
+## Créez un node
+
+Créez un paragraphe avec le texte `'Hello'` et insérez-le dans la balise `body`.
+
+Créez une balise `ul` avec 5 `li` dedans et insérez-la dans un div dans body. 
 <!-- N'hésitez pas à utiliser la boucle `for` pour ne pas répéter la même ligne de code 5 fois. -->
 
 <!-- --- -->
@@ -187,7 +295,7 @@ Créez une balise `ul` avec 5 `li` dedans et insérez la dans un div dans body.
 <!-- Créez une balise `script` qui télécharge la librairy jQuery `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js` de manière asynchrone. -->
 
 
-## Supprimer une node
+## Supprimer un node
 
 Supprimez le paragraphe qui se trouve dans un div.
 Supprimez le span.
@@ -203,7 +311,7 @@ Supprimez le span.
 
 ## Practise
 
-Utilisez le CSS ci-dessus.
+Utilisez le CSS ci-dessous.
 
 <details>
   <summary>CSS</summary>
@@ -225,7 +333,7 @@ Utilisez le CSS ci-dessus.
     font-style: italic;
   }
 
-  [data-link~="cookies-button"] {
+  .cookies-button {
     display: inline-block;
     padding: .7rem 1rem;
     background-color: green;
@@ -237,12 +345,11 @@ Utilisez le CSS ci-dessus.
 
 1. Créez un `div` avec une classe `cookies-notice`. 
   1. Modifiez la propriété `display` de ce div pour qu'il devienne visible. 
-  2. Passez-lui en position fixée et en bas de l'écran.
+  2. Passez-le en position fixe en bas de l'écran.
 2. Créez un paragraphe `p` avec une classe `cookies-text`. 
-  1. Dans ce paragraphe ajoutez le HTML suivant : 'By using our website, you acknowledge that you have read and understand our <strong>Cookies Policy</strong>'
-3. Créez un lien. 
+  1. Dans ce paragraphe ajoutez le HTML suivant : `'By using our website, you acknowledge that you have read and understand our <strong>Cookies Policy</strong>'`
+3. Créez un lien avec une class `cookies-button`.
   1. Insérez le texte `'Ok'` dans ce lien. 
-  2. Ajoutez un attribut `data-link` avec la valeur `cookies-button`.
 4. Insérez le paragraphe dans le div.
 5. Insérez le lien dans le div.
 6. Insérez le div dans le body de votre page web.

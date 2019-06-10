@@ -16,7 +16,7 @@ Créez un bouton dans votre HTML. Ajoutez-lui un écouteur d'événements côté
 
 Créez un bouton gris. S'il est cliqué, passez sa couleur en vert. S'il est cliqué à nouveau, repassez sa couleur en gris. Gérez les couleurs côté JavaScript.
 
-Faites la même chose en utilisant des classes css.
+<!-- Faites la même chose en utilisant des classes css. -->
 
 ---
 
@@ -33,6 +33,14 @@ Créez un bouton bleu. Il devient violet quand une touche de la souris est [appu
 ---
 
 Créez un bouton, associez-lui un événement `click`. Si ce bouton a été cliqué trois fois, enlevez l'écouteur d'événement.
+
+---
+
+```js
+const colors = ['#ffc7e9', '#f8f0e8', '#b6ddd8', '#2e326f', '#efd8ff'];
+```
+
+Au clique sur la page web changez sa couleur du fond. Alternez avec les couleurs présentes dans le tableau. Quand vous atteignez la fin du tableau, il faut repartir au debut du tableau.
 
 ---
 
