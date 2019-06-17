@@ -8,10 +8,47 @@
 + [JavaScript.info > focus/blur](http://javascript.info/focus-blur)
 + [JavaScript.info > Form events](http://javascript.info/forms-submit) 
 
+#### focus et blur
+
 1. Créez un champ de texte. 
 2. Quand la page est entièrement [chargée](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload), appelez une fonction qui met le champ en avant. 
 3. Ecrivez du texte dedans. 
 4. Quand le champ n'est plus mis en avant, logguez le texte écrit.
+
+---
+
+#### Soumettre un formulaire
+
+<details>
+<summary>HTML</summary>
+
+```html
+<div class="container">
+  <form id="js-total-price">
+    <div class="form-group">
+      <label for="quantity">Nom du produit</label>
+      <input type="text" id="js-product" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="quantity">Quantité</label>
+      <input type="number" id="js-quantity" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="price">Prix</label>
+      <input type="number" id="js-price" class="form-control">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Calculer le prix total</button>
+  </form>
+  
+  <div class="alert alert-primary mt-3" id="js-price-result" style="display: none"></div>
+</div>
+```
+</details>
+
+Calculez le prix total du produit saisi dans le champ du texte et affichez sur la page le résultat : `'Vous avez commandé NOM_DU_PRODUIT QUANTITE fois. Le prix total sera PRIX_TOTAL'€.`.
 
 ---
 
