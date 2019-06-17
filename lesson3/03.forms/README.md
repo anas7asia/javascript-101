@@ -48,7 +48,14 @@
 ```
 </details>
 
-Calculez le prix total du produit saisi dans le champ du texte et affichez sur la page le résultat : `'Vous avez commandé NOM_DU_PRODUIT QUANTITE fois. Le prix total sera PRIX_TOTAL'€.`.
+
+Calculez le prix total pour un produit avec la quantité et le prix récupérés dans le formulaire puis affichez-le sur la page : `'Vous avez commandé NOM_DU_PRODUIT QUANTITE fois. Le prix total sera PRIX_TOTAL'€.`.
+
+<details>
+<summary>Le résultat</summary>
+
+![Result](https://i.ibb.co/1RY1D2G/09-calculate-price.gif)
+</details>
 
 ---
 

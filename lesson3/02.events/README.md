@@ -11,7 +11,6 @@
 <!-- Créez un bouton dans votre HTML. Associez-lui un événement `onclick` avec un attribut directement dans HTML. Si le bouton est cliqué, loggez 'Clicked!'.
 
 Créez un bouton dans votre HTML. Avec JavaScript associez à la propriété `onclick` à une fonction qui logge 'Clicked!' si le bouton est cliqué. -->
-#### Click me
 
 ```html
 <button class="btn btn-primary" id="js-click">Click me!</button>
@@ -19,7 +18,7 @@ Créez un bouton dans votre HTML. Avec JavaScript associez à la propriété `on
 
 Créez un bouton dans votre HTML avec le texte `'Click me'`. 
 Ajoutez-lui un écouteur d'événements côté JavaScript. 
-Si le bouton est cliqué, logguez dans la console 'Clicked!' et [l'événement](https://developer.mozilla.org/en-US/docs/Web/API/Event) passé à la fonction de rappel, ensuite changez son texte à `'Clicked'`.
+Si le bouton est cliqué, logguez dans la console [l'événement](https://developer.mozilla.org/en-US/docs/Web/API/Event) passé à la fonction de rappel puis changez son texte pour `'Clicked'`.
 
 <details>
 <summary>Le résultat</summary>
@@ -51,8 +50,6 @@ Utilisez le HTML ci-dessus. Affichez l'alerte si le bouton `#js-show-alert` est 
 
 ---
 
-#### Changer la couleur au click
-
 ```html
 <button class="btn btn-secondary" id="js-change-color">I will change my color</button>
 ```
@@ -66,8 +63,6 @@ Créez un bouton gris. S'il est cliqué, passez sa couleur en vert. S'il est cli
 </details>
 
 ---
-
-#### Infinite rotation
 
 <details>
   <summary>HTML & CSS</summary>
@@ -90,9 +85,9 @@ Créez un bouton gris. S'il est cliqué, passez sa couleur en vert. S'il est cli
 
 Copiez-collez le HTML et le CSS ci-dessous.
 
-Si le div est cliqué deux fois d'affilé, tournez-le à 45 degrés de plus de sa position precedante. 
+A chaque fois que le div est cliqué deux fois d'affilé, faites-lui faire une rotation de 45 degrés. 
 
-Propriété CSS qui fait tourner les éléments :
+La propriété CSS qui permet la rotation :
 ```css
 transform: rotate(45deg);
 ```
@@ -104,8 +99,6 @@ transform: rotate(45deg);
 </details>
 
 ---
-
-#### Curseur in and out
 
 <details>
   <summary>HTML & CSS</summary>
@@ -140,7 +133,7 @@ transform: rotate(45deg);
   ```
 </details>
 
-Quand un drapeau est survolé, le nom du pays apparaît, quand le curseur sort du drapeau le pays disparaît.
+Quand un drapeau est survolé, le nom du pays apparaît, quand le curseur sort du drapeau le nom du pays disparaît.
 > La bibliothèque des drapeaux en format svg `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">`
 
 <details>
@@ -155,7 +148,7 @@ Quand un drapeau est survolé, le nom du pays apparaît, quand le curseur sort d
 const colors = ['#ffc7e9', '#f8f0e8', '#b6ddd8', '#2e326f', '#efd8ff'];
 ```
 
-Au clique sur la page web changez sa couleur du fond. Alternez avec les couleurs présentes dans le tableau. Quand vous atteignez la fin du tableau, il faut repartir au debut du tableau.
+Au clique sur la page web changez sa couleur de fond. Alternez avec les couleurs présentes dans le tableau. Quand vous atteignez la fin du tableau, il faut repartir au debut du tableau.
 
 <details>
 <summary>Le résultat</summary>
@@ -224,7 +217,7 @@ Ajoutez le même événement à ces deux liens. Trouvez quel lien a été cliqu�
   ```
 </details>
 
-Créez un champ de la taille de la fenêtre de votre navigateur. Dedans créez un carré qui bouge de 25px à droite/gauche/en-haut/en-bàs si on appuie sur les boutons fléchés. 
+Créez un champ de la taille de la fenêtre de votre navigateur. Créez dedans un carré qui bouge de 25px à droite/gauche/en-haut/en-bàs si on appuie sur les boutons fléchés. 
 
 **BONUS:** Ce carré ne doit pas dépasser les bords de la fenêtre.
 
@@ -277,8 +270,8 @@ Créez un champ de saisie de texte. A chaque fois que l'on tape une lettre dedan
   ```
 </details>
 
-Affichez la largeur (`window.innerWidth`) et l'hauteur (`window.innerHeight`) de la fênetre de votre navigateur.
-Si elle est [redimensionnée](https://developer.mozilla.org/en-US/docs/Web/Events/resize), mettez à jour ces valeurs.
+Affichez la largeur (`window.innerWidth`) et la hauteur (`window.innerHeight`) de la fênetre de votre navigateur.
+Si elle est [redimensionnée](https://developer.mozilla.org/en-US/docs/Web/Events/resize), mettez à jour les valeurs affichées.
 
 <details>
 <summary>Le résultat</summary>
